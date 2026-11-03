@@ -81,7 +81,15 @@ Erster Deploy (Commit «Prüfbefunde: Wortmarken-Link 44 px hoch …», 3.11.202
 SEO 66 auf allen Seiten, weil die Demo `noindex` trägt (Audit «is-crawlable»); mit `INDEXIERUNG=1` entfällt das. Der mobile LCP der
 Profilseite (1.9 s) ist das Portrait im Querformat unter simulierter Drosselung; es wird mit `fetchPriority="high"` geladen.
 
-Zweiter Deploy nach der Codex-Abschlussprüfung (Abschnitt 8): siehe Nachtrag am Ende dieses Abschnitts.
+Zweiter Deploy nach der Codex-Abschlussprüfung (Commit «Codex-Abschlussprüfung: kein automatisches Kopieren …», Lauf 41557700601, alle vier
+Jobs grün):
+
+- Stichproben live: CSP-Meta als erstes Element nach dem Zeichensatz, Datenschutzerklärung ohne «einfache Gesellschaft», Profil ohne
+  persönliche Adresse mit «E-Mail (Kanzlei)», Gruppentitel auf `/en/`, Teamfilter nicht im ausgelieferten HTML (erst nach dem Laden), 404 für unbekannte Adressen.
+- **Funktionen live**: 131 Prüfungen, 0 fehlgeschlagen.
+- **Lighthouse live** (gleiche Umgebung wie oben): Desktop auf allen fünf Seiten 100 / 100 / 100 / 66; Mobil `/` 99 / 100 / 100 / 66
+  (LCP 1.0 s, CLS 0.064), `/rechtsgebiete/` 100 (LCP 1.0 s), `/team/urs-ebnoether/` 100 (LCP 1.7 s), `/kontakt/` 100 (LCP 0.9 s),
+  `/ar/` 100 (LCP 1.0 s); TBT höchstens 30 ms.
 
 ## 7. Codex-Architekturprüfung (3.11.2026, read-only, vor dem ersten Push)
 
