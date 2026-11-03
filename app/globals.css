@@ -113,7 +113,7 @@ html[lang="ar"] .titel-1, html[lang="ar"] .titel-2, html[lang="ar"] .titel-3 { l
 /* ── Kopfzeile: Logo-Platte links, Sprachwahl rechts; darunter das Register ─ */
 .kopf { border-bottom: 1px solid var(--color-fuge); }
 .kopf-zeile { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; padding-block: 0.75rem; }
-.platte { display: inline-flex; align-items: center; min-width: 0; flex: 0 1 auto; }
+.platte { display: inline-flex; align-items: center; min-width: 0; min-height: 2.75rem; flex: 0 1 auto; }
 /* Die Wortmarke skaliert mit der Breite (Seitenverhältnis 5.5 : 1): 180 px bei 360 px, höchstens 400 px */
 .platte img { width: clamp(10rem, 50vw, 25rem); height: auto; display: block; }
 

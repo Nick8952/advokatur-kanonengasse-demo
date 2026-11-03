@@ -50,7 +50,8 @@ export default async function Rechtsgebiete() {
         <h1 className="titel-1">{s.titel}</h1>
         {s.einleitung.map((a) => <p key={a} className="vorspann">{a}</p>)}
       </header>
-      <section aria-label="Schwerpunkte" className="grid">
+      <section aria-labelledby="schwerpunkte-titel" className="grid">
+        <h2 id="schwerpunkte-titel" className="nur-sr">Schwerpunkte</h2>
         {schwerpunkte.map((r) => <Gebiet key={r.slug} r={r} />)}
       </section>
       <section aria-labelledby="weitere-titel" className="grid gap-4">
