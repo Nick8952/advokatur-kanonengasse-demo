@@ -13,9 +13,9 @@ const paare = [
   ["rahmen", "putz", "Lauftext auf Putz (Seitengrund)", 4.5], ["rahmen", "fenster", "Text in Fenstern und Feldern", 4.5], ["rahmen", "fenster-2", "Text auf ruhiger Fläche (Hinweise, Hover)", 4.5],
   ["rahmen-2", "putz", "Zweittext auf Putz", 4.5], ["rahmen-2", "fenster", "Zweittext in Fenstern", 4.5], ["grau", "putz", "Meta-Angaben, Hilfetexte", 4.5], ["grau", "fenster", "Hilfetexte in Feldern", 4.5],
   ["akzent-text", "akzent", "Text auf Orange (Knöpfe, Akzentfenster)", 4.5], ["akzent-text", "akzent-tief", "Text auf Orange im Hover", 4.5],
-  ["putz", "rahmen", "Text auf Marineblau (gedrückter Filter, Sekundärknopf im Hover)", 4.5],
+  ["putz", "rahmen", "Text auf Marineblau (Fusszeile, Menü, Schwerpunktkarten, gedrückter Filter)", 4.5], ["putz-2", "rahmen", "Zweittext auf Marineblau (Fusszeile, Menü, Bühne)", 4.5], ["akzent", "rahmen", "Orange als Schrift und Linie auf Marineblau (Menü aktuell, Strich)", 4.5],
   ["fehler", "putz", "Fehlermeldungen", 4.5], ["fehler", "fenster", "Fehlermeldung in Feldern", 4.5],
-  ["fuge-stark", "fenster", "Rahmen von Feldern (nicht Text)", 3], ["rahmen", "putz", "Fokusring (nicht Text)", 3], ["akzent", "putz", "Akzentfläche gegen Putz (nicht Text)", 1.5],
+  ["fuge-stark", "fenster", "Rahmen von Feldern (nicht Text)", 3], ["rahmen", "putz", "Fokusring (nicht Text)", 3], ["akzent", "putz", "Akzentfläche gegen Putz (nicht Text)", 1.5], ["putz", "rahmen", "Fokusring auf Marineblau (nicht Text)", 3], ["rahmen-2", "putz", "Abschnittsnummern (grosse Schrift)", 3],
 ];
 let fehler = 0;
 for (const [vg, hg, zweck, min] of paare) {

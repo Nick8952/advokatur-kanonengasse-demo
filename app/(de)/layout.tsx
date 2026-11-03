@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "../globals.css";
-import { Einwilligung } from "@/components/Einwilligung";
+import { Bewegung } from "@/components/Bewegung";
+import { Einwilligung, EinwilligungFussLink } from "@/components/Einwilligung";
 import { Fusszeile } from "@/components/Fusszeile";
 import { Kopf } from "@/components/Kopf";
-import { Register } from "@/components/Register";
+import { SmartLink } from "@/components/SmartLink";
 import { inhaltsquelle, pfade } from "@/lib/content";
 import { siteUrl } from "@/lib/deploy-ziel";
 import { CSP_META } from "@/lib/csp";
@@ -25,12 +26,17 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export const viewport: Viewport = { themeColor: "#e9e9e7", colorScheme: "light" };
+export const viewport: Viewport = { themeColor: "#182153", colorScheme: "light" };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   const q = await inhaltsquelle();
   const [k, t, personen, rechtsgebiete] = await Promise.all([q.getKanzlei(), q.getTexte(), q.getPersonen(), q.getRechtsgebiete()]);
   const sprachen = t.sprachen.map((s) => ({ code: s.code, name: s.name, nameDeutsch: s.nameDeutsch, lang: s.lang, pfad: pfade.sprache(s.code), aktuell: s.code === "de" }));
+  const fuss = {
+    kontaktTitel: t.footer.kontaktTitel, telefonzeiten: t.ui.telefonzeiten, tage: k.telefonzeiten.tage, zeiten: k.telefonzeiten.zeiten, terminhinweis: k.telefonzeiten.terminhinweis,
+    anrufen: t.ui.anrufen, besuchsadresse: t.ui.besuchsadresse, postadresse: t.ui.postadresse, seitenTitel: t.footer.seitenTitel, sprachenTitel: t.footer.sprachenTitel,
+    rechtlichesTitel: t.footer.rechtliches.map((r) => r.text).join(" und "), copyright: t.footer.copyright, demoHinweis: indexierungErlaubt ? undefined : t.footer.demoHinweis,
+  };
   return (
     <html lang="de-CH" dir="ltr">
       <head>
@@ -44,13 +50,22 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <Kopf
           logo={k.logo} logoAlt={t.kopf.logoAlt} startPfad={pfade.start} startLabel={t.kopf.zurStartseite}
           sprachen={sprachen} sprachLabel={t.kopf.sprache} sprachTitel={t.kopf.spracheWaehlen} aktuellLabel={t.kopf.aktuelleSprache}
-          register={<Register eintraege={t.navigation} label={t.kopf.navigationLabel} />}
+          navigation={t.navigation} navLabel={t.kopf.navigationLabel} menue={{ titel: t.kopf.menue, schliessen: t.kopf.menueSchliessen }}
+          kontakt={{ titel: t.footer.kontaktTitel, telefon: k.telefon, email: k.email, anrufen: t.ui.anrufen }}
         />
-        <main id="inhalt" tabIndex={-1} className="w-full max-w-full overflow-x-hidden outline-none">
+        <main id="inhalt" tabIndex={-1} className="inhalt w-full max-w-full outline-none">
           {children}
         </main>
-        <Fusszeile kanzlei={k} texte={t} sprachen={sprachen} zeigeDemoHinweis={!indexierungErlaubt} />
+        <Fusszeile
+          kanzlei={k} t={fuss} seiten={t.navigation} sprachen={sprachen}
+          rechtliches={<>
+            {t.footer.rechtliches.map((r) => <li key={r.ziel}><SmartLink ziel={r.ziel}>{r.text}</SmartLink></li>)}
+            <li><SmartLink ziel={t.footer.bildnachweis.ziel}>{t.footer.bildnachweis.text}</SmartLink></li>
+            <li><EinwilligungFussLink titel={t.footer.einstellungen} /></li>
+          </>}
+        />
         <Einwilligung texte={t.einwilligung} datenschutzPfad={pfade.datenschutz} schliessen={t.ui.schliessen} />
+        <Bewegung />
         {indexierungErlaubt ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdSicher(kanzleiJsonLd(k, personen, rechtsgebiete)) }} /> : null}
       </body>
     </html>

@@ -25,7 +25,7 @@ npm run qa             # Browser-Prüfungen gegen die Vorschau
 | --- | --- |
 | `CLAUDE.md` | Architektur, Regeln, Befehle (für Claude Code, Codex und Menschen) |
 | `docs/INHALTSMATRIX.md` | Bestandsaufnahme der bisherigen Website, Quellen, Korrekturen, Zuordnung alter und neuer Adressen |
-| `docs/DESIGN.md` | Gestaltung «Fensterfront»: Tokens, Schrift, Aufbau, Bewegung |
+| `docs/DESIGN.md` | Gestaltung «Durchgang»: Tokens, Schrift, Aufbau, Bewegung und Rückfälle |
 | `docs/ENTSCHEIDUNGEN.md` | Begründete Entscheidungen zu Inhalt und Technik |
 | `docs/BILDER.md`, `assets/originale/HERKUNFT.md` | Bildquellen, Rechte, Verarbeitung |
 | `docs/SANITY-VERCEL-EINRICHTUNG.md` | Einrichtung von Sanity und Vercel, Import, Builds, Go-Live |

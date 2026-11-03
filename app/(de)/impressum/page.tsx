@@ -11,6 +11,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Impressum() {
   const q = await inhaltsquelle();
-  const [s, t, nachweise] = await Promise.all([q.getRechtSeite("impressum"), q.getTexte(), q.getBildnachweise()]);
-  return <RechtSeite seite={s} standLabel={t.ui.stand} bildnachweise={nachweise} bildnachweisTitel={t.footer.bildnachweis.text} />;
+  const [k, s, t, nachweise] = await Promise.all([q.getKanzlei(), q.getRechtSeite("impressum"), q.getTexte(), q.getBildnachweise()]);
+  return <RechtSeite seite={s} etikett={k.kurzbeschreibung} standLabel={t.ui.stand} bildnachweise={nachweise} bildnachweisTitel={t.footer.bildnachweis.text} />;
 }

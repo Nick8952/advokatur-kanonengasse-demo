@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { Bild } from "@/components/Bild";
+import { Pfeil } from "@/components/Pfeil";
+import { Seitenkopf } from "@/components/Seitenkopf";
 import { inhaltsquelle, pfade } from "@/lib/content";
 import { telLink } from "@/lib/assets";
 import { CSP_META } from "@/lib/csp";
@@ -13,7 +15,7 @@ import { CSP_META } from "@/lib/csp";
  */
 // Next setzt auf der globalen Fehlerseite selbst «noindex»; kein zweites robots-Meta.
 export const metadata: Metadata = { title: "Seite nicht gefunden" };
-export const viewport: Viewport = { themeColor: "#e9e9e7", colorScheme: "light" };
+export const viewport: Viewport = { themeColor: "#182153", colorScheme: "light" };
 
 export default async function GlobalNotFound() {
   const q = await inhaltsquelle();
@@ -28,20 +30,27 @@ export default async function GlobalNotFound() {
           {t.ui.zumInhalt}
         </a>
         <header className="kopf">
-          <div className="behaelter kopf-zeile">
-            <Link href={pfade.start} className="platte" aria-label={t.kopf.zurStartseite}>
-              <Bild bild={k.logo} sizes="330px" prio alt={t.kopf.logoAlt} />
-            </Link>
+          <div className="kopf-innen">
+            <div className="behaelter kopf-zeile">
+              <Link href={pfade.start} className="platte" aria-label={t.kopf.zurStartseite}>
+                <Bild bild={k.logo} sizes="256px" prio alt={t.kopf.logoAlt} />
+              </Link>
+            </div>
           </div>
         </header>
-        <main id="inhalt" tabIndex={-1} className="behaelter abschnitt grid gap-6 outline-none">
-          <h1 className="titel-1">{t.ui.nichtGefundenTitel}</h1>
-          <p className="vorspann">{t.ui.nichtGefundenText}</p>
-          <p className="klein text-rahmen-2" lang="en">This page does not exist. The navigation on the home page lists all pages of the firm.</p>
-          <p className="flex flex-wrap gap-3">
-            <Link href={t.ui.nichtGefundenLink.ziel} className="knopf knopf-primaer">{t.ui.nichtGefundenLink.text}</Link>
-            <a href={telLink(k.telefon)} className="knopf knopf-sekundaer">{t.ui.anrufen}: <bdi dir="ltr">{k.telefon}</bdi></a>
-          </p>
+        <main id="inhalt" tabIndex={-1} className="inhalt outline-none">
+          <Seitenkopf
+            etikett={k.name} titel={t.ui.nichtGefundenTitel}
+            kinder={<>
+              <p className="vorspann">{t.ui.nichtGefundenText}</p>
+              <p className="klein text-rahmen-2" lang="en">This page does not exist. The navigation on the home page lists all pages of the firm.</p>
+            </>}
+            zeile={<>
+              <Link href={t.ui.nichtGefundenLink.ziel} className="knopf knopf-primaer">{t.ui.nichtGefundenLink.text}<Pfeil /></Link>
+              <a href={telLink(k.telefon)} className="knopf knopf-sekundaer">{t.ui.anrufen}: <bdi dir="ltr">{k.telefon}</bdi></a>
+            </>}
+          />
+          <div className="abschnitt" />
         </main>
       </body>
     </html>

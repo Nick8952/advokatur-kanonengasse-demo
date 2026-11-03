@@ -20,14 +20,15 @@ unter `app/(sprachen)/[sprache]` mit eigenem Wurzel-Layout (`lang`, `dir="rtl"` 
 `app/global-not-found.tsx` (`experimental.globalNotFound`) als Fehlerseite.
 
 ```text
-app/(de)/            layout.tsx (Kopf mit Wortmarke und Sprachwahl, Register, Fusszeile, Einwilligung ruhend, JSON-LD nur bei Freigabe),
+app/(de)/            layout.tsx (Kopf mit Wortmarke, Hauptnavigation, Sprachwahl und Menü, Fusszeile, Einwilligung ruhend, Bewegung, JSON-LD nur bei Freigabe),
                      page.tsx (Start), rechtsgebiete/, team/ + team/[slug]/ (generateStaticParams, dynamicParams = false), mitarbeit/, kontakt/,
                      impressum/, datenschutz/
 app/(sprachen)/[sprache]/  layout.tsx + page.tsx (en, fr, it, es, ar; Abschnitte kanzlei, rechtsgebiete, team, kontakt)
 app/                 global-not-found.tsx, robots.ts, globals.css (Tokens, @font-face, Komponentenklassen), icon.*, apple-icon.png
-components/          Kopf, Sprachwahl (details, Client), Register (Client, aria-current), Sprachfenster, Personenkachel, Teamfilter (Client),
-                     Erreichbarkeit, Kapazitaetshinweis, Anfrageformular (mailto, Client), Einwilligung (ruhend), Fusszeile, RechtSeite,
-                     RichText, Bild + Figur, SmartLink, Telefon + EMail (bdi dir="ltr")
+components/          Kopf, Navigation (Client, aria-current), Menue (Client, dialog.showModal), Sprachwahl (details, Client), Bewegung (Client,
+                     Enthüllung), Buehne, Laufband (Client, Pausenknopf), Sprachleiste, Abschnittskopf, Seitenkopf, Schiene (Client, Überhang + Fokus), Gebietskarte,
+                     Scrollspy (Client), Lesebalken, Personenkachel, Teamfilter (Client), Erreichbarkeit, Kapazitaetshinweis, Anfrageformular
+                     (mailto, Client), Einwilligung (ruhend), Fusszeile, RechtSeite, RichText, Bild + Figur, SmartLink, Pfeil, Telefon + EMail (bdi dir="ltr")
 lib/content/         modell.ts (EIN Domainmodell als zod-Schemas), pfade.ts (ohne zod, für Client-Komponenten), local.ts (JSON), sanity.ts
                      (GROQ + Portable Text, nur bei CONTENT_SOURCE=sanity), text.ts (Auszeichnung, Sprungmarken), freigabe.ts (Go-Live-Sperre),
                      index.ts (Quelle, Invarianten)
@@ -39,8 +40,9 @@ data/                kanzlei.json, texte.json (deutsche Oberfläche, Sprachliste
 studio/              eigenständiges Sanity Studio (eigenes package.json): schemas/objekte.ts, schemas/dokumente.ts, sanity.config.ts
 scripts/             bilder-optimieren.mjs (+ bilder-liste.json), schriften-kopieren.mjs, weiterleitungen.mjs, inhalt-pruefen.mts,
                      sitemap-schreiben.mts, sanity-bilder.mts, export-nachbereiten.mjs, export-pruefen.mjs, vorschau-server.mjs, seed.mts
-werkzeuge/qa/        puppeteer-core: audit.mjs (5 Breiten × 24 Seiten), funktionen.mjs (131 Prüfungen), ganzseiten.mjs, ausschnitte.mjs,
-                     screenshots.mjs, lighthouse.mjs; kontrast.mjs rechnet die WCAG-Kontraste der Farbtoken
+werkzeuge/qa/        puppeteer-core: audit.mjs (5 Breiten × 24 Seiten; BEWEGUNG=1 mit Bewegung), funktionen.mjs (158 Prüfungen, davon 17 mit
+                     Bewegung), szenen.mjs (Szenen-Screenshots mit Bewegung), ganzseiten.mjs, ausschnitte.mjs, screenshots.mjs, lighthouse.mjs;
+                     kontrast.mjs rechnet die WCAG-Kontraste der Farbtoken
 assets/originale/    Bilder der bisherigen Website im Original + HERKUNFT.md · assets/schriften/ IBM Plex Sans (+ Arabic), OFL
 public/bilder/       erzeugte AVIF/WebP-Varianten; public/*.html = erzeugte Weiterleitungsseiten (nicht versioniert)
 docs/                INHALTSMATRIX, DESIGN, ENTSCHEIDUNGEN, BILDER, SANITY-VERCEL-EINRICHTUNG, INHALTE-PFLEGEN, UEBERGABE, PRUEFBERICHT, PRAESENTATION
@@ -61,7 +63,9 @@ Sanity-Muster «statisch + Rebuild bei Publish»). Design, Aufbau, Komponenten, 
 | Export für Vercel (ohne Unterpfad) | `npm run build:vercel` |
 | Export allein prüfen | `npm run export:pruefen` |
 | Export lokal wie auf GitHub Pages ansehen | `npm run vorschau:pages` → <http://localhost:4321/advokatur-kanonengasse-demo/> (`PORT=4333` bei belegtem Port) |
-| Browser-Prüfungen (Audit 5 Breiten × alle Seiten, Funktionen) | `npm run qa` (Vorschau-Server muss laufen; anderer Port: `BASE=http://localhost:4333/advokatur-kanonengasse-demo`) |
+| Browser-Prüfungen (Audit 5 Breiten × alle Seiten ohne Bewegung, Funktionen mit und ohne Bewegung) | `npm run qa` (Vorschau-Server muss laufen; anderer Port: `BASE=http://localhost:4333/advokatur-kanonengasse-demo`) |
+| Audit mit erlaubter Bewegung (gepinnte Schiene, Parallaxe, Enthüllung; scrollt vor der Messung durch) | `BEWEGUNG=1 SEITEN=/,/rechtsgebiete/,/ar/ node werkzeuge/qa/audit.mjs` (läuft in der CI für acht Seiten) |
+| Szenen-Screenshots mit Bewegung (Kopf über der Bühne, Schiene in drei Stellungen, Menü, Index, Arabisch) | `node werkzeuge/qa/szenen.mjs` → `pruefung/shots/szene-*.png` |
 | Ganzseiten-Screenshots zur Sichtprüfung | `node werkzeuge/qa/ganzseiten.mjs` (`SEITEN=/,/team/ BREITEN=390,1440`) |
 | Lighthouse (lokal oder live) | `node werkzeuge/qa/lighthouse.mjs` · `BASE=https://nick8952.github.io/advokatur-kanonengasse-demo node werkzeuge/qa/lighthouse.mjs` |
 | Bilder neu erzeugen | `npm run bilder` (liest `scripts/bilder-liste.json`, schreibt `public/bilder/`, `data/bilder.json`, App-Icons) |
@@ -142,16 +146,26 @@ Browser-Prüfungen, einen Vercel-Probebau und die Studio-Prüfung, und veröffen
   mit Meta-Refresh (GitHub Pages liefert `name.html` für `/name`) und bricht ab, wenn `vercel.json` nicht dieselben 308-Weiterleitungen enthält.
   Neue alte Adresse: beide Dateien ergänzen. Adressen, die gleich bleiben (`/team`, `/kontakt`, `/impressum`, `/datenschutz`), brauchen keinen Eintrag.
 
-### Gestaltung «Fensterfront»
+### Gestaltung «Durchgang»
 
-- Eigenständiges Design, kein Reskin früherer Demos. Tokens, Schrift, Aufbau, Bewegung, Begründungen: `docs/DESIGN.md`.
-- Ein Motiv: Fenster (Zellen mit 1-px-Fugen als `box-shadow`, `.fenster-raster`) für Sprachwahl, Rechtsgebiete und Team. Radius 0. Ein
-  Akzent: Orange nur als Fläche mit marineblauer Schrift, nie als Schriftfarbe auf Hell. Keine Serife, keine Versalien-Etiketten, keine
-  Gedankenstriche, keine Scroll-Animationen, kein dunkles Theme.
-- Register: alle fünf Hauptseiten in einer Zeile auf jeder Breite (unter 40 rem über die volle Breite); kein Menü-Dialog. Sprachwahl als
-  `<details>` mit ausgeschriebenen Namen, keine Flaggen. Kein fixierter Kopf.
-- Eigene Klassen stehen in `app/globals.css` in `@layer components`. Touch-Ziele ≥ 44 px (`.textlink-block`, `.fenster-link`, Fusszeile),
-  Fokus sichtbar, Bewegung nur unter `prefers-reduced-motion: no-preference`.
+- Eigenständiges Design, kein Reskin früherer Demos. Tokens, Schrift, Aufbau, Bewegung, Rückfälle, Begründungen: `docs/DESIGN.md`.
+  Die erste Gestaltung «Fensterfront» (Zellen mit Fugen, Register in einer Zeile, keine Scroll-Bewegung) wurde am 3.11.2026 auf Wunsch des
+  Auftraggebers durch diese bewegtere Struktur ersetzt (`docs/ENTSCHEIDUNGEN.md`, Punkt 25).
+- Ein Akzent: Orange auf Hell nur als Fläche mit marineblauer Schrift; auf Marineblau auch als Linie und Schrift. Dunkle Bänder (Bühne,
+  Fusszeile, Menü, Schwerpunktkarten) mit Putz und Putz 2 als Schrift. Radius 0.75 rem für Karten, Pillen für Knöpfe. Keine Serife, keine
+  Versalien-Etiketten, keine Gedankenstriche, kein dunkles Theme, keine Bewegungsbibliothek.
+- Bewegung nur über CSS (Keyframes, `animation-timeline`) und zwei kleine Beobachter (Enthüllung, Scrollspy). **Grundzustand sichtbar:**
+  nichts darf von JavaScript abhängen, um sichtbar oder bedienbar zu sein. Jede Bewegung ist unter `prefers-reduced-motion: reduce`
+  vollständig abgeschaltet (nicht nur verkürzt): `animation: none` für scroll-getriebene und endlose Animationen, `html.bewegung-bereit` wird
+  dann nicht gesetzt. Neue Bewegung: in `docs/DESIGN.md` eintragen (Tabelle «Bewegung und Zustände») und in `funktionen.mjs` prüfen.
+- Schiene: gestapelte Karten sind die Grundversion; die horizontale Fahrt nur ab 64 rem, links nach rechts, mit Bewegung, Skript und
+  `view-timeline`. Fokus auf einer Karte muss sie sichtbar machen (`Schiene.tsx`). Hüllen getrennt lassen (Höhe › sticky › clip › transform).
+- Kopf klebt oben (`--kopf-h` 4.5 rem, `scroll-padding-top` berücksichtigt ihn); Sprungziele brauchen keinen zusätzlichen `scroll-margin`.
+  Unter 64 rem Menü als natives `<dialog>` nur über `showModal()`; der React-Zustand folgt dem `close`-Ereignis. Sprachwahl als `<details>`
+  mit ausgeschriebenen Namen, keine Flaggen.
+- Eigene Klassen stehen in `app/globals.css` in `@layer components`. Touch-Ziele ≥ 44 px (`.textlink-block`, `.karte-link`, `.kachel-link`,
+  Pillen, Chips, Fusszeile), Fokus sichtbar (auf Dunkel in Putz), keine horizontalen Überläufe (Bühne, Laufband und Schiene clippen selbst;
+  `main` hat kein `overflow`, damit `position: sticky` funktioniert).
 - Client-Komponenten importieren aus `lib/content/modell.ts` nur Typen (`import type`); Werte wie `pfade` kommen aus `lib/content/pfade.ts`.
 
 ### GitHub Pages

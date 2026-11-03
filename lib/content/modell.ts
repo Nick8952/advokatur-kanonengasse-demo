@@ -267,7 +267,7 @@ export const sprachseiteSchema = z.strictObject({
     anfahrt: kurz, anfahrtPunkte: z.array(kurz).min(1), karte: kurz, karten: z.array(z.strictObject({ text: kurz, ziel: https })).min(1),
     rechtsgebieteTitel: kurz, rechtsgebieteText: text, teamTitel: kurz, teamText: text, nurDeutsch: kurz, zurDeutschenWebsite: kurz,
     kontaktTitel: kurz, hinweisTitel: kurz, impressum: kurz, datenschutz: kurz, demoHinweis: text, oeffnetNeuesFenster: kurz, gesprocheneSprachen: kurz,
-    uebersetzungshinweis: text,
+    uebersetzungshinweis: text, menue: kurz, menueSchliessen: kurz, navigationLabel: kurz, laufbandAnhalten: kurz, laufbandFortsetzen: kurz,
     gruppen: z.strictObject({ "anwaeltinnen-und-anwaelte": kurz, "substitutinnen-und-substituten": kurz, sekretariat: kurz }),
   }),
   formular: z.strictObject({
@@ -285,11 +285,11 @@ export type Sprachseite = z.infer<typeof sprachseiteSchema>;
 export const texteSchema = z.strictObject({
   navigation: z.array(linkSchema).min(2).max(6),
   sprachen: z.array(z.strictObject({ code: sprachcodeSchema, name: kurz, nameDeutsch: kurz, gruss: kurz, lang: z.string(), richtung: z.enum(["ltr", "rtl"]) })).length(6),
-  kopf: z.strictObject({ logoAlt: kurz, zurStartseite: kurz, sprache: kurz, spracheWaehlen: kurz, aktuelleSprache: kurz, anrufen: kurz, navigationLabel: kurz, sprachenLabel: kurz }),
+  kopf: z.strictObject({ logoAlt: kurz, zurStartseite: kurz, sprache: kurz, spracheWaehlen: kurz, aktuelleSprache: kurz, anrufen: kurz, navigationLabel: kurz, sprachenLabel: kurz, menue: kurz, menueSchliessen: kurz }),
   ui: z.strictObject({
     zumInhalt: kurz, oeffnetNeuesFenster: kurz, telefonzeiten: kurz, terminhinweis: kurz, besuchsadresse: kurz, postadresse: kurz, telefon: kurz, email: kurz,
     anrufen: kurz, kontaktAufnehmen: kurz, mehr: kurz, nurDeutsch: kurz, personenLabel: kurz, nichtGefundenTitel: kurz, nichtGefundenText: text, nichtGefundenLink: linkSchema,
-    schliessen: kurz, stand: kurz, kapazitaetshinweisTitel: kurz, entwurf: kurz,
+    schliessen: kurz, stand: kurz, kapazitaetshinweisTitel: kurz, entwurf: kurz, laufbandAnhalten: kurz, laufbandFortsetzen: kurz,
   }),
   footer: z.strictObject({ kontaktTitel: kurz, sprachenTitel: kurz, seitenTitel: kurz, rechtliches: z.array(linkSchema).min(2), einstellungen: kurz, bildnachweis: linkSchema, demoHinweis: text, copyright: kurz }),
   formular: z.strictObject({

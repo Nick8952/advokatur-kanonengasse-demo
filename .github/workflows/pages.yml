@@ -38,6 +38,8 @@ jobs:
           BASE_PATH: /${{ github.event.repository.name }}
       # Browser-Prüfungen gegen den fertigen Export (Chrome ist auf ubuntu-latest vorinstalliert)
       - run: (node scripts/vorschau-server.mjs > /tmp/vorschau.log 2>&1 &) && sleep 2 && npm run qa
+      # Zweiter Audit-Lauf mit erlaubter Bewegung (gepinnte Schiene, Parallaxe, Enthüllung) für acht Seiten
+      - run: BEWEGUNG=1 SEITEN=/,/rechtsgebiete/,/team/,/team/urs-ebnoether/,/kontakt/,/mitarbeit/,/en/,/ar/ node werkzeuge/qa/audit.mjs
         env:
           BASE_PATH: /${{ github.event.repository.name }}
           BASE: http://localhost:4321/${{ github.event.repository.name }}

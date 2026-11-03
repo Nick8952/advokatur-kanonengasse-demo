@@ -133,3 +133,68 @@ Nach den Korrekturen: `npm run pruefen`, `npm run build`, `npm run seed -- --pro
 - Vercel-Deployment und seine Header (308-Weiterleitungen, CSP-Header): nur als Probebau geprüft, kein Vercel-Projekt angelegt (Auftrag).
 - Sanity-Import gegen ein echtes Projekt: nur Trockenlauf.
 - Lighthouse lokal: nicht aussagekräftig (Vorschau-Server ohne Kompression); gemessen wurde live.
+
+## 10. Umbau auf die Gestaltung «Durchgang» (3.11.2026)
+
+Auftrag des Auftraggebers: «eine andere, modernere Struktur mit dynamischen Effekten». Umgesetzt wie in `docs/DESIGN.md` beschrieben
+(klebender Kopf, Bühne mit Parallaxe, Laufband, Enthüllung, Schiene, Scrollspy, Lesebalken, Menü-Dialog, marineblaue Fusszeile, Radius 0.75 rem).
+
+### Codex-Konzeptprüfung vor dem Umbau (read-only, gpt via `codex exec`)
+
+Codex konnte die Konzeptdatei ausserhalb des Projekts nicht lesen und beurteilte die Kurzfassung im Prompt. 12 Empfehlungen, davon umgesetzt:
+
+| Nr. | Empfehlung | Umsetzung |
+| --- | --- | --- |
+| 1 | Gestapelte Rechtsgebiete als vollständige Grundversion | ja: `position: sticky`-Stapel ohne Skript; ab 64 rem ohne Fahrt drei Spalten |
+| 2 | Fahrt nur mit zuverlässig sichtbaren Fokuszielen, Test LTR/RTL/Zoom/Mobil | ja: `focusin`-Handler scrollt das Fenster zur Karte; Prüfung «Karten 1, 5, 9, 3» in `funktionen.mjs`; RTL ohne Fahrt |
+| 3 | Reduzierte Bewegung schaltet alles ab, nicht nur verkürzt | ja: `animation: none` für scroll-getriebene und endlose Animationen, `html.bewegung-bereit` nicht gesetzt, Schiene nicht gepinnt; Prüfung in Gruppe 10 |
+| 4 | Hero-Bild als frühes `<picture>` behalten | ja: `components/Buehne.tsx` mit `prio`, `sizes="100vw"`, AVIF/WebP bis 2000 px |
+| 5 | Menü nur über `showModal()`, `close`/`cancel` mit React synchronisieren | ja: `components/Menue.tsx` (`onClose` setzt den Zustand, `aria-expanded`), Prüfung Escape, Fokusrückgabe, Linkklick |
+| 6 | Zusätzlicher Puppeteer-Lauf mit Bewegung und Tastatur | ja: Audit `BEWEGUNG=1` (scrollt vor der Messung durch), 13 Funktionsprüfungen mit Bewegung (Gruppen 11 und 12), `szenen.mjs` |
+| 7 | sticky, Clipping und Transform auf getrennte Hüllen | ja: `.schiene` (Höhe, Timeline) › `.schiene-kleber` (sticky, animiert nur `--p`) › `.schiene-fenster` (clip) › `.schiene-spur` (transform) |
+| 8 | Grundzustand sichtbar, Enthüllung erst nach Initialisierung | ja: keine CSS-Vorab-Verstecke, `html.bewegung-bereit` erst nach dem Start des Skripts, Elemente im Fenster sofort `.sichtbar` |
+| 9 | Arabisch mit vertikalem Fallback | ja: `Schiene.tsx` setzt `gepinnt` nicht bei `dir="rtl"` |
+| 10 | Beobachter bei jedem Pfadwechsel abbauen und neu setzen | ja: `Bewegung.tsx` und `Scrollspy.tsx` räumen im Effekt auf (`usePathname` als Abhängigkeit) |
+| 11 | Lesefortschritt und Scrollspy nur auf langen Seiten | ja: Lesebalken nur auf Profilen, Scrollspy nur auf der Rechtsgebieteseite (9 Abschnitte); Mitarbeit hat Sprungmarken im Seitenkopf |
+| 12 | Modern über Typografie, Raster, Fotografie, Kontaktwege | teilweise: Titel bis 5.75 rem, nummerierte Abschnitte, Telefon gross in der Fusszeile; die Bewegung bleibt bewusst Teil des Auftrags |
+
+### Fehler, die die Prüfungen beim Umbau gefunden haben (alle behoben)
+
+- Schiene: Das Fenster war ein zentrierter Behälter mit negativem Rand; dadurch Kartenabschnitt bei 1240 px und falsche Messung. Jetzt volle Breite, Spur mit Behälter-Rand.
+- Schiene: `view-timeline` übernahm das `scroll-padding-top` der Seite (88 px) als Inset; die Fahrt begann 88 px zu früh. `view-timeline-inset: 0`.
+- Schiene: Der klebende Bereich wuchs auf die Breite der Spur (Grid-Spur `auto`), horizontaler Überlauf von 3569 px. `grid-template-columns: minmax(0, 1fr)` und `100%`.
+- Scrollspy: zwei Abschnitte im Messband, der obere gewann. Jetzt Messlinie bei 25 % und der zuletzt begonnene Abschnitt.
+- E-Mail-Adresse lief aus der schmalen Erreichbarkeitskarte (Start 1440): `overflow-wrap: anywhere`; Erreichbarkeit auf der Startseite über die volle Breite.
+- Pfeile im Menü in Arabisch nicht gespiegelt; Telefonzeiten in der Fusszeile umgebrochen («Uhr» allein); doppelter Scroll-Versatz auf den Sprachseiten (`scroll-margin` plus `scroll-padding`).
+
+### Ergebnisse nach dem Umbau (lokal, Vorschau-Server)
+
+| Prüfung | Ergebnis |
+| --- | --- |
+| `npm run pruefen` (Inhalte 810 DE + 457 fremdsprachig, Lint, Typen, 20 Kontrastpaare) | ohne Befund |
+| `npm run build` (Weiterleitungen, Export-Prüfung: 44 HTML, 2032 Verweise, CSP) | ohne Befund |
+| `npm run seed -- --probe`, Studio `typecheck` und `schema:pruefen` | 43 Dokumente mit Parität, 0 Fehler |
+| Audit ohne Bewegung, 24 Seiten × 360/390/768/1024/1440 px | 120/120 ohne Befund |
+| Audit mit Bewegung (`BEWEGUNG=1`), 8 Seiten × 5 Breiten | 40/40 ohne Befund |
+| Funktionen (158 Prüfungen, davon 17 mit Bewegung: Kopfzustand, Enthüllung, Schiene 0/0.5/1 mit Tastatur, Fokusring, Laufband-Pause, Lesebalken, Scrollspy, Menü modal/Escape/Fokus/Linkklick, Arabisch ohne Fahrt, Handy gestapelt) | 158/158 |
+| Szenen-Screenshots mit Bewegung (17 Szenen: Bühne, Schiene Anfang/Mitte/Ende, Menü DE/AR, Index, Profil, Kontakt) | Sichtprüfung ohne Befund (`pruefung/shots/szene-*.png`) |
+
+## 11. Codex-Abschlussprüfung des Umbaus (3.11.2026, read-only, gpt via `codex exec`)
+
+9 Befunde, alle umgesetzt; danach alle Prüfungen aus Abschnitt 10 wiederholt (Zahlen dort sind der Stand nach den Korrekturen).
+
+| Nr. | Priorität | Befund | Umsetzung |
+| --- | --- | --- | --- |
+| 1 | hoch | Laufband nur per Maus anzuhalten (WCAG 2.2.2) | `components/Laufband.tsx` als Client-Komponente mit Knopf «Laufband anhalten» / «Laufband fortsetzen» in sechs Sprachen; zusätzlich Halt ausserhalb des Fensters (IntersectionObserver); Prüfung in Gruppe 11 |
+| 2 | hoch | Orangener Fokusring der Schwerpunktkarten liegt auf hellem Grund (2:1) | Ring in Marineblau (12.5:1 auf Putz); Prüfung «Fokus: Schwerpunktkarte» |
+| 3 | mittel | Abschnittsnavigation der Sprachseiten hiess «Sprache wählen» | neues Feld `ui.navigationLabel` in fünf Sprachen (Modell, Daten, Studio); Prüfung in Gruppe 4 |
+| 4 | mittel | Druck: unenthüllte Elemente unsichtbar, gepinnte Schiene nicht zurückgesetzt | Druckregeln: Enthüllungen und Striche sichtbar, Schiene als zweispaltiges Raster ohne Höhe, Clip und Transform |
+| 5 | mittel | Terminregel als `dd` ohne `dt` | in dieselbe `dt`/`dd`-Gruppe wie die Telefonzeiten aufgenommen |
+| 6 | mittel | Hover-Transformationen bei reduzierter Bewegung nur verkürzt | Pfeile, Lift, Zoom, `:active` im Reduce-Medium auf `none` (RTL: gespiegelt); Prüfung per Hover in Gruppe 10 |
+| 7 | niedrig | `bewegung-bereit` beim Seitenwechsel nicht entfernt, ein Frame unsichtbar möglich | Layout-Effekt (vor dem ersten Bild), Klasse im Aufräumen entfernt |
+| 8 | niedrig | Menü bleibt bei Vergrösserung über 64 rem offen | `matchMedia("(min-width: 64rem)")` schliesst den Dialog |
+| 9 | niedrig | `backdrop-filter` wird beim Scrollen interpoliert | zweite Animation `kopf-weich` mit `steps(1, end)`: Weichzeichner schaltet am Ende des Scrollwegs zu; Prüfung in Gruppe 11 |
+
+Vorschläge von Codex für mehr Bewegung: View-Transitions zwischen Seiten (nicht umgesetzt: experimentell in Next 16, zwei Wurzel-Layouts),
+Akzentlinie statt Lift bei Karten (nicht umgesetzt), Laufband nur im Fenster und bei sichtbarem Tab laufen lassen (umgesetzt: ausserhalb des
+Fensters pausiert; verborgene Tabs pausiert der Browser).

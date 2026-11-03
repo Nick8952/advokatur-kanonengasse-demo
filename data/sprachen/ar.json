@@ -81,7 +81,12 @@
       "anwaeltinnen-und-anwaelte": "الشركاء والمحامون",
       "substitutinnen-und-substituten": "المعاونون القانونيون والمحامون المتدربون",
       "sekretariat": "السكرتارية"
-    }
+    },
+    "menue": "القائمة",
+    "menueSchliessen": "إغلاق القائمة",
+    "laufbandAnhalten": "إيقاف الشريط",
+    "laufbandFortsetzen": "متابعة الشريط",
+    "navigationLabel": "أقسام الصفحة"
   },
   "formular": {
     "titel": "إعداد رسالة",

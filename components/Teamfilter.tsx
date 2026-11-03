@@ -21,7 +21,7 @@ export function Teamfilter({ personen, gruppen, gebiete, sprachen, t }: { person
   const passt = (p: FilterPerson) => (gebiet === null || p.gebiete.includes(gebiet)) && (sprache === null || p.sprachen.includes(sprache));
   const treffer = personen.filter(passt);
   return (
-    <div className="grid gap-8">
+    <div className="grid gap-10">
       {geladen ? <div className="filter" role="group" aria-labelledby={`${id}-titel`}>
         <p id={`${id}-titel`} className="titel-4">{t.titel}</p>
         <fieldset>
@@ -52,10 +52,10 @@ export function Teamfilter({ personen, gruppen, gebiete, sprachen, t }: { person
         const liste = treffer.filter((p) => p.gruppe === g.kennung);
         if (!liste.length) return null;
         return (
-          <section key={g.kennung} aria-labelledby={`${id}-${g.kennung}`} className="grid gap-4">
-            <h2 id={`${id}-${g.kennung}`} className="titel-3">{g.titel}</h2>
-            <ul className="fenster-raster fenster-raster-team">
-              {liste.map((p) => <Personenkachel key={p.slug} k={p} />)}
+          <section key={g.kennung} aria-labelledby={`${id}-${g.kennung}`} className="grid gap-5">
+            <h2 id={`${id}-${g.kennung}`} className="gruppe-titel titel-3">{g.titel}<span className="zaehler zahl">{liste.length}</span></h2>
+            <ul className="portraits">
+              {liste.map((p, i) => <Personenkachel key={p.slug} k={p} i={i} />)}
             </ul>
           </section>
         );

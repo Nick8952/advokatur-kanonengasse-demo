@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Scrollspy } from "@/components/Scrollspy";
+import { Seitenkopf } from "@/components/Seitenkopf";
 import { inhaltsquelle, pfade } from "@/lib/content";
 import { seitenMetadaten } from "@/lib/seo";
 
@@ -9,15 +11,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return seitenMetadaten({ titel: s.seoTitel, beschreibung: s.seoBeschreibung, pfad: pfade.rechtsgebiete, kanzlei: k, texte: t });
 }
 
-/** Rechtsgebiete: Schwerpunkte zuerst, je Gebiet die Bezeichnungen der Profile, belegte Hintergründe und die Ansprechpersonen. */
+/** Rechtsgebiete: Seitenkopf, klebender Index mit Scrollspy, je Gebiet die Bezeichnungen der Profile, belegte Hintergründe und die Ansprechpersonen. */
 export default async function Rechtsgebiete() {
   const q = await inhaltsquelle();
-  const [s, rechtsgebiete, personen] = await Promise.all([q.getRechtsgebieteSeite(), q.getRechtsgebiete(), q.getPersonen()]);
+  const [k, s, rechtsgebiete, personen] = await Promise.all([q.getKanzlei(), q.getRechtsgebieteSeite(), q.getRechtsgebiete(), q.getPersonen()]);
   const schwerpunkte = rechtsgebiete.filter((r) => r.schwerpunkt);
   const weitere = rechtsgebiete.filter((r) => !r.schwerpunkt);
   const personenZu = (slug: string) => personen.filter((p) => p.rechtsgebiete.some((r) => r.slug === slug));
   const Gebiet = ({ r }: { r: (typeof rechtsgebiete)[number] }) => (
-    <article id={r.slug} className="gebiet" aria-labelledby={`${r.slug}-titel`}>
+    <article id={r.slug} className="gebiet" aria-labelledby={`${r.slug}-titel`} data-reveal>
       <div className="grid gap-2 content-start">
         <h3 id={`${r.slug}-titel`} className="titel-3">{r.titel}</h3>
         {r.zusatz ? <p className="meta">{r.zusatz}</p> : null}
@@ -44,21 +46,26 @@ export default async function Rechtsgebiete() {
       </div>
     </article>
   );
+  const eintrag = (r: (typeof rechtsgebiete)[number]) => ({ id: r.slug, text: r.titel, zaehler: personenZu(r.slug).length });
   return (
-    <div className="behaelter abschnitt grid gap-10">
-      <header className="grid gap-4">
-        <h1 className="titel-1">{s.titel}</h1>
-        {s.einleitung.map((a) => <p key={a} className="vorspann">{a}</p>)}
-      </header>
-      <section aria-labelledby="schwerpunkte-titel" className="grid">
-        <h2 id="schwerpunkte-titel" className="nur-sr">Schwerpunkte</h2>
-        {schwerpunkte.map((r) => <Gebiet key={r.slug} r={r} />)}
-      </section>
-      <section aria-labelledby="weitere-titel" className="grid gap-4">
-        <h2 id="weitere-titel" className="titel-2">{s.weitereTitel}</h2>
-        <div className="grid">{weitere.map((r) => <Gebiet key={r.slug} r={r} />)}</div>
-      </section>
-      <p className="hinweis">{s.hinweis}</p>
-    </div>
+    <>
+      <Seitenkopf etikett={k.kurzbeschreibung} titel={s.titel} kinder={s.einleitung.map((a) => <p key={a} className="vorspann">{a}</p>)} />
+      <div className="behaelter abschnitt-knapp">
+        <div className="spalten-index">
+          <Scrollspy label={s.titel} gruppen={[{ titel: "Schwerpunkte", eintraege: schwerpunkte.map(eintrag) }, { titel: s.weitereTitel, eintraege: weitere.map(eintrag) }]} />
+          <div className="grid gap-12">
+            <section aria-labelledby="schwerpunkte-titel" className="grid">
+              <h2 id="schwerpunkte-titel" className="nur-sr">Schwerpunkte</h2>
+              {schwerpunkte.map((r) => <Gebiet key={r.slug} r={r} />)}
+            </section>
+            <section aria-labelledby="weitere-titel" className="grid gap-6">
+              <h2 id="weitere-titel" className="titel-2" data-reveal>{s.weitereTitel}</h2>
+              <div className="grid">{weitere.map((r) => <Gebiet key={r.slug} r={r} />)}</div>
+            </section>
+            <p className="hinweis" data-reveal>{s.hinweis}</p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

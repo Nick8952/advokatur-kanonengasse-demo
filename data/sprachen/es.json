@@ -81,7 +81,12 @@
       "anwaeltinnen-und-anwaelte": "Socios y abogados",
       "substitutinnen-und-substituten": "Colaboradores jurídicos y pasantes",
       "sekretariat": "Secretaría"
-    }
+    },
+    "menue": "Menú",
+    "menueSchliessen": "Cerrar el menú",
+    "laufbandAnhalten": "Detener la cinta",
+    "laufbandFortsetzen": "Reanudar la cinta",
+    "navigationLabel": "Secciones de la página"
   },
   "formular": {
     "titel": "Preparar un mensaje",

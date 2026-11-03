@@ -82,7 +82,12 @@
       "anwaeltinnen-und-anwaelte": "Partners and lawyers",
       "substitutinnen-und-substituten": "Legal associates and trainee lawyers",
       "sekretariat": "Secretariat"
-    }
+    },
+    "menue": "Menu",
+    "menueSchliessen": "Close menu",
+    "laufbandAnhalten": "Pause ticker",
+    "laufbandFortsetzen": "Resume ticker",
+    "navigationLabel": "Sections of this page"
   },
   "formular": {
     "titel": "Prepare a message",

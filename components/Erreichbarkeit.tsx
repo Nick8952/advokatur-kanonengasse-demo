@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { Kanzlei } from "@/lib/content/modell";
 import { EMail, Telefon } from "./Telefon";
 
@@ -7,25 +8,24 @@ export type ErreichbarkeitTexte = {
 };
 
 /**
- * Die drei wichtigsten Angaben nebeneinander: Telefonzeiten mit Terminregel, Telefon und E-Mail, Besuchs- und Postadresse getrennt.
- * Texte kommen je Sprache von aussen; die Fakten (Zeiten, Adressen, Nummern) nur aus den Kanzleidaten.
+ * Die drei wichtigsten Angaben als drei Karten: Telefonzeiten mit Terminregel, Telefon und E-Mail, Besuchs- und Postadresse getrennt.
+ * Texte kommen je Sprache von aussen; die Fakten (Zeiten, Adressen, Nummern) nur aus den Kanzleidaten. Die Karten erscheinen gestaffelt.
  */
 export function Erreichbarkeit({ kanzlei: k, t, gross = false }: { kanzlei: Kanzlei; t: ErreichbarkeitTexte; gross?: boolean }) {
+  const karte = (i: number) => ({ className: "fakten karte-info", "data-reveal": true, style: { "--i": i } as CSSProperties });
   return (
-    <div className="erreichbarkeit">
-      <dl className="fakten">
+    <div className="erreichbarkeit karten-3">
+      <dl {...karte(0)}>
         <div>
           <dt>{t.telefonzeiten}</dt>
           <dd>
             <span className="block">{t.tage}</span>
             {t.zeiten.map((z) => <span key={z} className="block zahl"><bdi dir="auto">{z}</bdi></span>)}
+            <span className="block mt-2 font-semibold">{t.terminhinweis}</span>
           </dd>
         </div>
-        <div>
-          <dd className="font-semibold">{t.terminhinweis}</dd>
-        </div>
       </dl>
-      <dl className="fakten">
+      <dl {...karte(1)}>
         <div className={gross ? "gross" : undefined}>
           <dt>{t.telefon}</dt>
           <dd><Telefon nummer={k.telefon} label={t.anrufen} /></dd>
@@ -35,7 +35,7 @@ export function Erreichbarkeit({ kanzlei: k, t, gross = false }: { kanzlei: Kanz
           <dd><EMail adresse={k.email} /></dd>
         </div>
       </dl>
-      <dl className="fakten">
+      <dl {...karte(2)}>
         <div>
           <dt>{t.besuchsadresse}</dt>
           <dd>

@@ -13,7 +13,7 @@ navigierbar ist, in sechs Sprachen funktioniert (Arabisch von rechts nach links)
    Heute stehen sie nur auf Start- und Kontaktseite, auf der Startseite ohne Wochentage.
 2. **Besuchsadresse und Postadresse sind getrennt** (Militärstrasse 76, 8004 Zürich, 1. Stock; Postfach 1012, 8021 Zürich). Heute steht
    beides vermischt unter 8021.
-3. **Sechs Sprachen mit ausgeschriebenen Namen** in der Kopfzeile und als Sprachfenster auf der Startseite, wie das bisherige Raster, aber
+3. **Sechs Sprachen mit ausgeschriebenen Namen** in der Kopfzeile, im Menü und als Pillen im Einstieg (dazu die Willkommensworte als Laufband), wie das bisherige Raster, aber
    mit Deutsch-Namen und ohne Flaggen. Die arabische Seite läuft komplett von rechts nach links, mit arabischer Schrift und korrekt
    lesbaren Telefonnummern. Jede Sprachseite enthält Einführung, Erreichbarkeit, Rechtsgebiete, Team und das Kontaktformular.
 4. **Rechtsgebiete als eigene Seite**: neun Gebiete, davon vier Schwerpunkte, je mit Ansprechpersonen, den Bezeichnungen aus den Profilen
@@ -27,14 +27,16 @@ navigierbar ist, in sechs Sprachen funktioniert (Arabisch von rechts nach links)
 8. **Kein Cookie-Banner, weil es nichts zu bannern gibt**: keine Cookies, keine Analyse, keine eingebettete Karte (Karten als externe Links),
    Schriften und Bilder vom eigenen Server. Die Datenschutzerklärung beschreibt genau das. Eine Einwilligungslösung ist vorbereitet, falls
    später ein Dienst dazukommt.
-9. **Bedienbar für alle**: Register in einer Zeile auch bei 360 px, Touch-Ziele mindestens 44 px, Kontraste gemessen (Text 12:1, Akzent 6:1),
+9. **Bedienbar für alle**: Hauptnavigation im Kopf, unterwegs ein Menü mit grossen Einträgen, Touch-Ziele mindestens 44 px, Kontraste gemessen (Text 12:1, Akzent 6:1),
    sichtbarer Tastaturfokus, Sprunglink, Formular mit Beschriftungen und verständlichen Fehlermeldungen, Bewegung nur als Rückmeldung
    (abschaltbar über die Systemeinstellung).
 10. **Schnell und leicht**: statische Seiten, Bilder vorgerendert (AVIF/WebP, alle Varianten zusammen rund 2.2 MB), kein Baukasten-Code,
     keine Anfragen an fremde Server. Lighthouse-Werte der Live-Demo: siehe `docs/PRUEFBERICHT.md` (Testumgebung dort genannt).
 11. **Alte Adressen bleiben erreichbar**: 18 Weiterleitungen (Profile, Sprachseiten, Stellen, Partnerschaft), die übrigen Adressen sind gleich geblieben.
 12. **Erscheinungsbild weitergeführt, nicht ersetzt**: Wortmarke, Strassenfoto, Portraits, Marineblau und Orange der heutigen Seite;
-    das Fensterraster der alten Zellen ist das Gestaltungsmotiv. Kein Richterhammer, keine Justitia, keine Siegel, keine Kennzahlen.
+    neu dazu eine bewegte Struktur («Durchgang»): Foto in voller Höhe, das beim Scrollen langsamer läuft, ein Kopf, der sich festsetzt,
+    die sechs Willkommensworte der alten Startseite als Laufband, Rechtsgebiete als Karten, die vorbeifahren, Abschnitte, die auftauchen.
+    Alles auch ohne Bewegung (Systemeinstellung) und ohne JavaScript vollständig lesbar. Kein Richterhammer, keine Justitia, keine Siegel, keine Kennzahlen.
 13. **Pflege ohne Agentur**: Sanity-CMS vorbereitet (Studio mit deutschen Feldern, Validierung, Vorschauen), Redaktionsanleitung für Team,
     Sprachen, Kontakt und Stellen. Veröffentlichen löst automatisch einen neuen Build aus. Hosting auf Vercel vorbereitet.
 

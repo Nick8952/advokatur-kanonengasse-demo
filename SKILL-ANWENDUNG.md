@@ -57,6 +57,22 @@ Ehrliche Übersicht, welche installierten Skills für diese Demo geprüft und wi
 | `design:design-handoff` | gelesen | **angewendet.** Tokens, Schriftrollen, Zustände, Umschaltpunkte, Bewegung und Randfälle (lange Texte in FR/DE, Arabisch, fehlende E-Mail, Person ohne Rechtsgebiete, keine sichtbare Stelle) in `docs/DESIGN.md` und `docs/INHALTE-PFLEGEN.md`. | – |
 | `design:design-system` (Plugin) | gelesen | **angewendet** als Token-Audit (keine rohen Hex in Komponenten) und Komponenten-Dokumentation (Zustände, Tastatur, Screenreader) in `docs/DESIGN.md`. | Hex-Suche wie oben. |
 
+## Nachtrag: Umbau auf die Gestaltung «Durchgang» (3.11.2026)
+
+Auf Wunsch des Auftraggebers («eine andere, modernere Struktur mit dynamischen Effekten») wurde die Gestaltung ersetzt (`docs/DESIGN.md`,
+`docs/ENTSCHEIDUNGEN.md` Punkt 25). Damit verschieben sich die Stellwerte auf Varianz 4, Bewegung 4, Dichte 3, und einige der oben als
+«verworfen» geführten Techniken sind jetzt bewusst im Einsatz:
+
+| Skill | Was jetzt gilt |
+| --- | --- |
+| `design-taste-frontend` (v2) | Weiterhin Standard: ein Akzent, eine Palette, ein Theme, keine Serife, Grundzustand sichtbar, `prefers-reduced-motion` schaltet alles ab. Geändert: Radius 0.75 rem statt 0, Pillen für Knöpfe und Sprachen, Etiketten mit orangenem Quadrat (keine Versalien), Vollbild-Einstieg mit Foto, Scroll-Hinweis (nur gross, nur mit Bewegung). Bewegungsbibliothek weiterhin keine: CSS und Browser-Timelines reichen. |
+| `gpt-taste` | Aus der Verbotsliste jetzt übernommen, aber ohne GSAP: Pinning und Scrubbing (Schiene mit `view-timeline`), Kartenstapel (`position: sticky`), Marquee (Laufband, pausiert bei Hover, steht bei reduzierter Bewegung). Weiterhin verworfen: Python-Zufall, AIDA mit Preisen, picsum, Glass-Pill-Navigation als Insel (der Kopf ist eine Leiste). |
+| `high-end-visual-design` | Jetzt übernommen: Scroll-Einblendungen (`[data-reveal]`, IntersectionObserver, einmalig), Pillen-Knöpfe, Vollbild-Menü (natives `<dialog>`), Hover-Lift mit weichem Schatten. Weiterhin verworfen: Serife, Creme, Double-Bezel. |
+| `redesign-existing-projects` | Jetzt übernommen: Parallaxe (6 %, nur ab 48 rem) und Scroll-Reveals; Inertia-Scrolling weiterhin nicht (nativ). |
+| `emil-design-eng` | Hover-Übergänge bleiben unter 300 ms; Enthüllung und Strich dürfen länger (800 ms, 1 s), weil sie Scroll-Rückmeldung und keine Klick-Rückmeldung sind. Reduzierte Bewegung = ganz aus. |
+| `frontend-ui-engineering`, `design:accessibility-review` | Neue Prüfpunkte: Dialog modal mit Fokusrückgabe, Tastaturfokus in der gepinnten Fahrt, `aria-current` nur auf einem Scrollspy-Eintrag, Touch-Ziele in Menü, Pillen und Chips, kein Überlauf durch Laufband und Schiene; alles in `funktionen.mjs` (13 Prüfungen mit Bewegung) und `audit.mjs` (`BEWEGUNG=1`). |
+| `code-review-and-quality` | Codex-Konzeptprüfung vor dem Umbau (12 Empfehlungen, davon 11 umgesetzt, siehe `docs/PRUEFBERICHT.md`, Abschnitt 10) und Codex-Abschlussprüfung nach dem Umbau (Abschnitt 11). |
+
 ## Konflikte und ihre Auflösung
 
 | Konflikt | Entscheidung |
@@ -70,7 +86,7 @@ Ehrliche Übersicht, welche installierten Skills für diese Demo geprüft und wi
 | Einstieg: v1/stitch verbieten zentriert, gpt-taste bevorzugt zentriert, imagegen-web warnt vor «Text links, Bild rechts» | Text links, Sprachfenster rechts (Inhalt, kein Deko-Bild), darunter das Foto als Band. |
 | Eyebrows: high-end Pflicht, v2 höchstens eine je drei Abschnitte, frontend-design nur wenn wahr | eine Überzeile (Telefonzeiten) auf der Startseite; keine Versalien, keine Etiketten. |
 | Cookie-Consent: redesign verlangt ihn «falls nötig», Auftrag verbietet Pop-ups ohne Grund | keine Dienste Dritter, deshalb kein Banner; Komponente vorbereitet, Karten als externe Links. |
-| Navigation: high-end/gpt-taste wollen Glass-Pill oder Split-Nav, redesign nur aktiven Eintrag | schlichtes Register in einer Zeile mit aktivem Eintrag; keine Dialoge. |
+| Navigation: high-end/gpt-taste wollen Glass-Pill oder Split-Nav, redesign nur aktiven Eintrag | schlichtes Register in einer Zeile mit aktivem Eintrag; keine Dialoge (erste Gestaltung). Seit dem Umbau: Leiste mit Inline-Navigation und aktivem Eintrag, unter 64 rem natives Dialog-Menü; keine schwebende Insel. |
 | Icons: v1 Phosphor/Radix, minimalist Phosphor Bold, redesign Heroicons, ui-ux-pro-max-Checkliste Lucide | Phosphor, zwei Glyphen; Lucide nicht verwendet. |
 
 ## Ergebnis der Abschlusskontrolle

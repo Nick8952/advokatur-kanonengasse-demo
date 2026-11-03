@@ -74,3 +74,20 @@ Kurz begründete Entscheidungen, die man dem Code nicht ansieht. Datum 2. und 3.
     nach dem Laden sichtbar; Gruppentitel und isolierte deutsche Sprachnamen auf den Sprachseiten; CSP-Meta an den Anfang von `<head>`
     verschoben und auf jeder Seite geprüft; Telefonzeiten der Sprachseiten vollständig geprüft; Zürcher Kalendertag und Datumsreihenfolge
     bei Stellen; Prüfbericht angelegt; Befundzählung vereinheitlicht.
+25. **Zweite Gestaltung «Durchgang» (3.11.2026).** Auf Wunsch des Auftraggebers («eine andere, modernere Struktur mit dynamischen
+    Effekten») wurde die «Fensterfront» ersetzt: klebender Kopf, der sich über der Bühne festsetzt; Bühne in voller Höhe mit Parallaxe;
+    Laufband mit den Willkommensworten; nummerierte Abschnitte mit Enthüllung und Strich; Rechtsgebiete als Schiene (gepinnte Fahrt ab
+    64 rem, sonst gestapelte Karten); Scrollspy, klebende Profilspalte, Lesebalken; Menü-Dialog unter 64 rem; marineblaue Fusszeile; Radius
+    0.75 rem und Pillen. Unverändert: Inhalte, Daten, Sprachen, Formular, Rechtstexte, Weiterleitungen, Sanity-Vorbereitung, Farbwelt,
+    Schrift. Leitplanken aus der Codex-Konzeptprüfung (12 Empfehlungen, `docs/PRUEFBERICHT.md`, Abschnitt 10): Grundzustand sichtbar
+    (Enthüllung erst nach Start des Skripts, kein Inline-Skript), gestapelte Karten als Grundversion und keine Fahrt in Arabisch,
+    reduzierte Bewegung schaltet alles ab, Menü nur über `showModal()` mit synchronisiertem Zustand, Hüllen der Schiene getrennt, Fokus in
+    der Fahrt sichtbar gemacht, zusätzlicher Prüflauf mit Bewegung (Audit `BEWEGUNG=1`, 13 Funktionsprüfungen, Szenen-Screenshots).
+    Zwei neue Oberflächentexte (`kopf.menue`, `kopf.menueSchliessen`; auf den Sprachseiten `ui.menue`, `ui.menueSchliessen`, Entwürfe).
+26. **Codex-Abschlussprüfung des Umbaus (3.11.2026)** mit 9 Befunden, alle umgesetzt: Pausenknopf für das Laufband (WCAG 2.2.2, zusätzlich
+    Halt ausserhalb des Fensters); Fokusring der Schwerpunktkarten in Marineblau statt Orange auf Hell; eigener Landmark-Name der
+    Abschnittsnavigation auf den Sprachseiten (`ui.navigationLabel`); Druckansicht mit sichtbaren Enthüllungen und zurückgesetzter
+    Schiene; Terminregel in derselben `dt`/`dd`-Gruppe wie die Telefonzeiten; Hover-Transformationen bei reduzierter Bewegung ausdrücklich
+    aus; `Bewegung` als Layout-Effekt mit Klassenabbau beim Seitenwechsel; Menü schliesst beim Wechsel auf die breite Navigation;
+    Weichzeichner des Kopfs in einem Schritt statt interpoliert. Nicht umgesetzt (Vorschlag): View-Transitions zwischen Seiten (Next 16
+    experimentell), Akzentlinie statt Lift bei Karten (Lift bleibt, bei reduzierter Bewegung aus).

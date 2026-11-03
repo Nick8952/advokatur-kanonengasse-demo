@@ -16,8 +16,8 @@ async function pruefeSeite(breite, seite) {
     const ctx = await browser.createBrowserContext();
     const p = await ctx.newPage();
     await p.setViewport({ width: breite, height: 900, deviceScaleFactor: 1 });
-    // Ohne Animationen prüfen: sonst misst das Audit Elemente mitten im Einblenden
-    await p.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }, { name: "prefers-color-scheme", value: process.env.SCHEMA === "dunkel" ? "dark" : "light" }]);
+    // Standard: ohne Animationen prüfen (misst die Grundversion). BEWEGUNG=1 prüft mit erlaubter Bewegung (gepinnte Schiene, Parallaxe, Enthüllungen); dann wird vor der Messung einmal durch die Seite gescrollt.
+    await p.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: process.env.BEWEGUNG === "1" ? "no-preference" : "reduce" }, { name: "prefers-color-scheme", value: process.env.SCHEMA === "dunkel" ? "dark" : "light" }]);
     const konsole = [];
     const fehlgeschlagen = [];
     p.on("console", (m) => { if (m.type() === "error") konsole.push(m.text().slice(0, 160)); });
@@ -26,6 +26,11 @@ async function pruefeSeite(breite, seite) {
     const extern = externeAnfragen(p);
     const resp = await p.goto(BASE + seite, { waitUntil: "networkidle0", timeout: 60000 });
     await warten(250);
+    if (process.env.BEWEGUNG === "1") {
+      // einmal durch die ganze Seite scrollen (Enthüllungen, gepinnte Schiene) und wieder nach oben
+      await p.evaluate(async () => { const schritt = Math.max(200, Math.floor(innerHeight * 0.6)); for (let y = 0; y < document.documentElement.scrollHeight; y += schritt) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } scrollTo(0, 0); });
+      await warten(900);
+    }
     const audit = await p.evaluate(() => {
       const de = document.documentElement;
       const sichtbar = (el) => { const r = el.getBoundingClientRect(); const st = getComputedStyle(el); return r.width > 0 && r.height > 0 && st.visibility !== "hidden" && st.display !== "none"; };
@@ -52,7 +57,7 @@ async function pruefeSeite(breite, seite) {
       }).slice(0, 5).map((el) => el.tagName.toLowerCase() + "." + [...el.classList].slice(0, 2).join("."));
       const hs = [...document.querySelectorAll("h1,h2,h3,h4,h5,h6")].filter((h) => !h.closest("dialog") && sichtbar(h) || h.classList.contains("nur-sr")).map((h) => Number(h.tagName[1]));
       let spruenge = 0; for (let i = 1; i < hs.length; i++) if (hs[i] > hs[i - 1] + 1) spruenge++;
-      const lauf = document.querySelector("main p:not(.telefonzeile):not(.klein):not(.meta):not(.hilfe):not(.hinweis)");
+      const lauf = document.querySelector("main p:not(.telefonzeile):not(.klein):not(.meta):not(.hilfe):not(.hinweis):not(.etikett):not(.index):not(.buehne-fakten):not(.index-gruppe)");
       const laufMass = lauf ? { px: parseFloat(getComputedStyle(lauf).fontSize), zeilenhoehe: parseFloat(getComputedStyle(lauf).lineHeight) / parseFloat(getComputedStyle(lauf).fontSize) } : null;
       const dir = de.getAttribute("dir");
       return {

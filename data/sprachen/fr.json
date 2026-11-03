@@ -82,7 +82,12 @@
       "anwaeltinnen-und-anwaelte": "Partenaires et avocat·e·s",
       "substitutinnen-und-substituten": "Juristes et avocat·e·s stagiaires",
       "sekretariat": "Secrétariat"
-    }
+    },
+    "menue": "Menu",
+    "menueSchliessen": "Fermer le menu",
+    "laufbandAnhalten": "Arrêter le bandeau",
+    "laufbandFortsetzen": "Reprendre le bandeau",
+    "navigationLabel": "Sections de la page"
   },
   "formular": {
     "titel": "Préparer un message",

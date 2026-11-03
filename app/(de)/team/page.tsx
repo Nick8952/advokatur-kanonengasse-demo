@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Seitenkopf } from "@/components/Seitenkopf";
 import { SmartLink } from "@/components/SmartLink";
 import { Teamfilter } from "@/components/Teamfilter";
 import { inhaltsquelle, pfade } from "@/lib/content";
@@ -10,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return seitenMetadaten({ titel: s.seoTitel, beschreibung: s.seoBeschreibung, pfad: pfade.team, kanzlei: k, texte: t });
 }
 
-/** Team: Filter nach Rechtsgebiet und Beratungssprache (nur belegte Zuordnungen), drei Gruppen, am Ende der externe Link der bisherigen Website. */
+/** Team: Filter nach Rechtsgebiet und Beratungssprache (nur belegte Zuordnungen), drei Gruppen als Portraitraster, am Ende der externe Link der bisherigen Website. */
 export default async function Team() {
   const q = await inhaltsquelle();
-  const [s, t, personen, rechtsgebiete] = await Promise.all([q.getTeamSeite(), q.getTexte(), q.getPersonen(), q.getRechtsgebiete()]);
+  const [k, s, t, personen, rechtsgebiete] = await Promise.all([q.getKanzlei(), q.getTeamSeite(), q.getTexte(), q.getPersonen(), q.getRechtsgebiete()]);
   const benutzt = new Set(personen.flatMap((p) => p.rechtsgebiete.map((r) => r.slug).filter((x): x is string => !!x)));
   const gebiete = rechtsgebiete.filter((r) => benutzt.has(r.slug)).map((r) => ({ slug: r.slug, titel: r.titel }));
   const sprachen = [...new Set(personen.flatMap((p) => p.sprachen.map((x) => x.name)))].sort((a, b) => a.localeCompare(b, "de"));
@@ -24,24 +25,23 @@ export default async function Team() {
   }));
   const gruppen = (Object.keys(s.gruppen) as (keyof typeof s.gruppen)[]).map((g) => ({ kennung: g, titel: s.gruppen[g] }));
   return (
-    <div className="behaelter abschnitt grid gap-10">
-      <header className="grid gap-4">
-        <h1 className="titel-1">{s.titel}</h1>
-        <p className="vorspann">{s.einleitung}</p>
-      </header>
-      <Teamfilter personen={liste} gruppen={gruppen} gebiete={gebiete} sprachen={sprachen} t={s.filter} />
-      <section aria-labelledby="verlinkt-titel" className="trenner grid gap-3 pt-8">
-        <h2 id="verlinkt-titel" className="titel-3">{s.verlinkt.titel}</h2>
-        <p className="lauftext">{s.verlinkt.text}</p>
-        <ul className="liste-schlicht">
-          {s.verlinkt.links.map((l) => (
-            <li key={l.ziel}>
-              <SmartLink ziel={l.ziel} className="kontakt-link" neuesFensterText={t.ui.oeffnetNeuesFenster}>{l.name}</SmartLink>
-              <span className="meta"> ({l.beschreibung})</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </div>
+    <>
+      <Seitenkopf etikett={k.kurzbeschreibung} titel={s.titel} kinder={<p className="vorspann">{s.einleitung}</p>} />
+      <div className="behaelter abschnitt grid gap-12">
+        <Teamfilter personen={liste} gruppen={gruppen} gebiete={gebiete} sprachen={sprachen} t={s.filter} />
+        <section aria-labelledby="verlinkt-titel" className="trenner grid gap-3 pt-10" data-reveal>
+          <h2 id="verlinkt-titel" className="titel-3">{s.verlinkt.titel}</h2>
+          <p className="lauftext">{s.verlinkt.text}</p>
+          <ul className="liste-schlicht">
+            {s.verlinkt.links.map((l) => (
+              <li key={l.ziel}>
+                <SmartLink ziel={l.ziel} className="kontakt-link" neuesFensterText={t.ui.oeffnetNeuesFenster}>{l.name}</SmartLink>
+                <span className="meta"> ({l.beschreibung})</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+    </>
   );
 }

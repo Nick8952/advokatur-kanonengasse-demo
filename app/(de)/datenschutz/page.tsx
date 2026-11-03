@@ -11,6 +11,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Datenschutz() {
   const q = await inhaltsquelle();
-  const [s, t] = await Promise.all([q.getRechtSeite("datenschutz"), q.getTexte()]);
-  return <RechtSeite seite={s} standLabel={t.ui.stand} />;
+  const [k, s, t] = await Promise.all([q.getKanzlei(), q.getRechtSeite("datenschutz"), q.getTexte()]);
+  return <RechtSeite seite={s} etikett={k.kurzbeschreibung} standLabel={t.ui.stand} />;
 }

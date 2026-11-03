@@ -79,7 +79,9 @@
     "aktuelleSprache": "aktuelle Sprache",
     "anrufen": "Anrufen",
     "navigationLabel": "Seiten",
-    "sprachenLabel": "Sprachen"
+    "sprachenLabel": "Sprachen",
+    "menue": "Menü",
+    "menueSchliessen": "Menü schliessen"
   },
   "ui": {
     "zumInhalt": "Zum Inhalt springen",
@@ -104,7 +106,9 @@
     "schliessen": "Schliessen",
     "stand": "Stand der Angaben",
     "kapazitaetshinweisTitel": "Hinweis zu Anfragen",
-    "entwurf": "Entwurf"
+    "entwurf": "Entwurf",
+    "laufbandAnhalten": "Laufband anhalten",
+    "laufbandFortsetzen": "Laufband fortsetzen"
   },
   "footer": {
     "kontaktTitel": "Kontakt",

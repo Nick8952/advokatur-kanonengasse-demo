@@ -81,7 +81,12 @@
       "anwaeltinnen-und-anwaelte": "Partner e avvocati",
       "substitutinnen-und-substituten": "Collaboratori giuridici e praticanti",
       "sekretariat": "Segreteria"
-    }
+    },
+    "menue": "Menu",
+    "menueSchliessen": "Chiudi il menu",
+    "laufbandAnhalten": "Fermare il nastro",
+    "laufbandFortsetzen": "Riprendere il nastro",
+    "navigationLabel": "Sezioni della pagina"
   },
   "formular": {
     "titel": "Preparare un messaggio",
