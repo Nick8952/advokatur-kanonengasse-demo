@@ -36,7 +36,17 @@
       "permanent": true
     },
     {
+      "source": "/urs-ebnoether/",
+      "destination": "/team/urs-ebnoether/",
+      "permanent": true
+    },
+    {
       "source": "/tarig-hassan",
+      "destination": "/team/tarig-hassan/",
+      "permanent": true
+    },
+    {
+      "source": "/tarig-hassan/",
       "destination": "/team/tarig-hassan/",
       "permanent": true
     },
@@ -46,7 +56,17 @@
       "permanent": true
     },
     {
+      "source": "/tobias-kazik/",
+      "destination": "/team/tobias-kazik/",
+      "permanent": true
+    },
+    {
       "source": "/davide-loss",
+      "destination": "/team/davide-loss/",
+      "permanent": true
+    },
+    {
+      "source": "/davide-loss/",
       "destination": "/team/davide-loss/",
       "permanent": true
     },
@@ -56,7 +76,17 @@
       "permanent": true
     },
     {
+      "source": "/christian-mueller/",
+      "destination": "/team/christian-mueller/",
+      "permanent": true
+    },
+    {
       "source": "/manuela-schiller",
+      "destination": "/team/manuela-schiller/",
+      "permanent": true
+    },
+    {
+      "source": "/manuela-schiller/",
       "destination": "/team/manuela-schiller/",
       "permanent": true
     },
@@ -66,7 +96,17 @@
       "permanent": true
     },
     {
+      "source": "/nicolas-von-wartburg/",
+      "destination": "/team/nicolas-von-wartburg/",
+      "permanent": true
+    },
+    {
       "source": "/dominik-zuesli",
+      "destination": "/team/dominik-zuesli/",
+      "permanent": true
+    },
+    {
+      "source": "/dominik-zuesli/",
       "destination": "/team/dominik-zuesli/",
       "permanent": true
     },
@@ -76,7 +116,17 @@
       "permanent": true
     },
     {
+      "source": "/florian-hoensch/",
+      "destination": "/team/florian-hoensch/",
+      "permanent": true
+    },
+    {
       "source": "/leonie-roethlisberger",
+      "destination": "/team/leonie-roethlisberger/",
+      "permanent": true
+    },
+    {
+      "source": "/leonie-roethlisberger/",
       "destination": "/team/leonie-roethlisberger/",
       "permanent": true
     },
@@ -86,7 +136,17 @@
       "permanent": true
     },
     {
+      "source": "/patricia-berdin/",
+      "destination": "/team/patricia-berdin/",
+      "permanent": true
+    },
+    {
       "source": "/advokatur-en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-en/",
       "destination": "/en/",
       "permanent": true
     },
@@ -96,7 +156,17 @@
       "permanent": true
     },
     {
+      "source": "/advokatur-fr/",
+      "destination": "/fr/",
+      "permanent": true
+    },
+    {
       "source": "/advokatur-1",
+      "destination": "/ar/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-1/",
       "destination": "/ar/",
       "permanent": true
     },
@@ -106,7 +176,17 @@
       "permanent": true
     },
     {
+      "source": "/advokatur-it/",
+      "destination": "/it/",
+      "permanent": true
+    },
+    {
       "source": "/advokatur-es",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-es/",
       "destination": "/es/",
       "permanent": true
     },
@@ -116,7 +196,17 @@
       "permanent": true
     },
     {
+      "source": "/offene-stellen/",
+      "destination": "/mitarbeit/#offene-stellen",
+      "permanent": true
+    },
+    {
       "source": "/partnerschaft",
+      "destination": "/mitarbeit/#partnerschaft",
+      "permanent": true
+    },
+    {
+      "source": "/partnerschaft/",
       "destination": "/mitarbeit/#partnerschaft",
       "permanent": true
     }

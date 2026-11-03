@@ -3,8 +3,8 @@
 //    Weiterleitungen, liefert aber für «/name» die Datei «name.html» aus. Deshalb schreibt dieses Skript vor jedem Build für jede alte
 //    Adresse eine kleine statische Seite nach public/ (zum Beispiel public/urs-ebnoether.html), die per <meta http-equiv="refresh">
 //    sofort auf die neue Adresse führt und für Suchmaschinen noindex ist. Diese Dateien sind erzeugt und nicht versioniert.
-//  - Für den Produktivbetrieb (Vercel oder Kanzleidomain) stehen dieselben Zuordnungen als echte 308-Weiterleitungen in vercel.json.
-//    Dieses Skript prüft, dass beide Listen übereinstimmen, und bricht sonst ab.
+//  - Für den Produktivbetrieb (Vercel oder Kanzleidomain) stehen dieselben Zuordnungen als echte 308-Weiterleitungen in vercel.json,
+//    je alte Adresse ohne und mit Schluss-Schrägstrich. Dieses Skript prüft, dass beide Listen übereinstimmen, und bricht sonst ab.
 //  - Adressen, die gleich bleiben («/team», «/kontakt», «/impressum», «/datenschutz»), brauchen keinen Eintrag: Der Schluss-Schrägstrich
 //    wird von GitHub Pages (301) und Vercel (308) selbst ergänzt.
 // Aufruf: npm run weiterleitungen   (läuft automatisch in npm run build)
@@ -25,12 +25,16 @@ for (const w of liste) {
 }
 const vj = JSON.parse(await readFile(path.join(WURZEL, "vercel.json"), "utf8"));
 const redirects = Array.isArray(vj.redirects) ? vj.redirects : [];
+// Vercel ergänzt den Schluss-Schrägstrich (trailingSlash aus next.config.ts) VOR den Weiterleitungen aus vercel.json: «/urs-ebnoether» wird
+// erst zu «/urs-ebnoether/» und trifft dann die Regel. Deshalb braucht jede alte Adresse beide Quellen (ohne und mit Schrägstrich).
 for (const w of liste) {
-  const r = redirects.find((x) => x.source === w.alt);
-  if (!r) fehler.push(`vercel.json: Weiterleitung für ${w.alt} fehlt (erwartet: {"source": "${w.alt}", "destination": "${w.neu}", "permanent": true})`);
-  else if (r.destination !== w.neu || r.permanent !== true) fehler.push(`vercel.json: Weiterleitung für ${w.alt} zeigt auf «${r.destination}» (permanent=${r.permanent}), erwartet «${w.neu}» (permanent=true)`);
+  for (const quelle of [w.alt, `${w.alt}/`]) {
+    const r = redirects.find((x) => x.source === quelle);
+    if (!r) fehler.push(`vercel.json: Weiterleitung für ${quelle} fehlt (erwartet: {"source": "${quelle}", "destination": "${w.neu}", "permanent": true})`);
+    else if (r.destination !== w.neu || r.permanent !== true) fehler.push(`vercel.json: Weiterleitung für ${quelle} zeigt auf «${r.destination}» (permanent=${r.permanent}), erwartet «${w.neu}» (permanent=true)`);
+  }
 }
-for (const r of redirects) if (!liste.some((w) => w.alt === r.source)) fehler.push(`vercel.json: Weiterleitung ${r.source} steht nicht in data/weiterleitungen.json`);
+for (const r of redirects) if (!liste.some((w) => w.alt === r.source || `${w.alt}/` === r.source)) fehler.push(`vercel.json: Weiterleitung ${r.source} steht nicht in data/weiterleitungen.json`);
 if (fehler.length) {
   console.error(`✗ Weiterleitungen:\n${fehler.map((f) => `  - ${f}`).join("\n")}`);
   process.exit(1);

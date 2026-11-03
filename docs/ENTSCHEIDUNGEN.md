@@ -91,3 +91,9 @@ Kurz begründete Entscheidungen, die man dem Code nicht ansieht. Datum 2. und 3.
     aus; `Bewegung` als Layout-Effekt mit Klassenabbau beim Seitenwechsel; Menü schliesst beim Wechsel auf die breite Navigation;
     Weichzeichner des Kopfs in einem Schritt statt interpoliert. Nicht umgesetzt (Vorschlag): View-Transitions zwischen Seiten (Next 16
     experimentell), Akzentlinie statt Lift bei Karten (Lift bleibt, bei reduzierter Bewegung aus).
+27. **Vercel-Projekt angelegt (3.11.2026, Auftrag von Nick).** `nick-3488/advokatur-kanonengasse-demo`, <https://advokatur-kanonengasse-demo.vercel.app>,
+    GitHub-Repository verbunden (jeder Push auf `main` baut `npm run build:vercel`), keine Env-Variablen: ohne `SITE_URL` und `INDEXIERUNG`
+    bleibt die Website noindex, Canonical zeigt auf die vercel.app-Adresse. GitHub Pages läuft parallel weiter. Impressum und
+    Datenschutzerklärung nennen jetzt beide Dienste (GitHub, Inc. und Vercel Inc., Verbindungsdaten in den USA, Data Privacy Framework).
+    Weiterleitungen in `vercel.json` je alte Adresse ohne und mit Schluss-Schrägstrich, weil Vercel den Schrägstrich zuerst ergänzt.
+    Sanity bleibt nicht eingerichtet.

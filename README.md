@@ -4,6 +4,7 @@ Verkaufs-Demo einer neuen Website für die advokatur kanonengasse, Zürich (Bür
 offizielle Website der Kanzlei.** Betreiber der Demo: Nick Holzbecher.
 
 - Live-Demo (GitHub Pages, noindex): <https://nick8952.github.io/advokatur-kanonengasse-demo/>
+- Live-Demo (Vercel, ohne Unterpfad, noindex; Kundenlink): <https://advokatur-kanonengasse-demo.vercel.app/>
 - Sechs Sprachen: Deutsch (Wurzel), [English](https://nick8952.github.io/advokatur-kanonengasse-demo/en/), [Français](https://nick8952.github.io/advokatur-kanonengasse-demo/fr/),
   [Italiano](https://nick8952.github.io/advokatur-kanonengasse-demo/it/), [Español](https://nick8952.github.io/advokatur-kanonengasse-demo/es/), [العربية](https://nick8952.github.io/advokatur-kanonengasse-demo/ar/)
 - Technik: Next.js 16, TypeScript, Tailwind v4, statischer Export; Sanity (CMS) und Vercel (Hosting) vorbereitet, nicht eingerichtet.

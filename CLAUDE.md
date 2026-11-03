@@ -10,9 +10,11 @@ Bisherige Website: <https://www.kanonengasse.ch/> (Wix). Sie und die Domain werd
 ## Architektur in einem Absatz
 
 Next.js 16 (App Router, TypeScript, Tailwind CSS v4), **immer statischer Export** (`output: "export"`). Heute liegt er unter dem
-Repository-Unterpfad `/advokatur-kanonengasse-demo` auf GitHub Pages, die Inhalte kommen aus `data/*.json`. Später: Sanity als CMS und Vercel
-als Hosting; beides vorbereitet (Studio-Schemas, Sanity-Adapter, Import-Skript), aber **nicht eingerichtet**: keine Projekte, Tokens oder
-Zugänge. Auch mit Sanity bleibt die Website statisch: Veröffentlichen löst über einen Webhook einen neuen Build aus. Keine Serverfunktionen,
+Repository-Unterpfad `/advokatur-kanonengasse-demo` auf GitHub Pages und seit dem 3.11.2026 (Auftrag von Nick) zusätzlich ohne Unterpfad auf
+Vercel (<https://advokatur-kanonengasse-demo.vercel.app>, Projekt `nick-3488/advokatur-kanonengasse-demo`, mit dem GitHub-Repository
+verbunden, baut `npm run build:vercel` bei jedem Push auf `main`, keine Env-Variablen gesetzt, bleibt noindex). Die Inhalte kommen aus
+`data/*.json`. Später: Sanity als CMS; vorbereitet (Studio-Schemas, Sanity-Adapter, Import-Skript), aber **nicht eingerichtet**: kein Projekt,
+keine Tokens. Auch mit Sanity bleibt die Website statisch: Veröffentlichen löst über einen Webhook einen neuen Build aus. Keine Serverfunktionen,
 keine API-Routen, kein eingebettetes Studio, keine Anfragen an Dritte beim Seitenaufruf (CSP `default-src 'self'` als Meta und Header).
 
 Sechs Sprachen: Deutsch an der Wurzel (`app/(de)`, `lang="de-CH"`), Englisch, Französisch, Italienisch, Spanisch, Arabisch als je eine Seite
@@ -60,7 +62,8 @@ Sanity-Muster «statisch + Rebuild bei Publish»). Design, Aufbau, Komponenten, 
 | Inhalte prüfen (Schema, Schreibweise, Behauptungen, Rollen, Links, Bilder, Sprachseiten, Quellen) | `npm run inhalt:pruefen` · vor dem Go-Live `npm run inhalt:pruefen -- --live` |
 | Inhalte + Lint + Typen + Kontraste | `npm run pruefen` |
 | Statischer Export für GitHub Pages (Weiterleitungen, Inhalte, Sitemap, Bilder-Spiegel, Build, Nachbereitung, Export-Prüfung) | `npm run build` |
-| Export für Vercel (ohne Unterpfad) | `npm run build:vercel` |
+| Export für Vercel (ohne Unterpfad; so baut Vercel) | `npm run build:vercel` |
+| Vercel von Hand neu veröffentlichen (sonst automatisch bei Push) | `npx vercel@latest deploy --prod --yes --scope nick-3488` (Login liegt lokal vor; `.vercel/` ist gitignored) |
 | Export allein prüfen | `npm run export:pruefen` |
 | Export lokal wie auf GitHub Pages ansehen | `npm run vorschau:pages` → <http://localhost:4321/advokatur-kanonengasse-demo/> (`PORT=4333` bei belegtem Port) |
 | Browser-Prüfungen (Audit 5 Breiten × alle Seiten ohne Bewegung, Funktionen mit und ohne Bewegung) | `npm run qa` (Vorschau-Server muss laufen; anderer Port: `BASE=http://localhost:4333/advokatur-kanonengasse-demo`) |
@@ -137,14 +140,16 @@ Browser-Prüfungen, einen Vercel-Probebau und die Studio-Prüfung, und veröffen
   belegte Angaben, keine Anstellungsbeziehungen, keine Öffnungszeiten, kein Einzugsgebiet).
 - Leitplanken in `lib/deploy-ziel.ts`, nicht lockern: `INDEXIERUNG=1` verlangt eine ausdrückliche `SITE_URL` und bricht für Vorschau-Adressen
   ab; für jede echte Domain bricht der Build ab, solange etwas nicht `live` ist oder die Rechtstexte noch die Demo beschreiben (`lib/content/freigabe.ts`).
-- Impressum und Datenschutzerklärung beschreiben den tatsächlichen Stand der Demo (Betreiber Nick, GitHub Pages, keine Cookies, Links statt
-  Einbettungen, mailto-Formular). Bei jeder technischen Änderung beide Texte anpassen.
+- Impressum und Datenschutzerklärung beschreiben den tatsächlichen Stand der Demo (Betreiber Nick, GitHub Pages und Vercel als Hosting,
+  keine Cookies, Links statt Einbettungen, mailto-Formular). Bei jeder technischen Änderung beide Texte anpassen.
 
 ### Alte Adressen
 
 - `data/weiterleitungen.json` ist die eine Liste (Wix-Adressen ohne Endung). `npm run weiterleitungen` schreibt daraus `public/<name>.html`
   mit Meta-Refresh (GitHub Pages liefert `name.html` für `/name`) und bricht ab, wenn `vercel.json` nicht dieselben 308-Weiterleitungen enthält.
-  Neue alte Adresse: beide Dateien ergänzen. Adressen, die gleich bleiben (`/team`, `/kontakt`, `/impressum`, `/datenschutz`), brauchen keinen Eintrag.
+  Neue alte Adresse: beide Dateien ergänzen; in `vercel.json` je zwei Quellen (ohne und mit Schluss-Schrägstrich), weil Vercel den
+  Schrägstrich vor den Weiterleitungen ergänzt (zwei 308-Sprünge). Adressen, die gleich bleiben (`/team`, `/kontakt`, `/impressum`,
+  `/datenschutz`), brauchen keinen Eintrag.
 
 ### Gestaltung «Durchgang»
 
@@ -173,14 +178,15 @@ Browser-Prüfungen, einen Vercel-Probebau und die Studio-Prüfung, und veröffen
 - `basePath`/`assetUrl()` überall; nie absolute Pfade ohne Präfix. `trailingSlash: true`. Interne Links mit Sprungmarke laufen über `SmartLink`.
 - `scripts/export-pruefen.mjs` muss grün sein (läuft im Build). `.github/workflows/pages.yml` veröffentlicht bei Push auf `main`; Pages-Quelle ist «GitHub Actions».
 
-### Sanity und Vercel (nur vorbereitet)
+### Sanity (nur vorbereitet) und Vercel (eingerichtet)
 
 - Schemas in `studio/schemas/`, Adapter `lib/content/sanity.ts`, Import `scripts/seed.mts`. Feldnamen in Sanity = Feldnamen im Domainmodell
   (Ausnahme: Gruppentitel der Teamseite in camelCase). Personen verweisen auf `rechtsgebiet` und `beratungssprache`; Stellen sind eigene
   Dokumente mit Status und Datumsfenster; Sprachfassungen eigene Dokumente.
 - `CONTENT_SOURCE=sanity` schaltet die Quelle um; ohne `SANITY_PROJECT_ID`/`SANITY_DATASET` bricht der Build mit klarer Meldung ab.
 - Bilder aus Sanity werden vor dem Build gespiegelt (`scripts/sanity-bilder.mts` → `public/bilder/cms/`, `data/cms-bilder.json`).
-- Einrichtung Schritt für Schritt: `docs/SANITY-VERCEL-EINRICHTUNG.md`. **Nie** ohne ausdrücklichen Auftrag Sanity- oder Vercel-Projekte oder Tokens anlegen.
+- Einrichtung Schritt für Schritt: `docs/SANITY-VERCEL-EINRICHTUNG.md`. **Nie** ohne ausdrücklichen Auftrag Sanity-Projekte, Tokens oder
+  Vercel-Domains anlegen; das Vercel-Projekt selbst besteht (Auftrag vom 3.11.2026).
 
 ## Arbeitsweise
 

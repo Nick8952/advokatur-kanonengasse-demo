@@ -1,6 +1,8 @@
 # Sanity und Vercel einrichten (erst bei Kundeninteresse)
 
-Die Demo läuft ohne Sanity und Vercel. Dieses Dokument beschreibt, wie beides später eingerichtet wird. **Jetzt nichts anlegen.**
+Stand 3.11.2026: Das **Vercel-Projekt ist eingerichtet** (Abschnitt 5, auf Auftrag von Nick): `nick-3488/advokatur-kanonengasse-demo`,
+<https://advokatur-kanonengasse-demo.vercel.app>, mit dem GitHub-Repository verbunden, ohne Env-Variablen (noindex). **Sanity ist nicht
+eingerichtet**; die Abschnitte 1 bis 4 und 6 bis 7 beschreiben, wie es später dazukommt. Ohne Auftrag nichts davon anlegen.
 Grundmodell: Die Website bleibt ein statischer Export. Sanity liefert die Inhalte beim Build; Veröffentlichen im Studio ruft über einen
 Webhook einen Vercel-Deploy-Hook auf, der neu baut. Keine Serverfunktionen, keine API-Routen, kein eingebettetes Studio, keine Anfragen an
 Sanity beim Seitenaufruf (Bilder werden vor dem Build gespiegelt).
@@ -51,7 +53,12 @@ CONTENT_SOURCE=sanity SANITY_PROJECT_ID=<id> SANITY_DATASET=production SANITY_AP
 Der Build spiegelt zuerst alle Bilder (`npm run sanity:bilder` → `public/bilder/cms/`, `data/cms-bilder.json`), liest dann die Dokumente,
 prüft sie gegen dasselbe Modell wie die lokalen Inhalte und bricht bei fehlenden oder falschen Feldern mit klarer Meldung ab.
 
-## 5. Vercel-Projekt anlegen
+## 5. Vercel-Projekt anlegen (erledigt am 3.11.2026)
+
+Erledigt per `npx vercel@latest deploy --prod --yes --scope nick-3488` aus dem Projektordner (Login lag lokal vor): Projekt angelegt,
+GitHub-Repository automatisch verbunden, Build-Befehl aus `vercel.json`, erste Produktion live. Gelernt: Vercel ergänzt den
+Schluss-Schrägstrich vor den Weiterleitungen aus `vercel.json`; deshalb stehen dort je alte Adresse zwei Quellen (`/name` und `/name/`),
+und alte Adressen laufen in zwei 308-Sprüngen zum Ziel. Die ursprüngliche Anleitung bleibt zum Nachvollziehen:
 
 1. Repository `Nick8952/advokatur-kanonengasse-demo` in Vercel importieren (Framework Next.js). `vercel.json` setzt den Build-Befehl
    `npm run build:vercel` (ohne Unterpfad) und die Sicherheits-Header inklusive CSP und 308-Weiterleitungen der alten Adressen.

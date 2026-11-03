@@ -19,7 +19,7 @@
     { "titel": "Haftung" },
     "Die Inhalte wurden mit Sorgfalt zusammengestellt. Für Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Die Website ersetzt keine Rechtsberatung im Einzelfall. Links zu externen Websites führen zu Angeboten Dritter, für deren Inhalte die jeweiligen Betreiber verantwortlich sind.",
     { "titel": "Technik" },
-    "Die Demo ist eine statische Website und wird über GitHub Pages ausgeliefert (GitHub, Inc., San Francisco, USA). Sie ist für Suchmaschinen gesperrt (noindex) und als Entwurf gekennzeichnet."
+    "Die Demo ist eine statische Website und wird über GitHub Pages (GitHub, Inc., San Francisco, USA) und über Vercel (Vercel Inc., Covina, USA) ausgeliefert. Sie ist für Suchmaschinen gesperrt (noindex) und als Entwurf gekennzeichnet."
   ],
   "seoTitel": "Impressum",
   "seoBeschreibung": "Impressum der Verkaufs-Demo für die advokatur kanonengasse: Betreiber der Demo, dargestellte Kanzlei, Quellen der Inhalte, Urheberrechte und Bildnachweis.",

@@ -130,3 +130,5 @@ Für Vercel stehen dieselben Zuordnungen als echte 308-Weiterleitungen in `verce
 | Wix-Systemadressen (`/_partials`, `?lightbox=`) | keine | entfallen |
 
 Die bisherige Website und ihre Domain werden nicht verändert.
+
+Stand 3.11.2026: Auf Vercel (<https://advokatur-kanonengasse-demo.vercel.app>) laufen die alten Adressen in zwei 308-Sprüngen zum Ziel (`/name` → `/name/` → neue Seite), weil Vercel den Schluss-Schrägstrich vor den eigenen Weiterleitungen ergänzt; auf GitHub Pages weiterhin per Meta-Refresh-Seite.

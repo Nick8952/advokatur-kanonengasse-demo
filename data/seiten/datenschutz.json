@@ -47,7 +47,7 @@
       "titel": "2.1 Hosting",
       "stufe": 3
     },
-    "Die Website wird derzeit über GitHub Pages ausgeliefert, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf einer Seite verarbeitet GitHub technische Zugriffsdaten wie die IP-Adresse, Datum und Uhrzeit des Zugriffs, die abgerufene Datei und den verwendeten Browser, um die Seiten auszuliefern und den Dienst abzusichern. Einzelheiten stehen in der Datenschutzerklärung von GitHub unter [docs.github.com/site-policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement). Wir selbst führen keine Zugriffsprotokolle und werten keine Zugriffe aus.",
+    "Die Website wird derzeit über zwei Dienste ausgeliefert: über GitHub Pages, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, und über Vercel, einen Dienst der Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. Beim Aufruf einer Seite verarbeitet der jeweilige Dienst technische Zugriffsdaten wie die IP-Adresse, Datum und Uhrzeit des Zugriffs, die abgerufene Datei und den verwendeten Browser, um die Seiten auszuliefern und den Dienst abzusichern. Einzelheiten stehen in der Datenschutzerklärung von GitHub unter [docs.github.com/site-policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement) und in der [Datenschutzerklärung von Vercel](https://vercel.com/legal/privacy-policy). Wir selbst führen keine Zugriffsprotokolle und werten keine Zugriffe aus; Analysefunktionen von Vercel sind nicht eingeschaltet. Mit der Auslieferung werden Verbindungsdaten in die USA übermittelt. GitHub und Vercel geben an, unter dem Swiss-U.S. Data Privacy Framework zertifiziert zu sein; der Bundesrat hat die USA für Unternehmen mit dieser Zertifizierung als Staat mit angemessenem Datenschutz anerkannt.",
     {
       "titel": "2.2 Cookies, Speicher und Analyse",
       "stufe": 3
@@ -98,7 +98,7 @@
         "art": "amtlich"
       },
       {
-        "quelle": "Abschnitt 2 (Nutzung dieser Website) neu formuliert nach der tatsächlichen Technik der Demo (GitHub Pages, keine Cookies, mailto-Formular, externe Karten)",
+        "quelle": "Abschnitt 2 (Nutzung dieser Website) neu formuliert nach der tatsächlichen Technik der Demo (GitHub Pages und Vercel, keine Cookies, mailto-Formular, externe Karten)",
         "abgerufen": "2026-11-03",
         "art": "redaktion"
       }

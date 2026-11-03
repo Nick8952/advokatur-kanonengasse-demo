@@ -198,3 +198,47 @@ Codex konnte die Konzeptdatei ausserhalb des Projekts nicht lesen und beurteilte
 Vorschläge von Codex für mehr Bewegung: View-Transitions zwischen Seiten (nicht umgesetzt: experimentell in Next 16, zwei Wurzel-Layouts),
 Akzentlinie statt Lift bei Karten (nicht umgesetzt), Laufband nur im Fenster und bei sichtbarem Tab laufen lassen (umgesetzt: ausserhalb des
 Fensters pausiert; verborgene Tabs pausiert der Browser).
+
+## 12. Veröffentlichung des Umbaus und Live-Prüfungen (3.11.2026, GitHub Pages)
+
+- Commit `c5c4485` (Umbau) löste Pages-Lauf 41718535216 aus: `build` rot, weil die neue Prüfung «Lesebalken wächst» die Breite mit
+  `innerWidth` verglich, das im Linux-Chrome der CI die 15 px breite Scrollleiste einschliesst (lokal sind Scrollleisten ausgeblendet);
+  alle übrigen 157 Funktionsprüfungen, beide Audits (120/120, 40/40), `vercel-probe` und `studio` grün. Kein Befund an der Website.
+- Commit mit `clientWidth` (Lauf 41719781199): dieselbe Prüfung erneut rot. Ursache: scroll-getriebene `transform`-Animationen laufen im
+  Compositor; im CI-Chrome war der Wert im Hauptfaden erst nach dem nächsten Bild aktuell. Prüfung wartet jetzt zwei
+  `requestAnimationFrame` und akzeptiert auch die berechnete Skalierung; sie gibt ihre Messwerte aus.
+- Lauf 41720946268: alle vier Jobs grün (`build` mit beiden Audits und 158/158 Funktionen, `vercel-probe`, `studio`, `deploy`). Messwert
+  des Lesebalkens in der CI: Breite 1425 von 1440 px (Scrollleiste), Skalierung 1. Live-Seite liefert die neue Struktur (Bühne, Laufband,
+  Schiene, Menü-Knopf) unter <https://nick8952.github.io/advokatur-kanonengasse-demo/>.
+- Live-Prüfungen gegen GitHub Pages: Audit ohne Bewegung 120/120, Audit mit Bewegung 40/40 (8 Seiten), Funktionen 158/158 (zweiter Lauf mit dem korrigierten Scrollspy-Test).
+  Erster Live-Funktionslauf 157/158: der Scrollspy-Test scrollte den Abschnitt nur 80 px unter den Kopf, und live nachladende Schriften
+  verschoben die Messlinie in den vorigen Abschnitt; der Test scrollt jetzt auf 15 % der Fensterhöhe und wartet auf `document.fonts.ready`
+  (kein Befund an der Website; mit dem korrigierten Test lokal, auf Pages und auf Vercel je Familienrecht → Sportrecht).
+- Lighthouse live (Presets Desktop und Mobil, je Seite ein Lauf, `npx lighthouse@latest`), SEO absichtlich tief (noindex):
+
+| Seite | Pages Desktop | Pages Mobil | Vercel Desktop | Vercel Mobil |
+| --- | --- | --- | --- | --- |
+| `/` | 100 / 100 / 100, LCP 0.5 s | 98 / 100 / 100, LCP 2.3 s | 100 / 100 / 100, LCP 0.6 s | 99 / 100 / 100, LCP 2.3 s |
+| `/rechtsgebiete/` | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 1.9 s | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 0.9 s |
+| `/team/urs-ebnoether/` | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 1.9 s | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 1.9 s |
+| `/kontakt/` | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 0.9 s | 100 / 100 / 100, LCP 0.4 s | 100 / 100 / 100, LCP 0.9 s |
+| `/ar/` | 100 / 100 / 100, LCP 0.6 s | 96 / 100 / 100, LCP 2.8 s | 100 / 100 / 100, LCP 0.6 s | 97 / 100 / 100, LCP 2.6 s |
+
+  Werte: Leistung / Barrierefreiheit / Best Practices; CLS überall 0 bis 0.001, TBT höchstens 30 ms. Die Bühne mit dem Vollbildfoto kostet
+  auf simuliertem Mobilnetz 2.3 bis 2.8 s LCP (vor dem Umbau 0.9 bis 1.7 s); Desktop unverändert bei 100.
+
+## 13. Vercel-Projekt (3.11.2026, Auftrag von Nick)
+
+- Angelegt per `npx vercel@latest deploy --prod --yes --scope nick-3488` aus dem Projektordner (Login lag lokal vor): Projekt
+  `nick-3488/advokatur-kanonengasse-demo` (ID `prj_9fQaVb3N55hxIwg1I58ahCkJYIsn`), GitHub-Repository automatisch verbunden, Build-Befehl
+  `npm run build:vercel` aus `vercel.json`, Node 26, Region iad1, keine Env-Variablen. Produktion: <https://advokatur-kanonengasse-demo.vercel.app>.
+- Geprüft per HTTP: Start, `/ar/`, Profil, Rechtsgebiete, Datenschutz 200; unbekannte Adresse 404; Header `Content-Security-Policy`
+  (mit `frame-ancestors 'none'`), `X-Frame-Options: DENY`, `Referrer-Policy`; `robots` noindex, nofollow; Canonical auf die vercel.app-Adresse;
+  Datenschutzerklärung nennt Vercel.
+- Befund und Korrektur: Vercel ergänzt den Schluss-Schrägstrich (`trailingSlash` aus `next.config.ts`) **vor** den Weiterleitungen aus
+  `vercel.json`; `/urs-ebnoether` wurde zu `/urs-ebnoether/` und lieferte dort die Meta-Refresh-Seite (200) statt eines 308 zum Ziel.
+  `vercel.json` enthält jetzt je alte Adresse zwei Quellen (`/name`, `/name/`), `scripts/weiterleitungen.mjs` prüft beide; nach dem zweiten
+  Deploy laufen alle 18 alten Adressen in zwei 308-Sprüngen zum Ziel (CDN lieferte für kurze Zeit noch die alte Antwort; mit Query-Parameter geprüft).
+- Rechtstexte angepasst: Impressum und Datenschutzerklärung (2.1 Hosting) nennen GitHub Pages und Vercel, Verbindungsdaten in den USA,
+  Data Privacy Framework; `inhalt:pruefen` grün.
+- Funktionsprüfungen gegen den Vercel-Link: 158/158 (inklusive 18 Weiterleitungen in zwei Sprüngen, Fehlerseite 404, Formular DE und AR, Bewegung).
