@@ -20,8 +20,9 @@ Kurz begründete Entscheidungen, die man dem Code nicht ansieht. Datum 2. und 3.
 6. **Keine Beschreibungen der Rechtsgebiete erfunden.** Die Übersichtsseite zeigt je Gebiet die Ansprechpersonen, die Begriffe der Profile
    und belegte Hintergründe aus den Lebensläufen, dazu einen Hinweis, dass die Seite keine Leistungen im Einzelfall beschreibt.
 7. **Bürogemeinschaft.** Die Website spricht von Bürogemeinschaft und wirtschaftlicher Selbständigkeit (Partnerschaftsseite). Die
-   Datenschutzerklärung der Kanzlei nennt sich selbst «einfache Gesellschaft»; dieser Satz bleibt als Wortlaut der Kanzlei in der
-   Datenschutzerklärung, wird aber nirgends sonst verwendet. Strukturierte Daten verknüpfen Personen nicht als Angestellte (kein
+   Datenschutzerklärung der Kanzlei nennt sich selbst «einfache Gesellschaft»; diese Selbstbezeichnung wurde auf Codex-Befund hin nicht
+   übernommen (Verantwortliche sind «die auf der Website und im Briefkopf auftretenden Rechtsanwältinnen und Rechtsanwälte»); die Rechtsform
+   bestätigt die Kanzlei (`docs/UEBERGABE.md` Nr. 2 und 3). Strukturierte Daten verknüpfen Personen nicht als Angestellte (kein
    `employee`, kein `worksFor`); «Kanonengasse Kanzlei GmbH» (Zefix) wird nicht als Betreiberin dargestellt.
 8. **Hinweis zu Anfragen (24 Stunden).** Der Text der alten Website war die Antwortmeldung des Formulars. Er beschreibt, was ausbleibende
    Rückmeldung bedeutet, und ist keine Antwortzusage. Er steht neben dem Formular (nicht als Bestätigung nach dem Klick), mit einem Zusatz
@@ -61,9 +62,15 @@ Kurz begründete Entscheidungen, die man dem Code nicht ansieht. Datum 2. und 3.
 22. **Sanity-Modell.** Personen verweisen auf `rechtsgebiet`- und `beratungssprache`-Dokumente (saubere Verknüpfung), Stellen sind eigene
     Dokumente mit Status und Datumsfenster, Sprachfassungen eigene Dokumente, Übersetzungen der Gebietsnamen mit Status. Feldnamen in
     Sanity = Feldnamen im Modell (Ausnahme: Gruppentitel der Teamseite in camelCase, weil Sanity keine Bindestriche in Feldnamen erlaubt).
-23. **Codex-Architekturprüfung (3.11.2026)** mit 24 Befunden, davon umgesetzt: keine `employee`/`worksFor`/`areaServed` in JSON-LD,
+23. **Codex-Architekturprüfung (3.11.2026)** mit 25 markierten Befunden (in der Zählung der Abschlussprüfung), davon umgesetzt: keine `employee`/`worksFor`/`areaServed` in JSON-LD,
     Beratungssprachen aus den Profilen, Sitemap ohne Build-Datum, Eindeutigkeit der Sprachseiten, Gruppen- und Zähllogik des Teams,
     RTL-Isolation von Zeiten, Adressen, Namen und Rollen, Sprunglink logisch, CSP als Meta und Header, Vercel-Probe in der CI, absoluter
     Canonical der Weiterleitungen, schärfere Export- und Inhaltsprüfungen (lokale CSS-URLs, hreflang-Ziele, robots-Metas, Formular-Aktionen,
-    Antwortzusagen in Übersetzungen, Rechtsform im Impressum). Nicht umgesetzt: Umbenennung der Teamgruppe (Beschriftung ist der Wortlaut der
-    alten Website) und Umdeutung der «einfachen Gesellschaft» (bleibt Wortlaut der Kanzlei, Freigabe offen). Protokoll: `docs/PRUEFBERICHT.md`.
+    Antwortzusagen in Übersetzungen, Rechtsform im Impressum). Teilweise: internes Gruppenmodell (Beschriftung ist der Wortlaut der alten
+    Website, Logik neu geprüft), Netzwerk-APIs im JavaScript (CSP sperrt sie), `_not-found` (Ressourcen und CSP geprüft, lang/dir nicht, da
+    Next-intern). «Einfache Gesellschaft» nach der Abschlussprüfung entfernt. Protokoll: `docs/PRUEFBERICHT.md`.
+24. **Codex-Abschlussprüfung (3.11.2026)** mit 9 Befunden, alle umgesetzt: kein automatisches Kopieren langer Nachrichten in die
+    Zwischenablage (Text steht sichtbar bereit, Kopieren nur auf Klick); «E-Mail (Kanzlei)» im Profil ohne persönliche Adresse; Teamfilter erst
+    nach dem Laden sichtbar; Gruppentitel und isolierte deutsche Sprachnamen auf den Sprachseiten; CSP-Meta an den Anfang von `<head>`
+    verschoben und auf jeder Seite geprüft; Telefonzeiten der Sprachseiten vollständig geprüft; Zürcher Kalendertag und Datumsreihenfolge
+    bei Stellen; Prüfbericht angelegt; Befundzählung vereinheitlicht.

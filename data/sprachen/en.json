@@ -77,7 +77,12 @@
     "demoHinweis": "Draft: sales demo by Nick Holzbecher. This is not the official website of advokatur kanonengasse.",
     "oeffnetNeuesFenster": "opens in a new window",
     "uebersetzungshinweis": "The introduction is taken from the firm’s current website. All other texts on this page are translation drafts pending the firm’s approval.",
-    "gesprocheneSprachen": "Languages"
+    "gesprocheneSprachen": "Languages",
+    "gruppen": {
+      "anwaeltinnen-und-anwaelte": "Partners and lawyers",
+      "substitutinnen-und-substituten": "Legal associates and trainee lawyers",
+      "sekretariat": "Secretariat"
+    }
   },
   "formular": {
     "titel": "Prepare a message",
@@ -118,7 +123,7 @@
     "kopieren": "Copy message",
     "kopiert": "The message has been copied to the clipboard.",
     "kopierenFehler": "Copying was not possible. The full text is available below for selecting.",
-    "zuLangFehler": "The message is too long for a direct link and copying was not possible. The full text is available below for selecting.",
+    "zuLangFehler": "The message is too long for a direct link. Your email program opens with your details only; select and copy the full text below into the email yourself.",
     "volltextLabel": "Full message to copy",
     "ohneJavascript": "Without JavaScript the form cannot prepare an email. Please write directly to",
     "datenschutzHinweis": "How the firm handles personal data is described in the privacy policy (German).",

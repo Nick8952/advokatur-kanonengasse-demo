@@ -75,7 +75,7 @@ export default async function Profil({ params }: { params: Promise<{ slug: strin
               </div>
             ) : (
               <div>
-                <dt>{s.profil.email}</dt>
+                <dt>{s.profil.emailKanzlei}</dt>
                 <dd><EMail adresse={k.email} /></dd>
               </div>
             )}

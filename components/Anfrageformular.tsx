@@ -23,8 +23,9 @@ export function mailtoBauen(empfaenger: string, betreff: string, text: string): 
 /**
  * «E-Mail vorbereiten»: baut aus Name, E-Mail, Telefon (freiwillig), Betreff und Nachricht einen mailto:-Link und öffnet das
  * E-Mail-Programm. Die Website sendet, speichert und protokolliert nichts; es gibt keine Versandbestätigung, nur den Hinweis,
- * dass sich das E-Mail-Programm öffnen sollte. Öffnet sich nichts, lässt sich die Nachricht kopieren. Sehr lange Nachrichten kommen
- * als Kurzfassung in den Link, der ganze Text liegt dann in der Zwischenablage. Keine Datei-Uploads, keine Falldetails.
+ * dass sich das E-Mail-Programm öffnen sollte. Sehr lange Nachrichten passen nicht in einen mailto-Link: Dann öffnet sich die E-Mail nur
+ * mit den Angaben, und der ganze Text steht sichtbar zum Markieren bereit. In die Zwischenablage schreibt die Website nie von sich aus;
+ * «Nachricht kopieren» ist eine ausdrückliche Handlung der Besucherin. Keine Datei-Uploads, keine Falldetails.
  * Ohne JavaScript bleibt der Knopf gesperrt (ein gewöhnliches Absenden würde die Eingaben als Parameter an die Adresse hängen);
  * stattdessen nennt <noscript> die E-Mail-Adresse. Alle Texte kommen je Sprache von aussen.
  */
@@ -61,7 +62,7 @@ export function Anfrageformular({ texte: f, empfaenger, ueberschriftStufe = 2 }:
     <form
       className="grid gap-5"
       noValidate={geladen}
-      onSubmit={async (ev) => {
+      onSubmit={(ev) => {
         ev.preventDefault();
         const neu: typeof fehler = {};
         if (!name.trim()) neu.name = f.fehlerName;
@@ -71,19 +72,15 @@ export function Anfrageformular({ texte: f, empfaenger, ueberschriftStufe = 2 }:
         const erstes = (["name", "email", "nachricht"] as const).find((k) => neu[k]);
         if (erstes) { setStatus(""); document.getElementById(`${id}-${erstes}`)?.focus(); return; }
         let link = mailtoBauen(empfaenger, betreff, text);
-        let zusatz = "";
+        let hinweis = f.hinweisNachher;
         if (link.length > MAILTO_GRENZE) {
-          if (!(await kopieren())) {
-            setVorbereitet(true);
-            setVolltext(true);
-            setStatus(f.zuLangFehler);
-            return;
-          }
+          // Zu lang für einen Link: E-Mail nur mit den Angaben öffnen, der ganze Text steht unten zum Markieren (nichts wird kopiert)
           link = mailtoBauen(empfaenger, betreff, `${kopf}\n\n(…)`);
-          zusatz = ` ${f.kopiert}`;
+          setVolltext(true);
+          hinweis = f.zuLangFehler;
         }
         setVorbereitet(true);
-        setStatus(f.hinweisNachher + zusatz);
+        setStatus(hinweis);
         window.location.href = link;
       }}
     >

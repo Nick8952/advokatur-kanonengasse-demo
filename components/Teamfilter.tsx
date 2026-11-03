@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId, useState, useSyncExternalStore } from "react";
 import { Personenkachel, type Kachel } from "./Personenkachel";
 
 export type FilterPerson = Kachel & { gruppe: string; gebiete: string[]; sprachen: string[] };
@@ -8,11 +8,13 @@ export type FilterTexte = { titel: string; rechtsgebiet: string; sprache: string
 
 /**
  * Team mit Filter nach Rechtsgebiet und Beratungssprache. Die Zuordnungen stammen vollständig aus den Profilen der bisherigen Website;
- * es werden nur Gebiete und Sprachen angeboten, die mindestens eine Person nennt. Ohne JavaScript erscheinen alle Personen ohne Filter
- * (der Filter wird erst nach dem Laden eingeblendet). Zustände liegen nur im Speicher, nie in der Adresse oder im Browser-Speicher.
+ * es werden nur Gebiete und Sprachen angeboten, die mindestens eine Person nennt. Die Filterknöpfe erscheinen erst nach dem Laden
+ * (useSyncExternalStore liefert auf dem Server «nicht geladen»); ohne JavaScript steht die vollständige Personenliste ohne funktionslose
+ * Bedienelemente da. Zustände liegen nur im Speicher, nie in der Adresse oder im Browser-Speicher.
  */
 export function Teamfilter({ personen, gruppen, gebiete, sprachen, t }: { personen: FilterPerson[]; gruppen: { kennung: string; titel: string }[]; gebiete: { slug: string; titel: string }[]; sprachen: string[]; t: FilterTexte }) {
   const id = useId();
+  const geladen = useSyncExternalStore(() => () => {}, () => true, () => false);
   const [gebiet, setGebiet] = useState<string | null>(null);
   const [sprache, setSprache] = useState<string | null>(null);
   const aktiv = gebiet !== null || sprache !== null;
@@ -20,7 +22,7 @@ export function Teamfilter({ personen, gruppen, gebiete, sprachen, t }: { person
   const treffer = personen.filter(passt);
   return (
     <div className="grid gap-8">
-      <div className="filter" role="group" aria-labelledby={`${id}-titel`}>
+      {geladen ? <div className="filter" role="group" aria-labelledby={`${id}-titel`}>
         <p id={`${id}-titel`} className="titel-4">{t.titel}</p>
         <fieldset>
           <legend>{t.rechtsgebiet}</legend>
@@ -45,7 +47,7 @@ export function Teamfilter({ personen, gruppen, gebiete, sprachen, t }: { person
           {aktiv ? <span>{treffer.length} {t.treffer} ({[gebiet ? gebiete.find((g) => g.slug === gebiet)?.titel : null, sprache].filter(Boolean).join(", ")})</span> : null}
           {aktiv ? <button type="button" className="textlink" onClick={() => { setGebiet(null); setSprache(null); }}>{t.zuruecksetzen}</button> : null}
         </p>
-      </div>
+      </div> : null}
       {gruppen.map((g) => {
         const liste = treffer.filter((p) => p.gruppe === g.kennung);
         if (!liste.length) return null;

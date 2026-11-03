@@ -76,7 +76,12 @@
     "demoHinweis": "Borrador: demostración comercial de Nick Holzbecher. Este no es el sitio web oficial de advokatur kanonengasse.",
     "oeffnetNeuesFenster": "se abre en una ventana nueva",
     "uebersetzungshinweis": "El texto de presentación procede del sitio web actual del bufete. Los demás textos de esta página son borradores de traducción pendientes de la aprobación del bufete.",
-    "gesprocheneSprachen": "Idiomas"
+    "gesprocheneSprachen": "Idiomas",
+    "gruppen": {
+      "anwaeltinnen-und-anwaelte": "Socios y abogados",
+      "substitutinnen-und-substituten": "Colaboradores jurídicos y pasantes",
+      "sekretariat": "Secretaría"
+    }
   },
   "formular": {
     "titel": "Preparar un mensaje",
@@ -117,7 +122,7 @@
     "kopieren": "Copiar el mensaje",
     "kopiert": "El mensaje se ha copiado al portapapeles.",
     "kopierenFehler": "No se pudo copiar. El texto completo está disponible abajo para seleccionarlo.",
-    "zuLangFehler": "El mensaje es demasiado largo para un enlace directo y no se pudo copiar. El texto completo está disponible abajo para seleccionarlo.",
+    "zuLangFehler": "El mensaje es demasiado largo para un enlace directo. Su programa de correo se abre solo con sus datos; seleccione y copie usted mismo el texto completo de abajo en el correo.",
     "volltextLabel": "Mensaje completo para copiar",
     "ohneJavascript": "Sin JavaScript el formulario no puede preparar un correo. Escriba directamente a",
     "datenschutzHinweis": "El tratamiento de los datos personales por parte del bufete se describe en la declaración de protección de datos (en alemán).",

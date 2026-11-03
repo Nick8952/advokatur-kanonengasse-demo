@@ -1,18 +1,75 @@
 {
   "navigation": [
-    { "text": "Kanzlei", "ziel": "/" },
-    { "text": "Rechtsgebiete", "ziel": "/rechtsgebiete/" },
-    { "text": "Team", "ziel": "/team/" },
-    { "text": "Mitarbeit", "ziel": "/mitarbeit/" },
-    { "text": "Kontakt", "ziel": "/kontakt/" }
+    {
+      "text": "Kanzlei",
+      "ziel": "/"
+    },
+    {
+      "text": "Rechtsgebiete",
+      "ziel": "/rechtsgebiete/"
+    },
+    {
+      "text": "Team",
+      "ziel": "/team/"
+    },
+    {
+      "text": "Mitarbeit",
+      "ziel": "/mitarbeit/"
+    },
+    {
+      "text": "Kontakt",
+      "ziel": "/kontakt/"
+    }
   ],
   "sprachen": [
-    { "code": "de", "name": "Deutsch", "nameDeutsch": "Deutsch", "gruss": "Willkommen", "lang": "de-CH", "richtung": "ltr" },
-    { "code": "en", "name": "English", "nameDeutsch": "Englisch", "gruss": "welcome", "lang": "en", "richtung": "ltr" },
-    { "code": "fr", "name": "Français", "nameDeutsch": "Französisch", "gruss": "bienvenue", "lang": "fr", "richtung": "ltr" },
-    { "code": "ar", "name": "العربية", "nameDeutsch": "Arabisch", "gruss": "مرحبا", "lang": "ar", "richtung": "rtl" },
-    { "code": "it", "name": "Italiano", "nameDeutsch": "Italienisch", "gruss": "benvenuti", "lang": "it", "richtung": "ltr" },
-    { "code": "es", "name": "Español", "nameDeutsch": "Spanisch", "gruss": "bienvenidos", "lang": "es", "richtung": "ltr" }
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "nameDeutsch": "Deutsch",
+      "gruss": "Willkommen",
+      "lang": "de-CH",
+      "richtung": "ltr"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "nameDeutsch": "Englisch",
+      "gruss": "welcome",
+      "lang": "en",
+      "richtung": "ltr"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "nameDeutsch": "Französisch",
+      "gruss": "bienvenue",
+      "lang": "fr",
+      "richtung": "ltr"
+    },
+    {
+      "code": "ar",
+      "name": "العربية",
+      "nameDeutsch": "Arabisch",
+      "gruss": "مرحبا",
+      "lang": "ar",
+      "richtung": "rtl"
+    },
+    {
+      "code": "it",
+      "name": "Italiano",
+      "nameDeutsch": "Italienisch",
+      "gruss": "benvenuti",
+      "lang": "it",
+      "richtung": "ltr"
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "nameDeutsch": "Spanisch",
+      "gruss": "bienvenidos",
+      "lang": "es",
+      "richtung": "ltr"
+    }
   ],
   "kopf": {
     "logoAlt": "advokatur kanonengasse",
@@ -40,7 +97,10 @@
     "personenLabel": "Ansprechpersonen",
     "nichtGefundenTitel": "Diese Seite gibt es nicht",
     "nichtGefundenText": "Die Adresse ist falsch geschrieben, oder die Seite wurde verschoben. Über die Navigation finden Sie alle Seiten der Kanzlei.",
-    "nichtGefundenLink": { "text": "Zur Startseite", "ziel": "/" },
+    "nichtGefundenLink": {
+      "text": "Zur Startseite",
+      "ziel": "/"
+    },
     "schliessen": "Schliessen",
     "stand": "Stand der Angaben",
     "kapazitaetshinweisTitel": "Hinweis zu Anfragen",
@@ -51,11 +111,20 @@
     "sprachenTitel": "Sprachen",
     "seitenTitel": "Seiten",
     "rechtliches": [
-      { "text": "Impressum", "ziel": "/impressum/" },
-      { "text": "Datenschutz", "ziel": "/datenschutz/" }
+      {
+        "text": "Impressum",
+        "ziel": "/impressum/"
+      },
+      {
+        "text": "Datenschutz",
+        "ziel": "/datenschutz/"
+      }
     ],
     "einstellungen": "Datenschutz-Einstellungen",
-    "bildnachweis": { "text": "Bildnachweis", "ziel": "/impressum/#bildnachweis" },
+    "bildnachweis": {
+      "text": "Bildnachweis",
+      "ziel": "/impressum/#bildnachweis"
+    },
     "demoHinweis": "Entwurf: Verkaufs-Demo von Nick Holzbecher. Dies ist nicht die offizielle Website der advokatur kanonengasse.",
     "copyright": "© 2026 advokatur kanonengasse"
   },
@@ -69,11 +138,26 @@
     "telefonHilfe": "Freiwillig, für einen Rückruf während der Telefonzeiten.",
     "betreff": "Betreff",
     "betreffOptionen": [
-      { "wert": "allgemeine-anfrage", "titel": "Allgemeine Anfrage" },
-      { "wert": "rechtsvertretung", "titel": "Anfrage für Beratung oder Vertretung" },
-      { "wert": "termin", "titel": "Terminanfrage" },
-      { "wert": "mitarbeit", "titel": "Mitarbeit oder Partnerschaft" },
-      { "wert": "anderes", "titel": "Anderes" }
+      {
+        "wert": "allgemeine-anfrage",
+        "titel": "Allgemeine Anfrage"
+      },
+      {
+        "wert": "rechtsvertretung",
+        "titel": "Anfrage für Beratung oder Vertretung"
+      },
+      {
+        "wert": "termin",
+        "titel": "Terminanfrage"
+      },
+      {
+        "wert": "mitarbeit",
+        "titel": "Mitarbeit oder Partnerschaft"
+      },
+      {
+        "wert": "anderes",
+        "titel": "Anderes"
+      }
     ],
     "betreffPraefix": "Anfrage über die Website",
     "nachricht": "Kurze Nachricht",
@@ -87,11 +171,14 @@
     "kopieren": "Nachricht kopieren",
     "kopiert": "Die Nachricht ist in der Zwischenablage.",
     "kopierenFehler": "Kopieren war nicht möglich. Der vollständige Text steht unten zum Markieren bereit.",
-    "zuLangFehler": "Die Nachricht ist zu lang für einen direkten Link, und das Kopieren war nicht möglich. Der vollständige Text steht unten zum Markieren bereit.",
+    "zuLangFehler": "Die Nachricht ist zu lang für einen direkten Link. Ihr E-Mail-Programm öffnet sich nur mit Ihren Angaben; den vollständigen Text markieren und kopieren Sie unten selbst in die E-Mail.",
     "volltextLabel": "Vollständige Nachricht zum Kopieren",
     "ohneJavascript": "Ohne JavaScript bereitet das Formular keine E-Mail vor. Schreiben Sie direkt an",
     "datenschutzHinweis": "Wie die Kanzlei mit Personendaten umgeht, steht in der",
-    "datenschutzLink": { "text": "Datenschutzerklärung", "ziel": "/datenschutz/" }
+    "datenschutzLink": {
+      "text": "Datenschutzerklärung",
+      "ziel": "/datenschutz/"
+    }
   },
   "einwilligung": {
     "bannerTitel": "Datenschutz-Einstellungen",

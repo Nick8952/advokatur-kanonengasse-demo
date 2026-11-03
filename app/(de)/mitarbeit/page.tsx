@@ -18,7 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Mitarbeit() {
   const q = await inhaltsquelle();
   const [s, personen, t] = await Promise.all([q.getMitarbeitSeite(), q.getPersonen(), q.getTexte()]);
-  const heute = new Date().toISOString().slice(0, 10);
+  // Kalendertag in Zürich (nicht UTC): massgebend für «sichtbar ab» und «sichtbar bis»
+  const heute = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Zurich" }).format(new Date());
   const sichtbar = s.stellen.filter((st) => st.status === "veroeffentlicht" && (!st.veroeffentlichtAb || st.veroeffentlichtAb <= heute) && (!st.archiviertAb || st.archiviertAb > heute));
   const person = (slug: string) => personen.find((p) => p.slug === slug);
   const pa = s.partnerschaft;

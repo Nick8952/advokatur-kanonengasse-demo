@@ -51,7 +51,7 @@ const ABFRAGEN = {
   mitarbeitSeite: `*[_type == "mitarbeitSeite"][0]{ titel, einleitung, stellenTitel, keineStellen, bewerbungTitel, standLabel, partnerschaft{ "slug": coalesce(slug.current, "partnerschaft"), titel, status, stand, inhalt, kontakteTitel, kontakte[]{ "person": person->slug.current, email, telefon } }, seoTitel, seoBeschreibung, ${BELEGE} }`,
   kontaktSeite: `*[_type == "kontaktSeite"][0]{ titel, einleitung, erreichbarkeitTitel, adresseTitel, anfahrtTitel, kartenHinweis, hinweis{ titel, text, zusatz }, formularTitel, seoTitel, seoBeschreibung, ${BELEGE} }`,
   rechtSeite: `*[_type == "rechtSeite" && slug.current == $slug][0]{ "slug": slug.current, titel, einleitung, stand, inhalt, seoTitel, seoBeschreibung, ${BELEGE} }`,
-  sprachseiten: `*[_type == "sprachseite"]{ sprache, lang, richtung, name, nameDeutsch, gruss, titel, intro, seoTitel, seoBeschreibung, ui{ ..., navigation[]{ text, anker }, karten[]${LINK} }, formular{ ..., betreffOptionen[]{ wert, titel } }, kapazitaetshinweis{ text, status }, ${BELEGE} }`,
+  sprachseiten: `*[_type == "sprachseite"]{ sprache, lang, richtung, name, nameDeutsch, gruss, titel, intro, seoTitel, seoBeschreibung, ui{ ..., navigation[]{ text, anker }, karten[]${LINK}, "gruppen": { "anwaeltinnen-und-anwaelte": gruppen.anwaeltinnenUndAnwaelte, "substitutinnen-und-substituten": gruppen.substitutinnenUndSubstituten, "sekretariat": gruppen.sekretariat } }, formular{ ..., betreffOptionen[]{ wert, titel } }, kapazitaetshinweis{ text, status }, ${BELEGE} }`,
 } as const;
 
 // ── Normalisierung ─────────────────────────────────────────────────────────

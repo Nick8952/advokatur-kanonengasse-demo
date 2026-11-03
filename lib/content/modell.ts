@@ -176,7 +176,7 @@ export const teamSeiteSchema = z.strictObject({
   gruppen: z.strictObject({ "anwaeltinnen-und-anwaelte": kurz, "substitutinnen-und-substituten": kurz, sekretariat: kurz }),
   filter: z.strictObject({ titel: kurz, rechtsgebiet: kurz, sprache: kurz, alle: kurz, zuruecksetzen: kurz, treffer: kurz, keineTreffer: kurz, hinweis: text }),
   verlinkt: z.strictObject({ titel: kurz, text: text, links: z.array(z.strictObject({ name: kurz, beschreibung: kurz, ziel: https })).min(1) }),
-  profil: z.strictObject({ zurueck: kurz, funktion: kurz, sprachen: kurz, telefon: kurz, email: kurz, werdegang: kurz, fussnotenTitel: kurz, keineRechtsgebiete: kurz }),
+  profil: z.strictObject({ zurueck: kurz, funktion: kurz, sprachen: kurz, telefon: kurz, email: kurz, emailKanzlei: kurz, werdegang: kurz, fussnotenTitel: kurz, keineRechtsgebiete: kurz }),
   seoTitel: kurz,
   seoBeschreibung: z.string().min(50).max(170),
   belege: belegeSchema,
@@ -194,7 +194,7 @@ export const stelleSchema = z.strictObject({
   stand: kurz.nullable(),
   bloecke: z.array(blockSchema).min(1),
   bewerbung: z.strictObject({ text: text, email, person: slug }),
-});
+}).refine((s) => !s.veroeffentlichtAb || !s.archiviertAb || s.archiviertAb > s.veroeffentlichtAb, { message: "«Sichtbar bis» muss nach «Sichtbar ab» liegen", path: ["archiviertAb"] });
 export type Stelle = z.infer<typeof stelleSchema>;
 
 export const mitarbeitSeiteSchema = z.strictObject({
@@ -268,6 +268,7 @@ export const sprachseiteSchema = z.strictObject({
     rechtsgebieteTitel: kurz, rechtsgebieteText: text, teamTitel: kurz, teamText: text, nurDeutsch: kurz, zurDeutschenWebsite: kurz,
     kontaktTitel: kurz, hinweisTitel: kurz, impressum: kurz, datenschutz: kurz, demoHinweis: text, oeffnetNeuesFenster: kurz, gesprocheneSprachen: kurz,
     uebersetzungshinweis: text,
+    gruppen: z.strictObject({ "anwaeltinnen-und-anwaelte": kurz, "substitutinnen-und-substituten": kurz, sekretariat: kurz }),
   }),
   formular: z.strictObject({
     titel: kurz, einleitung: text, keineVertraulich: text, name: kurz, email: kurz, telefon: kurz, telefonHilfe: kurz, betreff: kurz,

@@ -100,14 +100,10 @@ const weiterleitungsDateien = new Set(weiterleitungen.map((w) => `${w.alt.slice(
   }
 }
 
-// CSP: jede Seite trägt das Meta-Tag, vercel.json denselben Wert plus frame-ancestors
-{
-  const vj = JSON.parse(await readFile(path.resolve(import.meta.dirname, "..", "vercel.json"), "utf8"));
-  const header = vj.headers?.[0]?.headers?.find((h) => h.key === "Content-Security-Policy")?.value ?? "";
-  const meta = (await readFile(path.join(WURZEL, "index.html"), "utf8")).match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/)?.[1];
-  if (!meta) fehler.push("Startseite ohne CSP-Meta");
-  else if (header !== `${meta.replace(/&#x27;/g, "'")}; frame-ancestors 'none'`) fehler.push(`vercel.json: CSP-Header weicht vom Meta-Tag ab («${header}» ≠ «${meta}; frame-ancestors 'none'»)`);
-}
+// CSP: jede Seite trägt dasselbe Meta-Tag vor allen Ressourcen, vercel.json denselben Wert plus frame-ancestors
+const cspHeader = JSON.parse(await readFile(path.resolve(import.meta.dirname, "..", "vercel.json"), "utf8")).headers?.[0]?.headers?.find((h) => h.key === "Content-Security-Policy")?.value ?? "";
+const cspErwartet = cspHeader.replace(/; frame-ancestors 'none'$/, "");
+if (cspErwartet === cspHeader) fehler.push("vercel.json: CSP-Header ohne frame-ancestors 'none'");
 let geprueft = 0;
 let maxJs = 0;
 for (const datei of seiten) {
@@ -159,7 +155,15 @@ for (const datei of seiten) {
       const ZIEL = { "de-CH": "/", "x-default": "/", en: "/en/", fr: "/fr/", it: "/it/", es: "/es/", ar: "/ar/" };
       for (const m of hreflangs) if (m[2] !== `${siteUrl}${ZIEL[m[1]] ?? "?"}`) fehler.push(`${rel}: hreflang ${m[1]} zeigt auf «${m[2]}», erwartet «${siteUrl}${ZIEL[m[1]]}»`);
     } else if (hreflangs.length) fehler.push(`${rel}: hreflang auf einer Seite ohne Sprachfassung`);
-    if (!/<meta http-equiv="Content-Security-Policy"/.test(html) && !istNextFehlerseite) fehler.push(`${rel}: CSP-Meta fehlt`);
+    {
+    const cspMeta = html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/);
+    if (!cspMeta) fehler.push(`${rel}: CSP-Meta fehlt`);
+    else {
+      if (cspMeta[1].replace(/&#x27;/g, "'") !== cspErwartet) fehler.push(`${rel}: CSP-Meta weicht von vercel.json ab`);
+      const ersteRessource = html.search(/<(link|script|style)\b/);
+      if (ersteRessource >= 0 && cspMeta.index > ersteRessource) fehler.push(`${rel}: CSP-Meta steht erst nach der ersten Ressource (wirkt dann nicht auf sie)`);
+    }
+  }
   const robotsTags = (html.match(/<meta name="robots"/g) ?? []).length;
     if (robotsTags > 1) fehler.push(`${rel}: ${robotsTags} robots-Metas (nur eines erlaubt)`);
   }

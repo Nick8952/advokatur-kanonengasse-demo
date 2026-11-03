@@ -98,6 +98,7 @@ Gebietsnamen (EN, FR, IT, ES, AR) sind Entwürfe (`status: entwurf` in `data/rec
 | Offene Stellen | «Rechtschriften», «inkl.» | «Rechtsschriften», «inklusive» | Schreibfehler, ausgeschriebene Abkürzung |
 | Partnerschaft | «Zweiterteam», «z.B.», «etc.» | «Zweierteam», «zum Beispiel», «und mehr» | Schreibfehler, ausgeschriebene Abkürzungen |
 | Datenschutz | «einfeache», «auf er Homepage», «Hauptanwendugnsprogramm», «auf die anwaltliche Schweigepflicht gebunden», «Rechtsanwältinnen und Rechtsanwälte verantwortlich» (Grammatik) | korrigiert | Schreib- und Grammatikfehler |
+| Datenschutz, Verantwortliche | «als einfeache Gesellschaft, bestehend aus …» | «verantwortlich, das heisst die auf der Website und im Briefkopf auftretenden Rechtsanwältinnen und Rechtsanwälte» | Rechtsform nicht ohne Bestätigung der Kanzlei (Auftrag); Frage in `docs/UEBERGABE.md` Nr. 3 |
 | Datenschutz, Rechte | «Art. 8 … 1992, bzw. nach dessen Inkrafttreten … Art. 25 … 2020» | «Artikel 25 des Bundesgesetzes über den Datenschutz vom 25. September 2020 (DSG)» | Das DSG 2020 ist seit 1. September 2023 in Kraft (Fedlex, Stand 7. Juli 2025) |
 | FR-Einführung | «nous distinguent» | «nous distingue» | Kongruenz (Subjekt Singular) |
 | IT-Einführung | Spiegelstriche, gerade Anführungszeichen | Kommas, «…» | Satzzeichen |

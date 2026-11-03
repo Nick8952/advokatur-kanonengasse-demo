@@ -134,7 +134,7 @@ function dokumenteBauen(): Doc[] {
   }
   for (const code of ["en", "fr", "it", "es", "ar"]) {
     const sp = lesen(`sprachen/${code}.json`);
-    docs.push({ _id: `sprachseite-${code}`, _type: "sprachseite", ...sp, ui: { ...sp.ui, navigation: liste(sp.ui.navigation, "abschnittLink"), karten: liste(sp.ui.karten, "verweis") }, formular: { ...sp.formular, betreffOptionen: liste(sp.formular.betreffOptionen, "betreffOption") }, belege: belege(sp.belege) });
+    docs.push({ _id: `sprachseite-${code}`, _type: "sprachseite", ...sp, ui: { ...sp.ui, navigation: liste(sp.ui.navigation, "abschnittLink"), karten: liste(sp.ui.karten, "verweis"), gruppen: { anwaeltinnenUndAnwaelte: sp.ui.gruppen["anwaeltinnen-und-anwaelte"], substitutinnenUndSubstituten: sp.ui.gruppen["substitutinnen-und-substituten"], sekretariat: sp.ui.gruppen.sekretariat } }, formular: { ...sp.formular, betreffOptionen: liste(sp.formular.betreffOptionen, "betreffOption") }, belege: belege(sp.belege) });
   }
   return docs;
 }
@@ -204,7 +204,11 @@ async function trockenlauf(liste2: Doc[]) {
   }
   gleich("Seite Kontakt", pruefen(kontaktSeiteSchema, proj("kontaktSeite"), "Import: Seite Kontakt"), await q.getKontaktSeite());
   for (const name of ["impressum", "datenschutz"] as const) gleich(`Rechtsseite ${name}`, pruefen(rechtSeiteSchema, mitBloecken(proj(`rechtSeite-${name}`) as Roh), `Import: ${name}`), await q.getRechtSeite(name));
-  for (const code of ["en", "fr", "it", "es", "ar"] as const) gleich(`Sprachseite ${code}`, pruefen(sprachseiteSchema, proj(`sprachseite-${code}`), `Import: Sprachseite ${code}`), await q.getSprachseite(code));
+  for (const code of ["en", "fr", "it", "es", "ar"] as const) {
+    const sp = proj(`sprachseite-${code}`) as Roh;
+    const ui = { ...sp.ui, gruppen: { "anwaeltinnen-und-anwaelte": sp.ui.gruppen.anwaeltinnenUndAnwaelte, "substitutinnen-und-substituten": sp.ui.gruppen.substitutinnenUndSubstituten, sekretariat: sp.ui.gruppen.sekretariat } };
+    gleich(`Sprachseite ${code}`, pruefen(sprachseiteSchema, { ...sp, ui }, `Import: Sprachseite ${code}`), await q.getSprachseite(code));
+  }
   if (unterschiede.length) {
     for (const u of unterschiede) if (process.env.DEBUG) console.error(u, JSON.stringify(vergleichbar(abgleich.get(u)?.[0]), null, 1), JSON.stringify(vergleichbar(abgleich.get(u)?.[1]), null, 1));
     throw new Error(`Import weicht vom lokalen Stand ab: ${unterschiede.join(", ")}. scripts/seed.mts und lib/content/sanity.ts abgleichen (DEBUG=1 zeigt beide Stände).`);

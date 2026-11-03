@@ -178,7 +178,9 @@ if (start.hero.titel.length > 60) fehler.push(`start.hero.titel: ${start.hero.ti
 // ── Sprachseiten ───────────────────────────────────────────────────────────
 for (const s of sprachseiten) {
   if (s.ui.zeiten.length !== k.telefonzeiten.zeiten.length) fehler.push(`Sprachseite ${s.sprache}: Anzahl Telefonzeiten weicht von kanzlei.json ab`);
-  for (const z of s.ui.zeiten) if (!/9|12|14|16/.test(z)) fehler.push(`Sprachseite ${s.sprache}: Telefonzeit «${z}» passt nicht zu 9 bis 12 und 14 bis 16 Uhr`);
+  // Beide Fenster vollständig: erstes 9 bis 12, zweites 14 bis 16 (beliebiges Zeitformat, auch «09.00» oder «9 h 00»)
+  const fenster = [/(^|\D)0?9\D.*(^|\D)12(\D|$)/, /(^|\D)14\D.*(^|\D)16(\D|$)/];
+  s.ui.zeiten.forEach((z, i) => { if (!fenster[i]?.test(z)) fehler.push(`Sprachseite ${s.sprache}: Telefonzeit ${i + 1} «${z}» entspricht nicht ${i === 0 ? "09.00 bis 12.00" : "14.00 bis 16.00"} Uhr`); });
   if (!/24/.test(s.kapazitaetshinweis.text)) fehler.push(`Sprachseite ${s.sprache}: Hinweis zu Anfragen nennt die 24 Stunden nicht`);
   // Der Hinweis beschreibt ausbleibende Rückmeldung; er darf in keiner Sprache eine Antwort zusagen.
   const ZUSAGE = /we will (reply|respond|answer|get back)|you will (hear|receive)|guarantee|nous (vous )?(répondrons|reviendrons)|garantissons|risponderemo|garantiamo|responderemos|garantizamos|سنرد|سنجيب|نضمن/i;

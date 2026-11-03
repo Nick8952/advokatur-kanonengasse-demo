@@ -87,16 +87,19 @@ export default async function Sprachseite({ params }: { params: Params }) {
             <p className="lauftext">{s.ui.teamText}</p>
           </div>
           {gruppen.map((g) => (
-            <ul key={g} className="fenster-raster fenster-raster-gebiete">
-              {personen.filter((p) => p.gruppe === g).map((p) => (
-                <li key={p.slug} className="fenster">
-                  <SmartLink ziel={pfade.person(p.slug)} className="fenster-link fenster-titel" hrefLang="de"><bdi dir="ltr">{p.vorname} {p.nachname}</bdi></SmartLink>
-                  <span className="fenster-text"><bdi dir="ltr" lang="de">{p.rolle}</bdi></span>
-                  <span className="fenster-text">{s.ui.gesprocheneSprachen}: {p.sprachen.map((x) => x.name).join(", ")}</span>
-                  <span className="fenster-text mt-auto pt-2"><bdi dir="ltr">{p.telefon}</bdi></span>
-                </li>
-              ))}
-            </ul>
+            <section key={g} aria-labelledby={`gruppe-${g}`} className="grid gap-3">
+              <h3 id={`gruppe-${g}`} className="titel-4">{s.ui.gruppen[g]}</h3>
+              <ul className="fenster-raster fenster-raster-gebiete">
+                {personen.filter((p) => p.gruppe === g).map((p) => (
+                  <li key={p.slug} className="fenster">
+                    <SmartLink ziel={pfade.person(p.slug)} className="fenster-link fenster-titel" hrefLang="de"><bdi dir="ltr">{p.vorname} {p.nachname}</bdi></SmartLink>
+                    <span className="fenster-text"><bdi dir="ltr" lang="de">{p.rolle}</bdi></span>
+                    <span className="fenster-text">{s.ui.gesprocheneSprachen}: <bdi dir="ltr" lang="de">{p.sprachen.map((x) => x.name).join(", ")}</bdi></span>
+                    <span className="fenster-text mt-auto pt-2"><bdi dir="ltr">{p.telefon}</bdi></span>
+                  </li>
+                ))}
+              </ul>
+            </section>
           ))}
         </div>
       </section>
