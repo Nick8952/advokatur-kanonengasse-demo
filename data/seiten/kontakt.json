@@ -1,0 +1,32 @@
+{
+  "titel": "Kontakt und Anfahrt",
+  "einleitung": "Termine nur gegen Voranmeldung. Rufen Sie während der Telefonzeiten an oder schreiben Sie eine E-Mail.",
+  "erreichbarkeitTitel": "Telefonzeiten",
+  "adresseTitel": "Adresse",
+  "anfahrtTitel": "So finden Sie uns",
+  "kartenHinweis": "Karten werden nicht eingebettet. Die Links führen zu externen Kartendiensten.",
+  "hinweis": {
+    "titel": "Hinweis zu Anfragen",
+    "text": "Besten Dank für Ihre Anfrage. Sollten Sie innerhalb von 24 Stunden keine Rückmeldung von uns erhalten, können Sie davon ausgehen, dass keiner unserer Anwältinnen und Anwälte Kapazitäten hat, Ihren Fall zu übernehmen.",
+    "zusatz": "Eine Anfrage begründet noch kein Mandat. Ein Mandat kommt erst zustande, wenn eine Anwältin oder ein Anwalt die Übernahme ausdrücklich bestätigt."
+  },
+  "formularTitel": "Nachricht vorbereiten",
+  "seoTitel": "Kontakt und Anfahrt",
+  "seoBeschreibung": "Kontakt zur advokatur kanonengasse: Militärstrasse 76, 8004 Zürich (1. Stock), Postfach 1012, 8021 Zürich, Telefonzeiten Montag bis Donnerstag, Termine nach Voranmeldung.",
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Kontaktseite der bisherigen Website (Telefonzeiten, Adresse, 1. Stock, Bus 31) und Hinweis zur Kapazität (Antworttext des Formulars)",
+        "url": "https://www.kanonengasse.ch/kontakt",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Zusatz zur Mandatsannahme formuliert für die Demo; Platzierung und Wortlaut gibt die Kanzlei frei",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

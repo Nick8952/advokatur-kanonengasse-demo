@@ -1,0 +1,64 @@
+{
+  "titel": "Mitarbeit und Partnerschaft",
+  "einleitung": "Die advokatur kanonengasse bildet jedes Jahr Substitutinnen und Substituten aus und ist als Bürogemeinschaft offen für selbständige Anwältinnen und Anwälte.",
+  "stellenTitel": "Offene Stellen",
+  "keineStellen": "Derzeit ist keine Stelle ausgeschrieben.",
+  "bewerbungTitel": "Bewerbung",
+  "standLabel": "Stand der Angaben",
+  "stellen": [
+    {
+      "slug": "anwaltspraktikum-substitut",
+      "titel": "Anwaltspraktikum / Substitut",
+      "status": "veroeffentlicht",
+      "veroeffentlichtAb": null,
+      "archiviertAb": null,
+      "stand": "Bisherige Website, abgerufen am 2. November 2026 (ohne Datum der Ausschreibung).",
+      "bloecke": [
+        { "art": "absatz", "inhalt": ["Die advokatur kanonengasse bietet jedes Jahr mehrere Stellen für Studienabgänger*innen an. Das Substitut dauert bei uns in der Regel 13 Monate bei einem Pensum zwischen 80 % und 100 %."] },
+        { "art": "absatz", "inhalt": ["Sie werden hauptsächlich im Asyl- und Ausländerrecht tätig sein, aber auch im Straf- und Familienrecht. Letztere Rechtsgebiete hängen massgeblich vom Vorhandensein der Venia ab, wobei wir Sie gerne unterstützen. Zu Ihren Tätigkeiten zählen das Verfassen von Rechtsschriften sowie die Kommunikation mit allen Verfahrensbeteiligten inklusive natürlich unseren Mandant*innen aus aller Welt. Gerade zu Beginn des Substitutenjahres werden Sie für die fallführenden Anwält*innen delegiert arbeiten, bevor Sie nach erfolgter Einführung eigene Mandate übernehmen. Dabei können Sie nicht nur Ihre juristischen Kenntnisse erweitern, sondern erhalten vom Erstgespräch bis zum Verfahrensabschluss einen umfassenden Einblick in die anwaltliche Tätigkeit."] },
+        { "art": "absatz", "inhalt": ["Sind Sie motiviert, Ihr Substitutenjahr im dynamischen Umfeld einer Kanzlei, welche die Menschen in den Vordergrund stellt, zu absolvieren? Haben Sie Erfahrungen im Bereich Asyl- und Ausländerrecht?"] }
+      ],
+      "bewerbung": {
+        "text": "Dann erwarten wir gerne Ihre Bewerbungsunterlagen mit einem kurzen Motivationsschreiben in elektronischer Form an Frau Patricia Berdin.",
+        "email": "berdin@kanonengasse.ch",
+        "person": "patricia-berdin"
+      }
+    }
+  ],
+  "partnerschaft": {
+    "slug": "partnerschaft",
+    "titel": "Partner:in bei uns werden?",
+    "status": "veroeffentlicht",
+    "stand": "Bisherige Website, abgerufen am 2. November 2026. Die Angabe «ab Januar 2026» stammt aus der Quelle.",
+    "bloecke": [
+      { "art": "absatz", "inhalt": [{ "text": "Selbständig als Anwält*in arbeiten? Partnerschaft ab Januar 2026 oder nach Vereinbarung möglich.", "fett": true }] },
+      { "art": "absatz", "inhalt": ["Wir sind eine kleinere erfahrene Kanzlei mit einigem Bekanntheitsgrad und Spezialisierung im Migrationsrecht sowie Straf- und Familienrecht als auch Mietrecht. Unser Engagement gilt nicht zuletzt auch den Interessen der «kleinen Leute» und Menschen mit Migrationshintergrund."] },
+      { "art": "absatz", "inhalt": ["Wir sind als Bürogemeinschaft organisiert und arbeiten alle wirtschaftlich selbständig. Eine Partnerschaft ist gegen Unkostenbeitrag und ohne «Einkauf» möglich."] },
+      { "art": "titel", "stufe": 3, "text": "Wir bieten", "anker": "wir-bieten" },
+      { "art": "liste", "punkte": [
+        ["moderne Räumlichkeiten mit Empfangsbereich, grossem und einladendem Sitzungszimmer, Pausenraum mit Küche, helle (bei Bedarf) möblierte Büros mit höhenverstellbaren Pulten und mehr;"],
+        ["zentrale Lage: 5 Gehminuten vom Hauptbahnhof;"],
+        ["neue und sichere IT-Lösung mit MS Office, auch für Homeoffice geeignet;"],
+        ["Sekretariat für namentlich Kundenempfang, Postadministration sowie Buchhaltung hinsichtlich Kanzleiinfrastruktur;"],
+        ["Überhang an täglichen Mandatsanfragen in unseren Fachgebieten."]
+      ] },
+      { "art": "titel", "stufe": 3, "text": "Wir suchen", "anker": "wir-suchen" },
+      { "art": "absatz", "inhalt": ["Engagierte Anwält*innen, die bereits selbständig sind oder den Schritt in die Selbständigkeit wagen wollen. Wir würden uns selbstverständlich auch über eine Erweiterung unseres bisherigen Tätigkeitsfeldes freuen."] },
+      { "art": "absatz", "inhalt": ["Möglich sind Einzeleintritte; da ab Januar 2026 ein ganzes Büro frei wird, wäre auch ein Beitritt von zum Beispiel einem Zweierteam im Bürosharing gut vorstellbar."] }
+    ],
+    "kontakteTitel": "Weitere Auskünfte erteilen auf Anfrage gern",
+    "kontakte": [
+      { "person": "manuela-schiller", "email": "schiller@kanonengasse.ch", "telefon": "+41 43 322 12 36" },
+      { "person": "urs-ebnoether", "email": "ebnoether@kanonengasse.ch", "telefon": "+41 43 322 12 14" }
+    ]
+  },
+  "seoTitel": "Mitarbeit und Partnerschaft",
+  "seoBeschreibung": "Anwaltspraktikum und Substitut bei der advokatur kanonengasse in Zürich sowie Partnerschaft in der Bürogemeinschaft für selbständige Anwältinnen und Anwälte.",
+  "belege": {
+    "herkunft": [
+      { "quelle": "Seite «Offene Stellen» der bisherigen Website", "url": "https://www.kanonengasse.ch/offene-stellen", "abgerufen": "2026-11-02", "art": "bisherige-website" },
+      { "quelle": "Seite «Partnerschaft» der bisherigen Website", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" }
+    ],
+    "freigabe": "demo"
+  }
+}

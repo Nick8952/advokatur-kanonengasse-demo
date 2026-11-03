@@ -1,0 +1,1600 @@
+{
+  "logo": {
+    "id": "logo",
+    "art": "logo",
+    "original": "assets/originale/kanone-logo.jpg",
+    "breite": 1280,
+    "hoehe": 233,
+    "alt": "advokatur kanonengasse",
+    "legende": null,
+    "nachweis": {
+      "urheber": "advokatur kanonengasse (Wortmarke der bisherigen Website)",
+      "titel": "Wortmarke «advokatur kanonengasse» auf schwarzem Grund",
+      "quelle": "https://static.wixstatic.com/media/d1de4f_e01b9b5accbe47d7ab403104e0605657~mv2.jpg (Kopfzeile der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungsrechte bei der Kanzlei, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 320,
+          "url": "/bilder/logo-320-ee533785.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/logo-480-1ad50a18.avif"
+        },
+        {
+          "breite": 640,
+          "url": "/bilder/logo-640-7003d650.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/logo-960-20953785.avif"
+        },
+        {
+          "breite": 1280,
+          "url": "/bilder/logo-1280-1645fff6.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 320,
+          "url": "/bilder/logo-320-fc077645.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/logo-480-9643a269.webp"
+        },
+        {
+          "breite": 640,
+          "url": "/bilder/logo-640-dccd9b45.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/logo-960-379fd73a.webp"
+        },
+        {
+          "breite": 1280,
+          "url": "/bilder/logo-1280-24063fec.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        1457,
+        1814,
+        3447,
+        3475,
+        5648
+      ],
+      "webp": [
+        1336,
+        2184,
+        3274,
+        5278,
+        6718
+      ]
+    }
+  },
+  "strassenfoto": {
+    "id": "strassenfoto",
+    "art": "foto",
+    "original": "assets/originale/strassenfoto_DSC0109.jpg",
+    "breite": 2000,
+    "hoehe": 1328,
+    "alt": "Strassenkreuzung im Zürcher Kreis 4: mehrstöckiges Geschäftshaus mit gleichmässigem Fensterraster, Fussgängerstreifen, Tramleitungen und grünen Markisen im Erdgeschoss",
+    "legende": "Im Zürcher Kreis 4, zwischen Hauptbahnhof und Langstrasse.",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Strassenfoto (Dateiname strassenfoto_DSC0109.jpg)",
+      "quelle": "https://static.wixstatic.com/media/d1de4f_2dc5e2ac1e624afba7ea62d38bdc942a~mv2_d_4288_2848_s_4_2.jpg (Kopfbild der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungsrechte bei der Kanzlei, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert (ohne den Ausschnitt der bisherigen Website)"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 640,
+          "url": "/bilder/strassenfoto-640-5a95fedb.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/strassenfoto-960-2c3cda1b.avif"
+        },
+        {
+          "breite": 1280,
+          "url": "/bilder/strassenfoto-1280-983b4805.avif"
+        },
+        {
+          "breite": 1600,
+          "url": "/bilder/strassenfoto-1600-fa119518.avif"
+        },
+        {
+          "breite": 2000,
+          "url": "/bilder/strassenfoto-2000-6ff9b341.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 640,
+          "url": "/bilder/strassenfoto-640-30823a12.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/strassenfoto-960-b37c509b.webp"
+        },
+        {
+          "breite": 1280,
+          "url": "/bilder/strassenfoto-1280-a3d96040.webp"
+        },
+        {
+          "breite": 1600,
+          "url": "/bilder/strassenfoto-1600-d0fc4988.webp"
+        },
+        {
+          "breite": 2000,
+          "url": "/bilder/strassenfoto-2000-d3494157.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        24473,
+        44360,
+        67965,
+        98545,
+        139849
+      ],
+      "webp": [
+        41292,
+        77464,
+        120438,
+        179714,
+        253818
+      ]
+    }
+  },
+  "urs-ebnoether": {
+    "id": "urs-ebnoether",
+    "art": "portrait",
+    "original": "assets/originale/urs-ebnoether.jpg",
+    "breite": 960,
+    "hoehe": 621,
+    "alt": "Urs Ebnöther, lächelnd, mit verschränkten Armen in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": "Urs Ebnöther, Rechtsanwalt, lic. iur., Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Urs Ebnöther",
+      "quelle": "https://www.kanonengasse.ch/urs-ebnoether (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/urs-ebnoether-480-593ed811.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/urs-ebnoether-720-bfcecd5c.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/urs-ebnoether-960-2b886cca.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/urs-ebnoether-480-cc6eb1b9.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/urs-ebnoether-720-98f59d79.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/urs-ebnoether-960-24059ff9.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2677,
+        4378,
+        6466
+      ],
+      "webp": [
+        2988,
+        5308,
+        8412
+      ]
+    }
+  },
+  "urs-ebnoether-quadrat": {
+    "id": "urs-ebnoether-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/urs-ebnoether.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Urs Ebnöther, lächelnd, mit verschränkten Armen in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Urs Ebnöther",
+      "quelle": "https://www.kanonengasse.ch/urs-ebnoether (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/urs-ebnoether-quadrat-240-1b1bc3ae.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/urs-ebnoether-quadrat-360-459c187d.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/urs-ebnoether-quadrat-480-2a1aa918.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/urs-ebnoether-quadrat-720-ba198be0.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/urs-ebnoether-quadrat-240-46e05f76.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/urs-ebnoether-quadrat-360-90db8166.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/urs-ebnoether-quadrat-480-08c747b8.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/urs-ebnoether-quadrat-720-c9bac2fe.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        1944,
+        3188,
+        4651,
+        7394
+      ],
+      "webp": [
+        2030,
+        3638,
+        5296,
+        9820
+      ]
+    }
+  },
+  "tarig-hassan": {
+    "id": "tarig-hassan",
+    "art": "portrait",
+    "original": "assets/originale/tarig-hassan.jpg",
+    "breite": 960,
+    "hoehe": 739,
+    "alt": "Tarig Hassan, lächelnd, mit verschränkten Armen in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": "Tarig Hassan, lic. iur., LL. M., Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Tarig Hassan",
+      "quelle": "https://www.kanonengasse.ch/tarig-hassan (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/tarig-hassan-480-40ea25a0.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tarig-hassan-720-2ba99e35.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/tarig-hassan-960-3a86b714.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/tarig-hassan-480-1d8155c8.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tarig-hassan-720-f4f52b4d.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/tarig-hassan-960-9f5f94ce.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        3391,
+        5373,
+        7401
+      ],
+      "webp": [
+        3748,
+        6522,
+        8830
+      ]
+    }
+  },
+  "tarig-hassan-quadrat": {
+    "id": "tarig-hassan-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/tarig-hassan.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Tarig Hassan, lächelnd, mit verschränkten Armen in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Tarig Hassan",
+      "quelle": "https://www.kanonengasse.ch/tarig-hassan (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/tarig-hassan-quadrat-240-289962c6.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/tarig-hassan-quadrat-360-5e7f5df4.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/tarig-hassan-quadrat-480-006af0c8.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tarig-hassan-quadrat-720-0a0dcd00.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/tarig-hassan-quadrat-240-9863e4a5.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/tarig-hassan-quadrat-360-94eefb29.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/tarig-hassan-quadrat-480-42ca2631.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tarig-hassan-quadrat-720-7fcb8caa.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2016,
+        3247,
+        4413,
+        7281
+      ],
+      "webp": [
+        2158,
+        3572,
+        4956,
+        8294
+      ]
+    }
+  },
+  "tobias-kazik": {
+    "id": "tobias-kazik",
+    "art": "portrait",
+    "original": "assets/originale/tobias-kazik.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Tobias Kazik mit Brille, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": "Tobias Kazik, Rechtsanwalt, MLaw, Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Tobias Kazik",
+      "quelle": "https://www.kanonengasse.ch/tobias-kazik (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/tobias-kazik-480-68845df5.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tobias-kazik-720-4c19cf00.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/tobias-kazik-960-8006ebdb.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/tobias-kazik-480-5a04e8cd.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tobias-kazik-720-a9811d90.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/tobias-kazik-960-128844f2.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2843,
+        4667,
+        6406
+      ],
+      "webp": [
+        3628,
+        6182,
+        8746
+      ]
+    }
+  },
+  "tobias-kazik-quadrat": {
+    "id": "tobias-kazik-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/tobias-kazik.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Tobias Kazik mit Brille, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Tobias Kazik",
+      "quelle": "https://www.kanonengasse.ch/tobias-kazik (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/tobias-kazik-quadrat-240-cdeb2b9b.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/tobias-kazik-quadrat-360-2d9f8cc3.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/tobias-kazik-quadrat-480-a15c1d8f.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tobias-kazik-quadrat-720-48e30c32.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/tobias-kazik-quadrat-240-c542addd.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/tobias-kazik-quadrat-360-5c3a0479.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/tobias-kazik-quadrat-480-39963ca0.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/tobias-kazik-quadrat-720-f3a3e913.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        1944,
+        3124,
+        4223,
+        6727
+      ],
+      "webp": [
+        2262,
+        3662,
+        5252,
+        9048
+      ]
+    }
+  },
+  "davide-loss": {
+    "id": "davide-loss",
+    "art": "portrait",
+    "original": "assets/originale/davide-loss.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Davide Loss mit Brille und Bart, lächelnd, in dunklem Anzug mit Krawatte vor hellem Hintergrund",
+    "legende": "Davide Loss, Rechtsanwalt, MLaw, Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Davide Loss",
+      "quelle": "https://www.kanonengasse.ch/davide-loss (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/davide-loss-480-ede16cca.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/davide-loss-720-16fe7084.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/davide-loss-960-d6a698a0.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/davide-loss-480-03e5e7ce.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/davide-loss-720-0c85b486.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/davide-loss-960-d121cdf9.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        3511,
+        6095,
+        9082
+      ],
+      "webp": [
+        4862,
+        8466,
+        12778
+      ]
+    }
+  },
+  "davide-loss-quadrat": {
+    "id": "davide-loss-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/davide-loss.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Davide Loss mit Brille und Bart, lächelnd, in dunklem Anzug mit Krawatte vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Davide Loss",
+      "quelle": "https://www.kanonengasse.ch/davide-loss (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/davide-loss-quadrat-240-2362b811.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/davide-loss-quadrat-360-67434578.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/davide-loss-quadrat-480-c6ddd56d.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/davide-loss-quadrat-720-f814f468.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/davide-loss-quadrat-240-81b657df.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/davide-loss-quadrat-360-3c188c89.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/davide-loss-quadrat-480-226e71a0.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/davide-loss-quadrat-720-909c3ce8.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2199,
+        3488,
+        5311,
+        9511
+      ],
+      "webp": [
+        2830,
+        4752,
+        7376,
+        13536
+      ]
+    }
+  },
+  "christian-mueller": {
+    "id": "christian-mueller",
+    "art": "portrait",
+    "original": "assets/originale/christian-mueller.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Christian Müller mit Bart, in dunklem Anzug mit Krawatte vor hellem Hintergrund",
+    "legende": "Christian Müller, Rechtsanwalt, MLaw LL.M., Associate",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Christian Müller",
+      "quelle": "https://www.kanonengasse.ch/christian-mueller (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/christian-mueller-480-418de3cb.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/christian-mueller-720-4f647543.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/christian-mueller-960-ad561773.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/christian-mueller-480-c6f1a012.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/christian-mueller-720-6a749d74.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/christian-mueller-960-64b26863.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2517,
+        4160,
+        5976
+      ],
+      "webp": [
+        3184,
+        5372,
+        7682
+      ]
+    }
+  },
+  "christian-mueller-quadrat": {
+    "id": "christian-mueller-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/christian-mueller.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Christian Müller mit Bart, in dunklem Anzug mit Krawatte vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Christian Müller",
+      "quelle": "https://www.kanonengasse.ch/christian-mueller (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/christian-mueller-quadrat-240-ad761f8b.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/christian-mueller-quadrat-360-39135afb.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/christian-mueller-quadrat-480-6a88538c.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/christian-mueller-quadrat-720-cbb30621.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/christian-mueller-quadrat-240-9eac7ef6.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/christian-mueller-quadrat-360-5481795d.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/christian-mueller-quadrat-480-f9e91387.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/christian-mueller-quadrat-720-81a8cc72.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        1759,
+        2654,
+        3737,
+        6609
+      ],
+      "webp": [
+        2062,
+        3288,
+        4794,
+        8380
+      ]
+    }
+  },
+  "manuela-schiller": {
+    "id": "manuela-schiller",
+    "art": "portrait",
+    "original": "assets/originale/manuela-schiller.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Manuela Schiller mit grauem Haar und grüner Brille, in gelbem Oberteil und schwarzer Jacke vor hellem Hintergrund",
+    "legende": "Manuela Schiller, Rechtsanwältin, lic. iur., Partnerin",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Manuela Schiller",
+      "quelle": "https://www.kanonengasse.ch/manuela-schiller (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/manuela-schiller-480-f7a45523.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/manuela-schiller-720-7a3022b9.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/manuela-schiller-960-78e0b57e.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/manuela-schiller-480-8e55bba0.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/manuela-schiller-720-f1df90f6.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/manuela-schiller-960-b486932f.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        4067,
+        7210,
+        11278
+      ],
+      "webp": [
+        5610,
+        10668,
+        16728
+      ]
+    }
+  },
+  "manuela-schiller-quadrat": {
+    "id": "manuela-schiller-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/manuela-schiller.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Manuela Schiller mit grauem Haar und grüner Brille, in gelbem Oberteil und schwarzer Jacke vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Manuela Schiller",
+      "quelle": "https://www.kanonengasse.ch/manuela-schiller (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/manuela-schiller-quadrat-240-26a36622.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/manuela-schiller-quadrat-360-74241143.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/manuela-schiller-quadrat-480-c2311ea6.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/manuela-schiller-quadrat-720-23d38b83.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/manuela-schiller-quadrat-240-c159d3a5.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/manuela-schiller-quadrat-360-1691c131.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/manuela-schiller-quadrat-480-9d84ce5b.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/manuela-schiller-quadrat-720-1501195b.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2273,
+        4171,
+        6365,
+        12659
+      ],
+      "webp": [
+        3286,
+        5690,
+        9210,
+        18854
+      ]
+    }
+  },
+  "nicolas-von-wartburg": {
+    "id": "nicolas-von-wartburg",
+    "art": "portrait",
+    "original": "assets/originale/nicolas-von-wartburg.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Nicolas von Wartburg, lächelnd, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": "Nicolas von Wartburg, Rechtsanwalt, MLaw, Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Nicolas von Wartburg",
+      "quelle": "https://www.kanonengasse.ch/nicolas-von-wartburg (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/nicolas-von-wartburg-480-307d56dc.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/nicolas-von-wartburg-720-003d807a.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/nicolas-von-wartburg-960-7986f180.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/nicolas-von-wartburg-480-108f273f.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/nicolas-von-wartburg-720-d500c8f5.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/nicolas-von-wartburg-960-8533bfb2.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        4102,
+        8058,
+        12772
+      ],
+      "webp": [
+        5496,
+        10908,
+        18292
+      ]
+    }
+  },
+  "nicolas-von-wartburg-quadrat": {
+    "id": "nicolas-von-wartburg-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/nicolas-von-wartburg.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Nicolas von Wartburg, lächelnd, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Nicolas von Wartburg",
+      "quelle": "https://www.kanonengasse.ch/nicolas-von-wartburg (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-240-af2693e1.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-360-3dad37a1.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-480-85e87ea9.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-720-ce0dca49.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-240-5c12939e.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-360-e1ebf17f.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-480-bfa57d59.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/nicolas-von-wartburg-quadrat-720-c82a5992.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2309,
+        4331,
+        7067,
+        14340
+      ],
+      "webp": [
+        2996,
+        5680,
+        9418,
+        20380
+      ]
+    }
+  },
+  "dominik-zuesli": {
+    "id": "dominik-zuesli",
+    "art": "portrait",
+    "original": "assets/originale/dominik-zuesli.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Dominik Züsli mit Brille, lächelnd, in dunklem Anzug mit dunkelroter Krawatte vor hellem Hintergrund",
+    "legende": "Dominik Züsli, Rechtsanwalt, MLaw, Partner",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Dominik Züsli",
+      "quelle": "https://www.kanonengasse.ch/dominik-zuesli (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/dominik-zuesli-480-baf3a343.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/dominik-zuesli-720-ea78fd9e.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/dominik-zuesli-960-b82931a3.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/dominik-zuesli-480-d3e0a939.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/dominik-zuesli-720-bcd01245.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/dominik-zuesli-960-ab2b33d5.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        3085,
+        5777,
+        8676
+      ],
+      "webp": [
+        4050,
+        7442,
+        11582
+      ]
+    }
+  },
+  "dominik-zuesli-quadrat": {
+    "id": "dominik-zuesli-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/dominik-zuesli.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Dominik Züsli mit Brille, lächelnd, in dunklem Anzug mit dunkelroter Krawatte vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Dominik Züsli",
+      "quelle": "https://www.kanonengasse.ch/dominik-zuesli (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/dominik-zuesli-quadrat-240-0bbcd83e.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/dominik-zuesli-quadrat-360-ebc3d58a.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/dominik-zuesli-quadrat-480-c71c03a8.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/dominik-zuesli-quadrat-720-77fe5436.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/dominik-zuesli-quadrat-240-09290672.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/dominik-zuesli-quadrat-360-2a4699b8.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/dominik-zuesli-quadrat-480-fd1cac80.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/dominik-zuesli-quadrat-720-1d66df30.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2145,
+        3301,
+        5183,
+        9688
+      ],
+      "webp": [
+        2416,
+        4214,
+        6576,
+        12794
+      ]
+    }
+  },
+  "florian-hoensch": {
+    "id": "florian-hoensch",
+    "art": "portrait",
+    "original": "assets/originale/florian-hoensch.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Florian Hönsch mit lockigem Haar, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": "Florian Hönsch, MLaw, Substitut",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Florian Hönsch",
+      "quelle": "https://www.kanonengasse.ch/florian-hoensch (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/florian-hoensch-480-3506e3d8.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/florian-hoensch-720-31cc4407.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/florian-hoensch-960-4146637f.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/florian-hoensch-480-f70016fc.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/florian-hoensch-720-348e2c48.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/florian-hoensch-960-b27910c3.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        3519,
+        6310,
+        9370
+      ],
+      "webp": [
+        4734,
+        8576,
+        12942
+      ]
+    }
+  },
+  "florian-hoensch-quadrat": {
+    "id": "florian-hoensch-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/florian-hoensch.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Florian Hönsch mit lockigem Haar, in dunklem Jackett und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Florian Hönsch",
+      "quelle": "https://www.kanonengasse.ch/florian-hoensch (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/florian-hoensch-quadrat-240-4ebd7687.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/florian-hoensch-quadrat-360-0e8a79dd.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/florian-hoensch-quadrat-480-a6d72db4.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/florian-hoensch-quadrat-720-d3a1e653.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/florian-hoensch-quadrat-240-2c23e8af.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/florian-hoensch-quadrat-360-42e07eb1.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/florian-hoensch-quadrat-480-aca69246.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/florian-hoensch-quadrat-720-fc986a22.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2434,
+        3753,
+        5880,
+        10687
+      ],
+      "webp": [
+        2798,
+        4998,
+        7738,
+        14484
+      ]
+    }
+  },
+  "leonie-roethlisberger": {
+    "id": "leonie-roethlisberger",
+    "art": "portrait",
+    "original": "assets/originale/leonie-roethlisberger.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Leonie Röthlisberger, lächelnd, mit dunklem Haar in schwarzem Blazer und weissem Hemd vor hellem Hintergrund",
+    "legende": "Leonie Röthlisberger, MLaw, Substitutin",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Leonie Röthlisberger",
+      "quelle": "https://www.kanonengasse.ch/leonie-roethlisberger (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/leonie-roethlisberger-480-51bf362a.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/leonie-roethlisberger-720-18c46f92.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/leonie-roethlisberger-960-4f41ee11.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/leonie-roethlisberger-480-2cb39f3d.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/leonie-roethlisberger-720-4dd0f93a.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/leonie-roethlisberger-960-a49eaae1.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        3663,
+        6790,
+        10455
+      ],
+      "webp": [
+        5406,
+        9986,
+        14234
+      ]
+    }
+  },
+  "leonie-roethlisberger-quadrat": {
+    "id": "leonie-roethlisberger-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/leonie-roethlisberger.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Leonie Röthlisberger, lächelnd, mit dunklem Haar in schwarzem Blazer und weissem Hemd vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Leonie Röthlisberger",
+      "quelle": "https://www.kanonengasse.ch/leonie-roethlisberger (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/leonie-roethlisberger-quadrat-240-5e00c98f.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/leonie-roethlisberger-quadrat-360-d81327cc.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/leonie-roethlisberger-quadrat-480-d457cdd5.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/leonie-roethlisberger-quadrat-720-32ccf0b8.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/leonie-roethlisberger-quadrat-240-09a5d1d5.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/leonie-roethlisberger-quadrat-360-90e1f3ce.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/leonie-roethlisberger-quadrat-480-cbc84ac9.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/leonie-roethlisberger-quadrat-720-31a2f12b.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2318,
+        3976,
+        6033,
+        11891
+      ],
+      "webp": [
+        3144,
+        5598,
+        8808,
+        15706
+      ]
+    }
+  },
+  "patricia-berdin": {
+    "id": "patricia-berdin",
+    "art": "portrait",
+    "original": "assets/originale/patricia-berdin.jpg",
+    "breite": 960,
+    "hoehe": 655,
+    "alt": "Patricia Berdin mit Brille und rotem Haar, in weissem Oberteil vor hellem Hintergrund",
+    "legende": "Patricia Berdin, Leiterin Sekretariat",
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Patricia Berdin",
+      "quelle": "https://www.kanonengasse.ch/patricia-berdin (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Unverändert, nur verkleinert und neu komprimiert"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 480,
+          "url": "/bilder/patricia-berdin-480-1a7f2d91.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/patricia-berdin-720-0f0e61ab.avif"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/patricia-berdin-960-2944cefd.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 480,
+          "url": "/bilder/patricia-berdin-480-225a1c04.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/patricia-berdin-720-59c7ed55.webp"
+        },
+        {
+          "breite": 960,
+          "url": "/bilder/patricia-berdin-960-4730904e.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        4347,
+        9802,
+        16462
+      ],
+      "webp": [
+        5826,
+        13914,
+        23204
+      ]
+    }
+  },
+  "patricia-berdin-quadrat": {
+    "id": "patricia-berdin-quadrat",
+    "art": "portrait-quadrat",
+    "original": "assets/originale/patricia-berdin.jpg",
+    "breite": 720,
+    "hoehe": 720,
+    "alt": "Patricia Berdin mit Brille und rotem Haar, in weissem Oberteil vor hellem Hintergrund",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt",
+      "titel": "Portrait Patricia Berdin",
+      "quelle": "https://www.kanonengasse.ch/patricia-berdin (Profilseite der bisherigen Website)",
+      "lizenz": "Nutzung in der Demo mit Zustimmung von Nick Holzbecher zum Download; Nutzungs- und Persönlichkeitsrechte bei der Kanzlei und der abgebildeten Person, Freigabe offen",
+      "bearbeitung": "Quadratischer Ausschnitt aus der Bildmitte über die volle Höhe (für die Teamübersicht); keine Retusche"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [
+        {
+          "breite": 240,
+          "url": "/bilder/patricia-berdin-quadrat-240-f4fab103.avif"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/patricia-berdin-quadrat-360-536bda35.avif"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/patricia-berdin-quadrat-480-f5773578.avif"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/patricia-berdin-quadrat-720-ad8a44a9.avif"
+        }
+      ],
+      "webp": [
+        {
+          "breite": 240,
+          "url": "/bilder/patricia-berdin-quadrat-240-55a7dea9.webp"
+        },
+        {
+          "breite": 360,
+          "url": "/bilder/patricia-berdin-quadrat-360-3255ed91.webp"
+        },
+        {
+          "breite": 480,
+          "url": "/bilder/patricia-berdin-quadrat-480-eca44c5f.webp"
+        },
+        {
+          "breite": 720,
+          "url": "/bilder/patricia-berdin-quadrat-720-6ca645a5.webp"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [
+        2289,
+        4385,
+        7547,
+        16304
+      ],
+      "webp": [
+        2568,
+        5282,
+        10110,
+        22448
+      ]
+    }
+  },
+  "og": {
+    "id": "og",
+    "art": "vorschau",
+    "original": "Montage aus assets/originale/strassenfoto_DSC0109.jpg und kanone-logo.jpg",
+    "breite": 1200,
+    "hoehe": 630,
+    "alt": "Wortmarke advokatur kanonengasse über dem Strassenfoto im Zürcher Kreis 4",
+    "legende": null,
+    "nachweis": {
+      "urheber": "Fotografin oder Fotograf auf der bisherigen Website nicht genannt; Wortmarke der Kanzlei",
+      "titel": "Vorschaubild für geteilte Links",
+      "quelle": "Montage von scripts/bilder-optimieren.mjs aus zwei Bildern der bisherigen Website",
+      "lizenz": "Nutzung in der Demo vorbehaltlich Freigabe durch die Kanzlei",
+      "bearbeitung": "Ausschnitt 1200 × 630 aus der Bildmitte, Wortmarke unverändert eingesetzt"
+    },
+    "abgerufen": "2026-11-03",
+    "quellen": {
+      "avif": [],
+      "webp": [
+        {
+          "breite": 1200,
+          "url": "/bilder/og-1200-f612b5dd.jpg"
+        }
+      ]
+    },
+    "bytes": {
+      "avif": [],
+      "webp": [
+        151128
+      ]
+    }
+  }
+}

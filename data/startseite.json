@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "titel": "Anwaltskanzlei im Zürcher Kreis 4",
+    "text": "Unser Einsatz für die Interessen «kleiner Leute», auch für Menschen mit Migrationshintergrund und im Asylbereich, macht uns zu einer speziellen Adresse.",
+    "sprachwahlTitel": "Informationen in Ihrer Sprache"
+  },
+  "kanzlei": {
+    "titel": "Die Kanzlei",
+    "absaetze": [
+      "Wir sind eine kleine Anwaltskanzlei im Zürcher Kreis 4. Wir freuen uns aber auch, unsere vielseitigen Erfahrungen in verschiedenen anderen Rechtsgebieten für Sie einzusetzen.",
+      "Die Anwältinnen und Anwälte der advokatur kanonengasse sind als Bürogemeinschaft organisiert und arbeiten wirtschaftlich selbständig."
+    ]
+  },
+  "foto": {
+    "legende": "Im Zürcher Kreis 4, zwischen Hauptbahnhof und Langstrasse."
+  },
+  "erreichbarkeit": {
+    "titel": "Erreichbarkeit"
+  },
+  "rechtsgebiete": {
+    "titel": "Rechtsgebiete",
+    "text": "Die Kanzlei nennt als Spezialisierung das Migrationsrecht sowie Straf-, Familien- und Mietrecht. Weitere Gebiete stehen in den einzelnen Profilen.",
+    "link": {
+      "text": "Alle Rechtsgebiete",
+      "ziel": "/rechtsgebiete/"
+    }
+  },
+  "team": {
+    "titel": "Team",
+    "text": "Partnerinnen und Partner, Rechtsanwältinnen und Rechtsanwälte, juristische Mitarbeitende und das Sekretariat.",
+    "link": {
+      "text": "Alle Profile",
+      "ziel": "/team/"
+    }
+  },
+  "mitarbeit": {
+    "titel": "Mitarbeit und Partnerschaft",
+    "partnerschaft": {
+      "titel": "Partner:in bei uns werden?",
+      "text": "Selbständig als Anwält*in arbeiten? Eine Partnerschaft in der Bürogemeinschaft ist gegen Unkostenbeitrag und ohne «Einkauf» möglich.",
+      "link": {
+        "text": "Zur Partnerschaft",
+        "ziel": "/mitarbeit/#partnerschaft"
+      }
+    },
+    "stellen": {
+      "titel": "Anwaltspraktikum und Substitut",
+      "text": "Die Kanzlei bietet jedes Jahr mehrere Stellen für Studienabgänger*innen an, hauptsächlich im Asyl- und Ausländerrecht.",
+      "link": {
+        "text": "Zu den offenen Stellen",
+        "ziel": "/mitarbeit/#offene-stellen"
+      }
+    }
+  },
+  "seoTitel": "Anwaltskanzlei im Zürcher Kreis 4",
+  "seoBeschreibung": "advokatur kanonengasse, Militärstrasse 76, Zürich: Bürogemeinschaft für Migrationsrecht, Strafrecht, Familienrecht und Mietrecht. Informationen in sechs Sprachen.",
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Startseite der bisherigen Website (Willkommenstext, Sprachwahl, Telefonzeiten)",
+        "url": "https://www.kanonengasse.ch/",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Partnerschaftsseite der bisherigen Website (Spezialisierung, Bürogemeinschaft, Unkostenbeitrag)",
+        "url": "https://www.kanonengasse.ch/partnerschaft",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Seite «Offene Stellen» der bisherigen Website (mehrere Stellen jährlich, Asyl- und Ausländerrecht)",
+        "url": "https://www.kanonengasse.ch/offene-stellen",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "sprache": "en",
+  "lang": "en",
+  "richtung": "ltr",
+  "name": "English",
+  "nameDeutsch": "Englisch",
+  "gruss": "welcome",
+  "titel": "Law firm in Zurich’s 4th district",
+  "intro": [
+    "We are a small law firm in the 4th district of Zurich. We specialize in assisting people in need, particularly those facing immigration and asylum issues, making advokatur kanonengasse a unique establishment.",
+    "In addition to our focus on immigration and asylum issues, we are happy to assist you with our expert knowledge in many other fields of law."
+  ],
+  "seoTitel": "Law firm in Zurich’s 4th district",
+  "seoBeschreibung": "advokatur kanonengasse, Militärstrasse 76, Zurich: a small law firm focusing on immigration and asylum, criminal, family and tenancy law. Phone hours Monday to Thursday.",
+  "ui": {
+    "navigation": [
+      {
+        "text": "Firm",
+        "anker": "kanzlei"
+      },
+      {
+        "text": "Areas of law",
+        "anker": "rechtsgebiete"
+      },
+      {
+        "text": "Team",
+        "anker": "team"
+      },
+      {
+        "text": "Contact",
+        "anker": "kontakt"
+      }
+    ],
+    "sprache": "Language",
+    "spracheWaehlen": "Choose language",
+    "zumInhalt": "Skip to content",
+    "zurStartseite": "advokatur kanonengasse, home page",
+    "telefonzeiten": "Telephone hours",
+    "tage": "Monday to Thursday",
+    "zeiten": [
+      "9:00 to 12:00",
+      "14:00 to 16:00"
+    ],
+    "terminhinweis": "Appointments only with advance reservation.",
+    "besuchsadresse": "Office address",
+    "postadresse": "Postal address",
+    "stockwerk": "1st floor, at the top of the stairs",
+    "telefon": "Phone",
+    "email": "Email",
+    "anrufen": "Call",
+    "anfahrt": "How to find us",
+    "anfahrtPunkte": [
+      "Bus 31 from Zurich main station to the stop «Kanonengasse».",
+      "About five minutes on foot from the main station."
+    ],
+    "karte": "Open map (external website)",
+    "karten": [
+      {
+        "text": "Map on OpenStreetMap",
+        "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      },
+      {
+        "text": "Map on Google Maps",
+        "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      }
+    ],
+    "rechtsgebieteTitel": "Areas of law",
+    "rechtsgebieteText": "Detailed descriptions and the assignment to individual lawyers are available in German.",
+    "teamTitel": "Team",
+    "teamText": "The profiles with background, languages and direct phone numbers are available in German.",
+    "nurDeutsch": "German only",
+    "zurDeutschenWebsite": "German website",
+    "kontaktTitel": "Contact",
+    "hinweisTitel": "Note on enquiries",
+    "impressum": "Legal notice",
+    "datenschutz": "Privacy policy",
+    "demoHinweis": "Draft: sales demo by Nick Holzbecher. This is not the official website of advokatur kanonengasse.",
+    "oeffnetNeuesFenster": "opens in a new window",
+    "uebersetzungshinweis": "The introduction is taken from the firm’s current website. All other texts on this page are translation drafts pending the firm’s approval.",
+    "gesprocheneSprachen": "Languages"
+  },
+  "formular": {
+    "titel": "Prepare a message",
+    "einleitung": "This form prepares an email to the firm in your own email program. The website does not send or store anything.",
+    "keineVertraulich": "Please do not include confidential documents or detailed case information. A mandate only comes into effect once the firm has expressly confirmed it.",
+    "name": "Name",
+    "email": "Email address",
+    "telefon": "Phone number",
+    "telefonHilfe": "Optional, for a call back during telephone hours.",
+    "betreff": "Subject",
+    "betreffOptionen": [
+      {
+        "wert": "general-enquiry",
+        "titel": "General enquiry"
+      },
+      {
+        "wert": "legal-representation",
+        "titel": "Request for advice or representation"
+      },
+      {
+        "wert": "appointment",
+        "titel": "Appointment request"
+      },
+      {
+        "wert": "other",
+        "titel": "Other"
+      }
+    ],
+    "betreffPraefix": "Enquiry via the website",
+    "nachricht": "Short message",
+    "nachrichtHilfe": "What is it about, and how can we best reach you?",
+    "pflicht": "Fields marked * are required.",
+    "absenden": "Prepare email",
+    "hinweisNachher": "Your email program should now open with the prepared message. Check the text and send it from there. If nothing opens, write directly to",
+    "fehlerName": "Please enter your name.",
+    "fehlerEmail": "Please enter a valid email address, for example name@example.com.",
+    "fehlerNachricht": "Please write a short message.",
+    "kopieren": "Copy message",
+    "kopiert": "The message has been copied to the clipboard.",
+    "kopierenFehler": "Copying was not possible. The full text is available below for selecting.",
+    "zuLangFehler": "The message is too long for a direct link and copying was not possible. The full text is available below for selecting.",
+    "volltextLabel": "Full message to copy",
+    "ohneJavascript": "Without JavaScript the form cannot prepare an email. Please write directly to",
+    "datenschutzHinweis": "How the firm handles personal data is described in the privacy policy (German).",
+    "datenschutzLink": "Privacy policy (German)"
+  },
+  "kapazitaetshinweis": {
+    "text": "Thank you for your enquiry. If you do not hear back from us within 24 hours, you may assume that none of our lawyers have sufficient capacity to take on your case.",
+    "status": "quelle"
+  },
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "English page «welcome» of the current website (introduction, telephone hours, capacity note)",
+        "url": "https://www.kanonengasse.ch/advokatur-en",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bedienelemente und Hinweise ins Englische übersetzt (Entwurf zur Freigabe)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

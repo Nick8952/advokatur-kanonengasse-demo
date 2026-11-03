@@ -1,0 +1,147 @@
+{
+  "sprache": "fr",
+  "lang": "fr",
+  "richtung": "ltr",
+  "name": "Français",
+  "nameDeutsch": "Französisch",
+  "gruss": "bienvenue",
+  "titel": "Cabinet d’avocats au Kreis 4 de Zurich",
+  "intro": [
+    "Nous sommes un cabinet d’avocats au Kreis 4 à Zurich. Notre engagement pour les intérêts des « petites gens », notamment en faveur des immigrés et des requérants d’asile, nous distingue des autres cabinets.",
+    "Cependant nous nous réjouirions de vous faire profiter de nos expériences dans divers autres domaines juridiques."
+  ],
+  "seoTitel": "Cabinet d’avocats au Kreis 4 de Zurich",
+  "seoBeschreibung": "advokatur kanonengasse, Militärstrasse 76, Zurich : cabinet engagé en droit des migrations et de l’asile, droit pénal, droit de la famille et droit du bail.",
+  "ui": {
+    "navigation": [
+      {
+        "text": "Cabinet",
+        "anker": "kanzlei"
+      },
+      {
+        "text": "Domaines",
+        "anker": "rechtsgebiete"
+      },
+      {
+        "text": "Équipe",
+        "anker": "team"
+      },
+      {
+        "text": "Contact",
+        "anker": "kontakt"
+      }
+    ],
+    "sprache": "Langue",
+    "spracheWaehlen": "Choisir la langue",
+    "zumInhalt": "Aller au contenu",
+    "zurStartseite": "advokatur kanonengasse, page d’accueil",
+    "telefonzeiten": "Permanence téléphonique",
+    "tage": "du lundi au jeudi",
+    "zeiten": [
+      "de 9 h 00 à 12 h 00",
+      "de 14 h 00 à 16 h 00"
+    ],
+    "terminhinweis": "Consultations uniquement sur rendez-vous.",
+    "besuchsadresse": "Adresse du cabinet",
+    "postadresse": "Adresse postale",
+    "stockwerk": "1er étage, en haut de l’escalier",
+    "telefon": "Téléphone",
+    "email": "E-mail",
+    "anrufen": "Appeler",
+    "anfahrt": "Comment nous trouver",
+    "anfahrtPunkte": [
+      "Bus 31 depuis la gare centrale jusqu’à l’arrêt « Kanonengasse ».",
+      "Environ cinq minutes à pied depuis la gare centrale."
+    ],
+    "karte": "Ouvrir la carte (site externe)",
+    "karten": [
+      {
+        "text": "Carte sur OpenStreetMap",
+        "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      },
+      {
+        "text": "Carte sur Google Maps",
+        "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      }
+    ],
+    "rechtsgebieteTitel": "Domaines juridiques",
+    "rechtsgebieteText": "Les descriptions détaillées et l’attribution aux avocates et avocats sont disponibles en allemand.",
+    "teamTitel": "Équipe",
+    "teamText": "Les profils avec parcours, langues et numéros directs sont disponibles en allemand.",
+    "nurDeutsch": "en allemand uniquement",
+    "zurDeutschenWebsite": "Site en allemand",
+    "kontaktTitel": "Contact",
+    "hinweisTitel": "Remarque concernant les demandes",
+    "impressum": "Mentions légales",
+    "datenschutz": "Protection des données",
+    "demoHinweis": "Projet : démonstration commerciale de Nick Holzbecher. Ceci n’est pas le site officiel de l’advokatur kanonengasse.",
+    "oeffnetNeuesFenster": "s’ouvre dans une nouvelle fenêtre",
+    "uebersetzungshinweis": "Le texte d’introduction provient du site actuel du cabinet. Les autres textes de cette page sont des projets de traduction soumis à l’approbation du cabinet.",
+    "gesprocheneSprachen": "Langues"
+  },
+  "formular": {
+    "titel": "Préparer un message",
+    "einleitung": "Ce formulaire prépare un e-mail au cabinet dans votre propre programme de messagerie. Le site n’envoie et n’enregistre rien.",
+    "keineVertraulich": "Merci de ne pas joindre de documents confidentiels ni de détails de votre dossier. Un mandat ne prend effet qu’après confirmation expresse du cabinet.",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "telefon": "Numéro de téléphone",
+    "telefonHilfe": "Facultatif, pour un rappel pendant la permanence téléphonique.",
+    "betreff": "Objet",
+    "betreffOptionen": [
+      {
+        "wert": "demande-generale",
+        "titel": "Demande générale"
+      },
+      {
+        "wert": "representation",
+        "titel": "Demande de conseil ou de représentation"
+      },
+      {
+        "wert": "rendez-vous",
+        "titel": "Demande de rendez-vous"
+      },
+      {
+        "wert": "autre",
+        "titel": "Autre"
+      }
+    ],
+    "betreffPraefix": "Demande via le site",
+    "nachricht": "Message bref",
+    "nachrichtHilfe": "De quoi s’agit-il et comment pouvons-nous vous joindre ?",
+    "pflicht": "Les champs marqués * sont obligatoires.",
+    "absenden": "Préparer l’e-mail",
+    "hinweisNachher": "Votre programme de messagerie devrait maintenant s’ouvrir avec le message préparé. Vérifiez le texte et envoyez-le depuis là. Si rien ne s’ouvre, écrivez directement à",
+    "fehlerName": "Veuillez indiquer votre nom.",
+    "fehlerEmail": "Veuillez indiquer une adresse e-mail valide, par exemple nom@exemple.ch.",
+    "fehlerNachricht": "Veuillez écrire un bref message.",
+    "kopieren": "Copier le message",
+    "kopiert": "Le message a été copié dans le presse-papiers.",
+    "kopierenFehler": "La copie n’a pas été possible. Le texte complet est disponible ci-dessous pour être sélectionné.",
+    "zuLangFehler": "Le message est trop long pour un lien direct et la copie n’a pas été possible. Le texte complet est disponible ci-dessous pour être sélectionné.",
+    "volltextLabel": "Message complet à copier",
+    "ohneJavascript": "Sans JavaScript, le formulaire ne peut pas préparer d’e-mail. Écrivez directement à",
+    "datenschutzHinweis": "Le traitement des données personnelles par le cabinet est décrit dans la déclaration de protection des données (en allemand).",
+    "datenschutzLink": "Protection des données (allemand)"
+  },
+  "kapazitaetshinweis": {
+    "text": "Nous vous remercions de votre demande. Si vous ne recevez pas de réponse de notre part dans les 24 heures, vous pouvez partir du principe qu’aucune de nos avocates et aucun de nos avocats n’a la capacité de prendre en charge votre dossier.",
+    "status": "entwurf"
+  },
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Französische Seite «bienvenue» der bisherigen Website (Einführung; Grammatik «nous distinguent» zu «nous distingue» korrigiert)",
+        "url": "https://www.kanonengasse.ch/advokatur-fr",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bedienelemente, Hinweise und Kapazitätshinweis ins Französische übersetzt (Entwurf zur Freigabe)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "navigation": [
+    { "text": "Kanzlei", "ziel": "/" },
+    { "text": "Rechtsgebiete", "ziel": "/rechtsgebiete/" },
+    { "text": "Team", "ziel": "/team/" },
+    { "text": "Mitarbeit", "ziel": "/mitarbeit/" },
+    { "text": "Kontakt", "ziel": "/kontakt/" }
+  ],
+  "sprachen": [
+    { "code": "de", "name": "Deutsch", "nameDeutsch": "Deutsch", "gruss": "Willkommen", "lang": "de-CH", "richtung": "ltr" },
+    { "code": "en", "name": "English", "nameDeutsch": "Englisch", "gruss": "welcome", "lang": "en", "richtung": "ltr" },
+    { "code": "fr", "name": "Français", "nameDeutsch": "Französisch", "gruss": "bienvenue", "lang": "fr", "richtung": "ltr" },
+    { "code": "ar", "name": "العربية", "nameDeutsch": "Arabisch", "gruss": "مرحبا", "lang": "ar", "richtung": "rtl" },
+    { "code": "it", "name": "Italiano", "nameDeutsch": "Italienisch", "gruss": "benvenuti", "lang": "it", "richtung": "ltr" },
+    { "code": "es", "name": "Español", "nameDeutsch": "Spanisch", "gruss": "bienvenidos", "lang": "es", "richtung": "ltr" }
+  ],
+  "kopf": {
+    "logoAlt": "advokatur kanonengasse",
+    "zurStartseite": "advokatur kanonengasse, zur Startseite",
+    "sprache": "Sprache",
+    "spracheWaehlen": "Sprache wählen",
+    "aktuelleSprache": "aktuelle Sprache",
+    "anrufen": "Anrufen",
+    "navigationLabel": "Seiten",
+    "sprachenLabel": "Sprachen"
+  },
+  "ui": {
+    "zumInhalt": "Zum Inhalt springen",
+    "oeffnetNeuesFenster": "öffnet in einem neuen Fenster",
+    "telefonzeiten": "Telefonzeiten",
+    "terminhinweis": "Termine nur gegen Voranmeldung.",
+    "besuchsadresse": "Besuchsadresse",
+    "postadresse": "Postadresse",
+    "telefon": "Telefon",
+    "email": "E-Mail",
+    "anrufen": "Anrufen",
+    "kontaktAufnehmen": "Kontakt und Anfahrt",
+    "mehr": "Mehr",
+    "nurDeutsch": "nur auf Deutsch",
+    "personenLabel": "Ansprechpersonen",
+    "nichtGefundenTitel": "Diese Seite gibt es nicht",
+    "nichtGefundenText": "Die Adresse ist falsch geschrieben, oder die Seite wurde verschoben. Über die Navigation finden Sie alle Seiten der Kanzlei.",
+    "nichtGefundenLink": { "text": "Zur Startseite", "ziel": "/" },
+    "schliessen": "Schliessen",
+    "stand": "Stand der Angaben",
+    "kapazitaetshinweisTitel": "Hinweis zu Anfragen",
+    "entwurf": "Entwurf"
+  },
+  "footer": {
+    "kontaktTitel": "Kontakt",
+    "sprachenTitel": "Sprachen",
+    "seitenTitel": "Seiten",
+    "rechtliches": [
+      { "text": "Impressum", "ziel": "/impressum/" },
+      { "text": "Datenschutz", "ziel": "/datenschutz/" }
+    ],
+    "einstellungen": "Datenschutz-Einstellungen",
+    "bildnachweis": { "text": "Bildnachweis", "ziel": "/impressum/#bildnachweis" },
+    "demoHinweis": "Entwurf: Verkaufs-Demo von Nick Holzbecher. Dies ist nicht die offizielle Website der advokatur kanonengasse.",
+    "copyright": "© 2026 advokatur kanonengasse"
+  },
+  "formular": {
+    "titel": "Nachricht vorbereiten",
+    "einleitung": "Das Formular bereitet eine E-Mail an die Kanzlei in Ihrem eigenen E-Mail-Programm vor. Die Website sendet und speichert nichts.",
+    "keineVertraulich": "Bitte keine vertraulichen Unterlagen und keine ausführlichen Falldetails. Ein Mandat kommt erst durch eine ausdrückliche Bestätigung der Kanzlei zustande.",
+    "name": "Name",
+    "email": "E-Mail-Adresse",
+    "telefon": "Telefonnummer",
+    "telefonHilfe": "Freiwillig, für einen Rückruf während der Telefonzeiten.",
+    "betreff": "Betreff",
+    "betreffOptionen": [
+      { "wert": "allgemeine-anfrage", "titel": "Allgemeine Anfrage" },
+      { "wert": "rechtsvertretung", "titel": "Anfrage für Beratung oder Vertretung" },
+      { "wert": "termin", "titel": "Terminanfrage" },
+      { "wert": "mitarbeit", "titel": "Mitarbeit oder Partnerschaft" },
+      { "wert": "anderes", "titel": "Anderes" }
+    ],
+    "betreffPraefix": "Anfrage über die Website",
+    "nachricht": "Kurze Nachricht",
+    "nachrichtHilfe": "Worum geht es, und wie erreichen wir Sie am besten?",
+    "pflicht": "Felder mit * sind erforderlich.",
+    "absenden": "E-Mail vorbereiten",
+    "hinweisNachher": "Ihr E-Mail-Programm sollte sich jetzt mit der vorbereiteten Nachricht öffnen. Prüfen Sie den Text und senden Sie ihn dort ab. Öffnet sich nichts, schreiben Sie direkt an",
+    "fehlerName": "Bitte geben Sie Ihren Namen an.",
+    "fehlerEmail": "Bitte geben Sie eine gültige E-Mail-Adresse an, zum Beispiel name@beispiel.ch.",
+    "fehlerNachricht": "Bitte schreiben Sie eine kurze Nachricht.",
+    "kopieren": "Nachricht kopieren",
+    "kopiert": "Die Nachricht ist in der Zwischenablage.",
+    "kopierenFehler": "Kopieren war nicht möglich. Der vollständige Text steht unten zum Markieren bereit.",
+    "zuLangFehler": "Die Nachricht ist zu lang für einen direkten Link, und das Kopieren war nicht möglich. Der vollständige Text steht unten zum Markieren bereit.",
+    "volltextLabel": "Vollständige Nachricht zum Kopieren",
+    "ohneJavascript": "Ohne JavaScript bereitet das Formular keine E-Mail vor. Schreiben Sie direkt an",
+    "datenschutzHinweis": "Wie die Kanzlei mit Personendaten umgeht, steht in der",
+    "datenschutzLink": { "text": "Datenschutzerklärung", "ziel": "/datenschutz/" }
+  },
+  "einwilligung": {
+    "bannerTitel": "Datenschutz-Einstellungen",
+    "bannerText": "Diese Website kann optionale Dienste Dritter einbinden. Sie werden erst geladen, wenn Sie zustimmen. Einzelheiten stehen in der",
+    "alleAkzeptieren": "Alle akzeptieren",
+    "nurNotwendige": "Nur notwendige",
+    "einstellungen": "Einstellungen",
+    "auswahlSpeichern": "Auswahl speichern",
+    "widerrufen": "Einwilligung widerrufen",
+    "notwendigTitel": "Notwendig",
+    "notwendigText": "Für die Darstellung der Website nötig. Es werden keine Cookies gesetzt.",
+    "ruhendTitel": "Datenschutz-Einstellungen",
+    "ruhendText": "Diese Website setzt keine Cookies, keine Analysewerkzeuge und keine eingebetteten Dienste Dritter ein. Es gibt deshalb nichts einzustellen.",
+    "datenschutzerklaerung": "Datenschutzerklärung",
+    "kategorien": []
+  },
+  "seo": {
+    "titelZusatz": "advokatur kanonengasse",
+    "beschreibung": "advokatur kanonengasse, Militärstrasse 76, Zürich: Bürogemeinschaft von Anwältinnen und Anwälten für Migrationsrecht, Strafrecht, Familienrecht und Mietrecht."
+  },
+  "demoHinweis": "Entwurf: Verkaufs-Demo, nicht die offizielle Website der advokatur kanonengasse."
+}

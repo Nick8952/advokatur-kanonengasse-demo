@@ -1,0 +1,146 @@
+{
+  "sprache": "it",
+  "lang": "it",
+  "richtung": "ltr",
+  "name": "Italiano",
+  "nameDeutsch": "Italienisch",
+  "gruss": "benvenuti",
+  "titel": "Studio legale nel Kreis 4 di Zurigo",
+  "intro": [
+    "Il nostro piccolo studio legale si trova a Zurigo, nel «Kreis 4». Lottare per i diritti dei meno ricchi, e anche per quelli degli stranieri e dei rifugiati, è una delle nostre specialità. Ma è chiaro che trattiamo con grande piacere ed impegno anche altre questioni giuridiche."
+  ],
+  "seoTitel": "Studio legale nel Kreis 4 di Zurigo",
+  "seoBeschreibung": "advokatur kanonengasse, Militärstrasse 76, Zurigo: studio legale impegnato in diritto migratorio e d’asilo, diritto penale, diritto di famiglia e di locazione.",
+  "ui": {
+    "navigation": [
+      {
+        "text": "Studio",
+        "anker": "kanzlei"
+      },
+      {
+        "text": "Aree del diritto",
+        "anker": "rechtsgebiete"
+      },
+      {
+        "text": "Team",
+        "anker": "team"
+      },
+      {
+        "text": "Contatto",
+        "anker": "kontakt"
+      }
+    ],
+    "sprache": "Lingua",
+    "spracheWaehlen": "Scegliere la lingua",
+    "zumInhalt": "Vai al contenuto",
+    "zurStartseite": "advokatur kanonengasse, pagina iniziale",
+    "telefonzeiten": "Orari telefonici",
+    "tage": "dal lunedì al giovedì",
+    "zeiten": [
+      "dalle 9.00 alle 12.00",
+      "dalle 14.00 alle 16.00"
+    ],
+    "terminhinweis": "Appuntamenti solo su prenotazione.",
+    "besuchsadresse": "Indirizzo dello studio",
+    "postadresse": "Indirizzo postale",
+    "stockwerk": "1° piano, in cima alle scale",
+    "telefon": "Telefono",
+    "email": "E-mail",
+    "anrufen": "Chiama",
+    "anfahrt": "Come raggiungerci",
+    "anfahrtPunkte": [
+      "Bus 31 dalla stazione centrale fino alla fermata «Kanonengasse».",
+      "Circa cinque minuti a piedi dalla stazione centrale."
+    ],
+    "karte": "Apri la mappa (sito esterno)",
+    "karten": [
+      {
+        "text": "Mappa su OpenStreetMap",
+        "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      },
+      {
+        "text": "Mappa su Google Maps",
+        "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      }
+    ],
+    "rechtsgebieteTitel": "Aree del diritto",
+    "rechtsgebieteText": "Le descrizioni dettagliate e l’attribuzione alle singole avvocate e ai singoli avvocati sono disponibili in tedesco.",
+    "teamTitel": "Team",
+    "teamText": "I profili con percorso, lingue e numeri diretti sono disponibili in tedesco.",
+    "nurDeutsch": "solo in tedesco",
+    "zurDeutschenWebsite": "Sito in tedesco",
+    "kontaktTitel": "Contatto",
+    "hinweisTitel": "Nota sulle richieste",
+    "impressum": "Note legali",
+    "datenschutz": "Protezione dei dati",
+    "demoHinweis": "Bozza: demo di vendita di Nick Holzbecher. Questo non è il sito ufficiale dell’advokatur kanonengasse.",
+    "oeffnetNeuesFenster": "si apre in una nuova finestra",
+    "uebersetzungshinweis": "Il testo introduttivo proviene dal sito attuale dello studio. Gli altri testi di questa pagina sono bozze di traduzione in attesa dell’approvazione dello studio.",
+    "gesprocheneSprachen": "Lingue"
+  },
+  "formular": {
+    "titel": "Preparare un messaggio",
+    "einleitung": "Questo modulo prepara un’e-mail allo studio nel Suo programma di posta elettronica. Il sito non invia né salva nulla.",
+    "keineVertraulich": "La preghiamo di non allegare documenti riservati né dettagli del Suo caso. Un mandato ha effetto solo dopo la conferma espressa dello studio.",
+    "name": "Nome",
+    "email": "Indirizzo e-mail",
+    "telefon": "Numero di telefono",
+    "telefonHilfe": "Facoltativo, per essere richiamati durante gli orari telefonici.",
+    "betreff": "Oggetto",
+    "betreffOptionen": [
+      {
+        "wert": "richiesta-generale",
+        "titel": "Richiesta generale"
+      },
+      {
+        "wert": "rappresentanza",
+        "titel": "Richiesta di consulenza o rappresentanza"
+      },
+      {
+        "wert": "appuntamento",
+        "titel": "Richiesta di appuntamento"
+      },
+      {
+        "wert": "altro",
+        "titel": "Altro"
+      }
+    ],
+    "betreffPraefix": "Richiesta tramite il sito",
+    "nachricht": "Breve messaggio",
+    "nachrichtHilfe": "Di cosa si tratta e come possiamo raggiungerLa?",
+    "pflicht": "I campi contrassegnati con * sono obbligatori.",
+    "absenden": "Prepara l’e-mail",
+    "hinweisNachher": "Il Suo programma di posta dovrebbe ora aprirsi con il messaggio preparato. Controlli il testo e lo invii da lì. Se non si apre nulla, scriva direttamente a",
+    "fehlerName": "Indichi per favore il Suo nome.",
+    "fehlerEmail": "Indichi per favore un indirizzo e-mail valido, ad esempio nome@esempio.ch.",
+    "fehlerNachricht": "Scriva per favore un breve messaggio.",
+    "kopieren": "Copia il messaggio",
+    "kopiert": "Il messaggio è stato copiato negli appunti.",
+    "kopierenFehler": "La copia non è riuscita. Il testo completo è disponibile qui sotto per essere selezionato.",
+    "zuLangFehler": "Il messaggio è troppo lungo per un link diretto e la copia non è riuscita. Il testo completo è disponibile qui sotto per essere selezionato.",
+    "volltextLabel": "Messaggio completo da copiare",
+    "ohneJavascript": "Senza JavaScript il modulo non può preparare un’e-mail. Scriva direttamente a",
+    "datenschutzHinweis": "Il trattamento dei dati personali da parte dello studio è descritto nell’informativa sulla protezione dei dati (in tedesco).",
+    "datenschutzLink": "Protezione dei dati (tedesco)"
+  },
+  "kapazitaetshinweis": {
+    "text": "La ringraziamo per la Sua richiesta. Se entro 24 ore non riceve una nostra risposta, può presumere che nessuna delle nostre avvocate e nessuno dei nostri avvocati abbia la capacità di assumere il Suo caso.",
+    "status": "entwurf"
+  },
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Italienische Seite «benvenuti» der bisherigen Website (Einführung; Gedankenstriche durch Kommas ersetzt, Anführungszeichen vereinheitlicht)",
+        "url": "https://www.kanonengasse.ch/advokatur-it",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bedienelemente, Hinweise und Kapazitätshinweis ins Italienische übersetzt (Entwurf zur Freigabe)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

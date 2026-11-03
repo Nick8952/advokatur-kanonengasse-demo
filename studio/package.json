@@ -1,0 +1,26 @@
+{
+  "name": "advokatur-kanonengasse-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sanity Studio für die Website der advokatur kanonengasse (vorbereitet, noch mit keinem Projekt verbunden)",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "typecheck": "tsc --noEmit",
+    "schema:pruefen": "sanity schema validate"
+  },
+  "dependencies": {
+    "@sanity/locale-de-de": "^1.1.37",
+    "@sanity/vision": "^6.21.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sanity": "^6.21.0",
+    "styled-components": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19.3.0",
+    "typescript": "^5"
+  }
+}

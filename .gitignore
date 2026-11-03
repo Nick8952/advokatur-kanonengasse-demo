@@ -1,0 +1,38 @@
+# Abhängigkeiten
+/node_modules
+/studio/node_modules
+/studio/dist
+/studio/.sanity
+
+# Next.js
+/.next/
+/out/
+
+# Umgebungsvariablen (nie committen); die Beispieldatei bleibt versioniert
+.env*
+!.env.example
+
+# Vercel / TypeScript
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Gespiegelte Bilder aus Sanity (entstehen bei jedem Build mit CONTENT_SOURCE=sanity)
+/public/bilder/cms/
+/data/cms-bilder.json
+
+# Erzeugte Weiterleitungsseiten für alte Adressen (scripts/weiterleitungen.mjs schreibt sie vor jedem Build)
+/public/*.html
+
+# Lokale Prüfausgaben (Audit-Berichte, Screenshots, Lighthouse)
+/pruefung
+
+# System
+.DS_Store
+npm-debug.log*
+
+# Chrome for Testing für die Browser-Prüfungen (npx @puppeteer/browsers install chrome@<Version>), nie versionieren
+/chrome/
+
+# Erzeugte Sitemap (scripts/sitemap-schreiben.mts, nur mit INDEXIERUNG=1)
+/public/sitemap.xml

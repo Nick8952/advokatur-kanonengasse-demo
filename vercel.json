@@ -1,0 +1,124 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build:vercel",
+  "installCommand": "npm ci",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/urs-ebnoether",
+      "destination": "/team/urs-ebnoether/",
+      "permanent": true
+    },
+    {
+      "source": "/tarig-hassan",
+      "destination": "/team/tarig-hassan/",
+      "permanent": true
+    },
+    {
+      "source": "/tobias-kazik",
+      "destination": "/team/tobias-kazik/",
+      "permanent": true
+    },
+    {
+      "source": "/davide-loss",
+      "destination": "/team/davide-loss/",
+      "permanent": true
+    },
+    {
+      "source": "/christian-mueller",
+      "destination": "/team/christian-mueller/",
+      "permanent": true
+    },
+    {
+      "source": "/manuela-schiller",
+      "destination": "/team/manuela-schiller/",
+      "permanent": true
+    },
+    {
+      "source": "/nicolas-von-wartburg",
+      "destination": "/team/nicolas-von-wartburg/",
+      "permanent": true
+    },
+    {
+      "source": "/dominik-zuesli",
+      "destination": "/team/dominik-zuesli/",
+      "permanent": true
+    },
+    {
+      "source": "/florian-hoensch",
+      "destination": "/team/florian-hoensch/",
+      "permanent": true
+    },
+    {
+      "source": "/leonie-roethlisberger",
+      "destination": "/team/leonie-roethlisberger/",
+      "permanent": true
+    },
+    {
+      "source": "/patricia-berdin",
+      "destination": "/team/patricia-berdin/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-fr",
+      "destination": "/fr/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-1",
+      "destination": "/ar/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-it",
+      "destination": "/it/",
+      "permanent": true
+    },
+    {
+      "source": "/advokatur-es",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/offene-stellen",
+      "destination": "/mitarbeit/#offene-stellen",
+      "permanent": true
+    },
+    {
+      "source": "/partnerschaft",
+      "destination": "/mitarbeit/#partnerschaft",
+      "permanent": true
+    }
+  ]
+}

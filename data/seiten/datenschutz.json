@@ -1,0 +1,108 @@
+{
+  "slug": "datenschutz",
+  "titel": "Datenschutzerklärung",
+  "einleitung": "Entwurf für die Verkaufs-Demo. Die Abschnitte zur Geschäftstätigkeit stammen von der bisherigen Website der Kanzlei; der Abschnitt zur Website beschreibt die tatsächlich eingesetzte Technik dieser Demo. Die Kanzlei gibt den Text vor dem Produktivbetrieb frei.",
+  "stand": "3. November 2026",
+  "bloecke": [
+    "Der Schutz Ihrer Personendaten, welche die advokatur kanonengasse (nachfolgend auch «wir» oder «uns») im Rahmen der Geschäftstätigkeit erhebt und bearbeitet, ist uns ein wichtiges Anliegen. Wir bearbeiten Personendaten nach den Vorgaben des schweizerischen Datenschutzgesetzes (nachfolgend «DSG») und, sofern und soweit anwendbar, nach der Datenschutz-Grundverordnung der Europäischen Union (nachfolgend «DSGVO»).",
+    "Die nachfolgende Datenschutzerklärung gibt Auskunft darüber, wie und zu welchen Zwecken wir Ihre Personendaten bearbeiten sowie welche Rechte Ihnen dabei zustehen. Als «Personendaten» gelten alle Angaben und Informationen, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen.",
+    {
+      "titel": "Verantwortliche"
+    },
+    "Für die Bearbeitung Ihrer Personendaten gemäss dieser Datenschutzerklärung ist die advokatur kanonengasse als einfache Gesellschaft verantwortlich, bestehend aus den auf der Website und im Briefkopf auftretenden Rechtsanwältinnen und Rechtsanwälten. Sie schliessen Verträge mit Dritten und Hilfspersonen, die alle an die anwaltliche Schweigepflicht gebunden sind. Hauptdienstleistungspartner sind die Kanonengasse Kanzlei GmbH und die Care4IT GmbH, über die Hauptanwendungsprogramme Abacus und Plato auch deren Anbieterin All Consulting AG.",
+    "Name und Anschrift der für die Bearbeitung Verantwortlichen: advokatur kanonengasse, Militärstrasse 76, 8004 Zürich; Postadresse Postfach 1012, 8021 Zürich; E-Mail [kanzlei@kanonengasse.ch](mailto:kanzlei@kanonengasse.ch).",
+    {
+      "titel": "1. Personendaten und Bearbeitungszwecke im Rahmen unserer Geschäftstätigkeit"
+    },
+    "Im Rahmen eines Mandatsverhältnisses bearbeiten wir folgende Personendaten:",
+    {
+      "liste": [
+        "**Klientendaten und Daten für die Mandatsverwaltung:** Vor- und Nachname sowie Kontaktangaben der Ansprechpersonen, Position und Titel, zugehöriges Unternehmen / Stelle, Branche, allfällige Querverbindungen (zum Beispiel Gesellschafterin / Gesellschafter oder nahestehende Personen) und weitere Hintergrundinformationen aus öffentlich zugänglichen Quellen (zum Beispiel Handelsregister), allfällige zuweisende Person, Inhalte von Anfrage und Mandat, Gegenparteien und deren Vertreterin / Vertreter sowie weitere Angaben zur Prüfung allfälliger Interessenkonflikte.",
+        "**Mandatsdaten:** Kommunikation mit Klientinnen / Klienten, Gerichten, Gegenanwältinnen / Gegenanwälten und Dritten, Beratungsdokumentation, Informationen, die uns im Rahmen unserer Dienstleistungen von oder für die Klientinnen / Klienten, von Gegenparteien, Gerichten, Behörden und weiteren Verfahrensbeteiligten bekanntgegeben werden oder die wir im Rahmen unserer Dienstleistungen erstellen.",
+        "**Leistungs- und Abrechnungsdaten:** Angaben über die erbrachten und abgerechneten Leistungen, Rechnungsdaten, Leistungsnachweise, Rechnungen, Zahlungen, Bankverbindungen."
+      ]
+    },
+    "Wir bearbeiten die Personendaten hauptsächlich, um unsere Dienstleistungen zu erbringen, zu dokumentieren, abzurechnen und zu verbessern. Dazu gehört die Bearbeitung zur Erfüllung rechtlicher Anforderungen (zum Beispiel zur Prüfung allfälliger Interessenkonflikte) und zur Durchsetzung beziehungsweise Abwehr von Rechtsansprüchen. Wir bearbeiten die Personendaten unserer Klientinnen / Klienten auch, um mit ihnen zu kommunizieren, Anfragen zu beantworten und ihnen Informationen über unsere Kanzlei und Einladungen zu Anlässen, Kursen, Konferenzen oder Vorträgen zuzustellen.",
+    {
+      "titel": "1.1 Weitergabe von Personendaten",
+      "stufe": 3
+    },
+    "Wir geben keine Personendaten ohne Einwilligung der betroffenen Person an Dritte weiter, ausser dies erfolge im Zusammenhang mit der Mandatsbearbeitung oder sei für die in dieser Datenschutzerklärung beschriebenen Zwecke erforderlich. Insbesondere können im Rahmen der Mandatsbearbeitung Informationen an Gerichte und Behörden, Gegenparteien, Korrespondenzanwältinnen / Korrespondenzanwälte, Rechtsschutzversicherungen und sonstige Sachverständige weitergegeben werden.",
+    "Zudem können wir Personendaten an Auftragsdatenbearbeitende weitergeben, insbesondere an IT-Provider und andere Anbieterinnen / Anbieter, die IT-Applikationen zur Verfügung stellen (zum Beispiel Kollaborationsplattformen) oder Support und andere Dienstleistungen für die in dieser Datenschutzerklärung aufgeführten Zwecke in unserem Auftrag erbringen.",
+    {
+      "titel": "1.2 Speicherungsdauer",
+      "stufe": 3
+    },
+    "Wir verarbeiten und speichern Ihre Personendaten nur so lange, wie es gemäss dem betreffenden Verarbeitungszweck notwendig ist oder eine andere rechtliche Grundlage (zum Beispiel gesetzliche Aufbewahrungsfristen) dafür besteht. Personendaten, die wir aufgrund einer Vertragsbeziehung mit Ihnen besitzen, behalten wir mindestens so lange, wie die Vertragsbeziehung besteht und Verjährungsfristen für mögliche Ansprüche von uns laufen oder vertragliche Aufbewahrungspflichten bestehen. Sobald Ihre Personendaten für die oben genannten Zwecke nicht mehr erforderlich sind, werden sie grundsätzlich und soweit möglich passiv gesetzt, gelöscht oder anonymisiert.",
+    {
+      "titel": "1.3 Datensicherheit",
+      "stufe": 3
+    },
+    "Wir treffen technische und organisatorische Massnahmen zum Schutz Ihrer Personendaten vor unberechtigtem Zugriff, Missbrauch, Verlust und Zerstörung.",
+    {
+      "titel": "2. Nutzung dieser Website"
+    },
+    "Um diese Website zu nutzen, müssen Sie keine Personendaten offenlegen. Die Website ist eine statische Website ohne eigene Datenbank und ohne Benutzerkonten.",
+    {
+      "titel": "2.1 Hosting",
+      "stufe": 3
+    },
+    "Die Website wird derzeit über GitHub Pages ausgeliefert, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf einer Seite verarbeitet GitHub technische Zugriffsdaten wie die IP-Adresse, Datum und Uhrzeit des Zugriffs, die abgerufene Datei und den verwendeten Browser, um die Seiten auszuliefern und den Dienst abzusichern. Einzelheiten stehen in der Datenschutzerklärung von GitHub unter [docs.github.com/site-policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement). Wir selbst führen keine Zugriffsprotokolle und werten keine Zugriffe aus.",
+    {
+      "titel": "2.2 Cookies, Speicher und Analyse",
+      "stufe": 3
+    },
+    "Die Website setzt keine Cookies, verwendet keine Analyse- oder Statistikwerkzeuge, kein Tracking und keine Session-Aufzeichnungen. Schriften und Bilder werden von der Website selbst ausgeliefert; es werden keine Inhalte von Drittanbietern nachgeladen. Solche Dienste würden erst nach Ihrer ausdrücklichen Einwilligung geladen; derzeit gibt es nichts einzustellen, weshalb kein Einwilligungsbanner erscheint.",
+    {
+      "titel": "2.3 Kontaktformular und E-Mail",
+      "stufe": 3
+    },
+    "Das Kontaktformular sendet keine Daten an diese Website oder an einen Server. Es bereitet eine E-Mail in Ihrem eigenen E-Mail-Programm vor, die Sie selbst prüfen und absenden. Die eingegebenen Angaben werden von der Website weder gespeichert noch übertragen. Wenn Sie uns per E-Mail oder Telefon kontaktieren, bearbeiten wir Ihre Angaben zur Beantwortung der Anfrage und zur Prüfung, ob ein Mandat übernommen werden kann. E-Mails werden in der Regel unverschlüsselt übertragen; bitte senden Sie uns keine vertraulichen Unterlagen, bevor ein Kontakt besteht.",
+    {
+      "titel": "2.4 Externe Links und Kartendienste",
+      "stufe": 3
+    },
+    "Verweise und Links auf Websites Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Websites abgelehnt. Der Zugriff und die Nutzung solcher Websites erfolgen auf eigene Gefahr der Nutzerin oder des Nutzers. Karten sind nicht eingebettet; Links zu OpenStreetMap und Google Maps öffnen die jeweiligen Dienste in einem neuen Fenster, wo deren eigene Datenschutzbestimmungen gelten.",
+    {
+      "titel": "2.5 Urheberrechte",
+      "stufe": 3
+    },
+    "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich der advokatur kanonengasse oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.",
+    {
+      "titel": "3. Ihre Rechte"
+    },
+    "Personen, über die wir Daten bearbeiten, haben das Recht, Auskunft gemäss Artikel 25 des Bundesgesetzes über den Datenschutz vom 25. September 2020 (DSG) zu verlangen.",
+    "Soweit unsere Bearbeitung auf Einwilligung beruht, hat jede betroffene Person das Recht, diese Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen.",
+    "Sie können überdies die weiteren Rechte gemäss dem anwendbaren schweizerischen Datenschutzgesetz geltend machen.",
+    "Für die Ausübung solcher Rechte können sich die betroffenen Personen an [kanzlei@kanonengasse.ch](mailto:kanzlei@kanonengasse.ch) wenden. Wir werden diese Gesuche im Einklang mit dem anwendbaren schweizerischen Datenschutzgesetz bearbeiten und können diese gemäss den gesetzlichen Regelungen auch ablehnen oder nur eingeschränkt erfüllen.",
+    "Eine betroffene Person hat zudem die im Datenschutzgesetz vorgesehene Möglichkeit, den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten zu kontaktieren ([www.edoeb.admin.ch](https://www.edoeb.admin.ch/)).",
+    {
+      "titel": "4. Anpassungen dieser Datenschutzerklärung"
+    },
+    "Wir behalten uns ausdrücklich das Recht vor, die vorliegende Datenschutzerklärung jederzeit zu ändern. Werden derartige Anpassungen vorgenommen, veröffentlichen wir umgehend die angepasste Datenschutzerklärung auf unserer Website. Gültig ist jeweils die auf unserer Website publizierte Datenschutzerklärung."
+  ],
+  "seoTitel": "Datenschutzerklärung",
+  "seoBeschreibung": "Datenschutzerklärung der advokatur kanonengasse: Personendaten im Mandat, Hosting der Website, Kontaktformular ohne Datenübertragung, keine Cookies, Ihre Rechte.",
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Datenschutzerklärung der bisherigen Website (Abschnitte zur Geschäftstätigkeit, Rechte, Anpassungen; Schreibfehler korrigiert)",
+        "url": "https://www.kanonengasse.ch/datenschutz",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bundesgesetz über den Datenschutz (DSG, SR 235.1), Art. 19 und 25, Fassung vom 7. Juli 2025 (Fedlex)",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2022/491/de",
+        "abgerufen": "2026-11-03",
+        "art": "amtlich"
+      },
+      {
+        "quelle": "Abschnitt 2 (Nutzung dieser Website) neu formuliert nach der tatsächlichen Technik der Demo (GitHub Pages, keine Cookies, mailto-Formular, externe Karten)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

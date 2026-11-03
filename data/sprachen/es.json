@@ -1,0 +1,146 @@
+{
+  "sprache": "es",
+  "lang": "es",
+  "richtung": "ltr",
+  "name": "Español",
+  "nameDeutsch": "Spanisch",
+  "gruss": "bienvenidos",
+  "titel": "Bufete de abogados en el distrito 4 de Zúrich",
+  "intro": [
+    "Somos un pequeño bufete de abogados en Zürich 4. Nuestra especialidad es el derecho de inmigración y de asilo. Sea cual sea su problema, en nuestro despacho encontrará el apoyo humano y profesional que necesita, a través de un equipo de abogados que le ofrecerán el asesoramiento legal y jurídico más adecuado, encontrando la solución más eficaz a su problema."
+  ],
+  "seoTitel": "Bufete de abogados en el distrito 4 de Zúrich",
+  "seoBeschreibung": "advokatur kanonengasse, Militärstrasse 76, Zúrich: bufete dedicado al derecho migratorio y de asilo, derecho penal, derecho de familia y de arrendamiento.",
+  "ui": {
+    "navigation": [
+      {
+        "text": "Bufete",
+        "anker": "kanzlei"
+      },
+      {
+        "text": "Áreas del derecho",
+        "anker": "rechtsgebiete"
+      },
+      {
+        "text": "Equipo",
+        "anker": "team"
+      },
+      {
+        "text": "Contacto",
+        "anker": "kontakt"
+      }
+    ],
+    "sprache": "Idioma",
+    "spracheWaehlen": "Elegir idioma",
+    "zumInhalt": "Ir al contenido",
+    "zurStartseite": "advokatur kanonengasse, página de inicio",
+    "telefonzeiten": "Horario telefónico",
+    "tage": "de lunes a jueves",
+    "zeiten": [
+      "de 9.00 a 12.00",
+      "de 14.00 a 16.00"
+    ],
+    "terminhinweis": "Atención solo con cita previa.",
+    "besuchsadresse": "Dirección de la oficina",
+    "postadresse": "Dirección postal",
+    "stockwerk": "1.er piso, al final de la escalera",
+    "telefon": "Teléfono",
+    "email": "Correo electrónico",
+    "anrufen": "Llamar",
+    "anfahrt": "Cómo llegar",
+    "anfahrtPunkte": [
+      "Autobús 31 desde la estación central hasta la parada «Kanonengasse».",
+      "Unos cinco minutos a pie desde la estación central."
+    ],
+    "karte": "Abrir el mapa (sitio externo)",
+    "karten": [
+      {
+        "text": "Mapa en OpenStreetMap",
+        "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      },
+      {
+        "text": "Mapa en Google Maps",
+        "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      }
+    ],
+    "rechtsgebieteTitel": "Áreas del derecho",
+    "rechtsgebieteText": "Las descripciones detalladas y la asignación a cada abogada y abogado están disponibles en alemán.",
+    "teamTitel": "Equipo",
+    "teamText": "Los perfiles con trayectoria, idiomas y teléfonos directos están disponibles en alemán.",
+    "nurDeutsch": "solo en alemán",
+    "zurDeutschenWebsite": "Sitio en alemán",
+    "kontaktTitel": "Contacto",
+    "hinweisTitel": "Nota sobre las consultas",
+    "impressum": "Aviso legal",
+    "datenschutz": "Protección de datos",
+    "demoHinweis": "Borrador: demostración comercial de Nick Holzbecher. Este no es el sitio web oficial de advokatur kanonengasse.",
+    "oeffnetNeuesFenster": "se abre en una ventana nueva",
+    "uebersetzungshinweis": "El texto de presentación procede del sitio web actual del bufete. Los demás textos de esta página son borradores de traducción pendientes de la aprobación del bufete.",
+    "gesprocheneSprachen": "Idiomas"
+  },
+  "formular": {
+    "titel": "Preparar un mensaje",
+    "einleitung": "Este formulario prepara un correo electrónico al bufete en su propio programa de correo. El sitio web no envía ni guarda nada.",
+    "keineVertraulich": "Por favor, no incluya documentos confidenciales ni detalles de su caso. Un mandato solo surte efecto cuando el bufete lo confirma expresamente.",
+    "name": "Nombre",
+    "email": "Dirección de correo electrónico",
+    "telefon": "Número de teléfono",
+    "telefonHilfe": "Opcional, para devolverle la llamada en el horario telefónico.",
+    "betreff": "Asunto",
+    "betreffOptionen": [
+      {
+        "wert": "consulta-general",
+        "titel": "Consulta general"
+      },
+      {
+        "wert": "representacion",
+        "titel": "Solicitud de asesoramiento o representación"
+      },
+      {
+        "wert": "cita",
+        "titel": "Solicitud de cita"
+      },
+      {
+        "wert": "otro",
+        "titel": "Otro"
+      }
+    ],
+    "betreffPraefix": "Consulta a través del sitio web",
+    "nachricht": "Mensaje breve",
+    "nachrichtHilfe": "¿De qué se trata y cómo podemos localizarle?",
+    "pflicht": "Los campos marcados con * son obligatorios.",
+    "absenden": "Preparar el correo",
+    "hinweisNachher": "Su programa de correo debería abrirse ahora con el mensaje preparado. Revise el texto y envíelo desde allí. Si no se abre nada, escriba directamente a",
+    "fehlerName": "Indique su nombre, por favor.",
+    "fehlerEmail": "Indique una dirección de correo válida, por ejemplo nombre@ejemplo.ch.",
+    "fehlerNachricht": "Escriba un mensaje breve, por favor.",
+    "kopieren": "Copiar el mensaje",
+    "kopiert": "El mensaje se ha copiado al portapapeles.",
+    "kopierenFehler": "No se pudo copiar. El texto completo está disponible abajo para seleccionarlo.",
+    "zuLangFehler": "El mensaje es demasiado largo para un enlace directo y no se pudo copiar. El texto completo está disponible abajo para seleccionarlo.",
+    "volltextLabel": "Mensaje completo para copiar",
+    "ohneJavascript": "Sin JavaScript el formulario no puede preparar un correo. Escriba directamente a",
+    "datenschutzHinweis": "El tratamiento de los datos personales por parte del bufete se describe en la declaración de protección de datos (en alemán).",
+    "datenschutzLink": "Protección de datos (alemán)"
+  },
+  "kapazitaetshinweis": {
+    "text": "Gracias por su consulta. Si no recibe respuesta nuestra en un plazo de 24 horas, puede suponer que ninguna de nuestras abogadas ni ninguno de nuestros abogados tiene capacidad para hacerse cargo de su caso.",
+    "status": "entwurf"
+  },
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Spanische Seite «bienvenidos» der bisherigen Website (Einführung im Wortlaut)",
+        "url": "https://www.kanonengasse.ch/advokatur-es",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bedienelemente, Hinweise und Kapazitätshinweis ins Spanische übersetzt (Entwurf zur Freigabe)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

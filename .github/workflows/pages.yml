@@ -1,0 +1,91 @@
+# Prüft die Website, baut den statischen Export und veröffentlicht ihn auf GitHub Pages.
+# Läuft bei jedem Push auf main. Keine Geheimnisse nötig: die Demo baut ohne Env-Variablen.
+name: GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Inhalte (Schema, Schreibweise, Quellen, Links, Publikationen), Lint, Typen
+      - run: npm run pruefen
+      # Import nach Sanity als Trockenlauf: Dokumente bauen und mit den lokalen Inhalten vergleichen (schreibt nichts)
+      - run: npm run seed -- --probe
+      # BASE_PATH ist im Code als /advokatur-kanonengasse-demo voreingestellt (lib/deploy-ziel.ts);
+      # hier zur Sicherheit aus dem Repository-Namen abgeleitet.
+      - run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+      - run: npm run export:pruefen
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+      # Browser-Prüfungen gegen den fertigen Export (Chrome ist auf ubuntu-latest vorinstalliert)
+      - run: (node scripts/vorschau-server.mjs > /tmp/vorschau.log 2>&1 &) && sleep 2 && npm run qa
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+          BASE: http://localhost:4321/${{ github.event.repository.name }}
+          CHROME_PATH: /usr/bin/google-chrome
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  # Zweite Betriebsart (Vercel, kein Unterpfad): bauen und den Export prüfen, damit root-relative Fehler nicht erst beim Vercel-Deploy auffallen.
+  vercel-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build:vercel
+
+  # Das vorbereitete Sanity Studio muss kompilieren und ein gültiges Schema haben (ohne Sanity-Projekt prüfbar).
+  studio:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run schema:pruefen
+        env:
+          SANITY_STUDIO_PROJECT_ID: probe0000
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

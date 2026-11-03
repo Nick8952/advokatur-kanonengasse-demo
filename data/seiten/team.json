@@ -1,0 +1,59 @@
+{
+  "titel": "Team",
+  "einleitung": "Sieben Rechtsanwältinnen und Rechtsanwälte, ein Partner mit Lizentiat und LL. M., zwei juristische Mitarbeitende und das Sekretariat. Die Profile nennen Rechtsgebiete, Sprachen, Werdegang und die direkte Telefonnummer.",
+  "gruppen": {
+    "anwaeltinnen-und-anwaelte": "Partnerinnen und Partner, Rechtsanwältinnen und Rechtsanwälte",
+    "substitutinnen-und-substituten": "Juristische Mitarbeitende und Substitutinnen",
+    "sekretariat": "Sekretariat"
+  },
+  "filter": {
+    "titel": "Team filtern",
+    "rechtsgebiet": "Rechtsgebiet",
+    "sprache": "Beratungssprache",
+    "alle": "Alle",
+    "zuruecksetzen": "Filter zurücksetzen",
+    "treffer": "Personen",
+    "keineTreffer": "Für diese Auswahl ist in den Profilen niemand eingetragen.",
+    "hinweis": "Die Zuordnung von Rechtsgebieten und Sprachen stammt aus den Profilen der bisherigen Website. Juristische Mitarbeitende und das Sekretariat nennen keine Rechtsgebiete."
+  },
+  "verlinkt": {
+    "titel": "Ebenfalls verlinkt",
+    "text": "Die bisherige Website der Kanzlei verlinkt zusätzlich die eigene Website von Bernhard Jüsi.",
+    "links": [
+      {
+        "name": "Bernhard Jüsi",
+        "beschreibung": "anwalt jüsi, eigene Website",
+        "ziel": "https://www.juesi.ch/"
+      }
+    ]
+  },
+  "profil": {
+    "zurueck": "Zum Team",
+    "funktion": "Funktion",
+    "sprachen": "Sprachen",
+    "telefon": "Telefon",
+    "email": "E-Mail",
+    "werdegang": "Werdegang",
+    "fussnotenTitel": "Anmerkung",
+    "keineRechtsgebiete": "Das Profil nennt keine eigenen Rechtsgebiete."
+  },
+  "seoTitel": "Team",
+  "seoBeschreibung": "Das Team der advokatur kanonengasse in Zürich: Partnerinnen und Partner, Rechtsanwältinnen und Rechtsanwälte, juristische Mitarbeitende und Sekretariat.",
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Teamseite der bisherigen Website (Gruppen, Reihenfolge, Rollen, Link auf juesi.ch)",
+        "url": "https://www.kanonengasse.ch/team",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Externe Website von Bernhard Jüsi («anwalt jüsi»), nur als Link übernommen",
+        "url": "https://www.juesi.ch/",
+        "abgerufen": "2026-11-03",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

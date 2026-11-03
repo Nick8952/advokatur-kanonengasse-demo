@@ -1,0 +1,186 @@
+[
+  {
+    "slug": "migrationsrecht",
+    "titel": "Migrationsrecht",
+    "zusatz": "Asyl-, Ausländer- und Bürgerrecht",
+    "schwerpunkt": true,
+    "reihenfolge": 1,
+    "begriffe": ["Migrationsrecht (Bürgerrecht, Asyl- und Ausländerrecht)", "Migrationsrecht (Asyl- und Ausländerrecht)", "Asylrecht", "Ausländerrecht"],
+    "hintergrund": [
+      "Urs Ebnöther leitete von 2001 bis 2005 die Rechtsberatungsstelle für Asyl- und Ausländerrecht in Schaffhausen.",
+      "Tarig Hassan war Rechtsberater im Bereich Zwangsmassnahmen im Ausländerrecht beim HEKS und führte eigene Mandate bei der Muhajir Rechtsberatung.",
+      "Dominik Züsli arbeitete zwei Jahre als Rechtsvertreter im erweiterten Asylverfahren bei der Zürcher Beratungsstelle für Asylsuchende; Florian Hönsch und Leonie Röthlisberger kamen über Rechtsvertretungen für Asylsuchende zur Kanzlei.",
+      "Davide Loss, Christian Müller und Dominik Züsli sind Mitglieder im Pikett Administrativhaft."
+    ],
+    "uebersetzungen": {
+      "en": { "titel": "Immigration and asylum law", "status": "entwurf" },
+      "fr": { "titel": "Droit des migrations (asile et droit des étrangers)", "status": "entwurf" },
+      "it": { "titel": "Diritto migratorio (asilo e stranieri)", "status": "entwurf" },
+      "es": { "titel": "Derecho migratorio (asilo y extranjería)", "status": "entwurf" },
+      "ar": { "titel": "قانون الهجرة واللجوء", "status": "entwurf" }
+    },
+    "herkunft": [
+      { "quelle": "Profile der bisherigen Website (Ebnöther, Hassan, Kazik, Loss, Müller, Schiller, von Wartburg, Züsli) und Partnerschaftsseite (Spezialisierung)", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "strafrecht",
+    "titel": "Strafrecht",
+    "zusatz": "inklusive Verwaltungsstrafrecht und Migrationsstrafrecht",
+    "schwerpunkt": true,
+    "reihenfolge": 2,
+    "begriffe": ["Strafrecht (inkl. Verwaltungsstrafrecht)", "Migrationsstrafrecht"],
+    "hintergrund": [
+      "Manuela Schiller, Davide Loss, Christian Müller und Nicolas von Wartburg sind Mitglieder im Pikett Strafverteidigung.",
+      "Tobias Kazik war Gerichtsschreiber am Bezirksgericht Zürich, von 2016 bis 2020 mit Schwerpunkt im Familien- und Strafrecht anwaltlich tätig und danach teilamtlicher beziehungsweise nebenamtlicher Richter an den Bezirksgerichten Pfäffikon ZH und Zürich."
+    ],
+    "uebersetzungen": {
+      "en": { "titel": "Criminal law", "status": "entwurf" },
+      "fr": { "titel": "Droit pénal", "status": "entwurf" },
+      "it": { "titel": "Diritto penale", "status": "entwurf" },
+      "es": { "titel": "Derecho penal", "status": "entwurf" },
+      "ar": { "titel": "القانون الجنائي", "status": "entwurf" }
+    },
+    "herkunft": [
+      { "quelle": "Profile der bisherigen Website (Ebnöther, Kazik, Loss, Müller, Schiller, von Wartburg, Züsli) und Partnerschaftsseite (Spezialisierung)", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "familienrecht",
+    "titel": "Familienrecht",
+    "zusatz": null,
+    "schwerpunkt": true,
+    "reihenfolge": 3,
+    "begriffe": ["Familienrecht"],
+    "hintergrund": [
+      "Tobias Kazik ist Mitglied der ZAV Fachgruppe Familienrecht und war von 2016 bis 2020 mit Schwerpunkt im Familien- und Strafrecht tätig.",
+      "Nicolas von Wartburg nennt das Familienrecht als eines seiner besonderen Erfahrungsgebiete."
+    ],
+    "uebersetzungen": {
+      "en": { "titel": "Family law", "status": "entwurf" },
+      "fr": { "titel": "Droit de la famille", "status": "entwurf" },
+      "it": { "titel": "Diritto di famiglia", "status": "entwurf" },
+      "es": { "titel": "Derecho de familia", "status": "entwurf" },
+      "ar": { "titel": "قانون الأسرة", "status": "entwurf" }
+    },
+    "herkunft": [
+      { "quelle": "Profile der bisherigen Website (Ebnöther, Kazik, Loss, Müller, von Wartburg) und Partnerschaftsseite (Spezialisierung)", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "mietrecht",
+    "titel": "Mietrecht",
+    "zusatz": null,
+    "schwerpunkt": true,
+    "reihenfolge": 4,
+    "begriffe": ["Mietrecht"],
+    "hintergrund": [
+      "Urs Ebnöther war von 2001 bis 2022 Rechtsberater beim Mieterverband Zürich, von 2002 bis 2012 Beisitzer der Schlichtungsbehörde in Mietsachen Zürich und ist Mietrichter an den Mietgerichten in Dielsdorf, Zürich, Bülach und Meilen.",
+      "Manuela Schiller ist Vertrauensanwältin des Mieterinnen- und Mieterverbands Zürich."
+    ],
+    "uebersetzungen": {
+      "en": { "titel": "Tenancy law", "status": "entwurf" },
+      "fr": { "titel": "Droit du bail", "status": "entwurf" },
+      "it": { "titel": "Diritto di locazione", "status": "entwurf" },
+      "es": { "titel": "Derecho de arrendamiento", "status": "entwurf" },
+      "ar": { "titel": "قانون الإيجار", "status": "entwurf" }
+    },
+    "herkunft": [
+      { "quelle": "Profile der bisherigen Website (Ebnöther, Müller, Schiller) und Partnerschaftsseite (Spezialisierung)", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "sozialhilfe-und-sozialversicherungsrecht",
+    "titel": "Sozialhilfe- und Sozialversicherungsrecht",
+    "zusatz": null,
+    "schwerpunkt": false,
+    "reihenfolge": 5,
+    "begriffe": ["Sozialhilfe", "Sozialversicherungsrecht und Sozialhilferecht"],
+    "hintergrund": ["Davide Loss ist Vertrauensanwalt der Unabhängigen Fachstelle für Sozialhilferecht (UFS)."],
+    "uebersetzungen": {
+      "en": { "titel": "Social assistance and social insurance law", "status": "entwurf" },
+      "fr": { "titel": "Aide sociale et assurances sociales", "status": "entwurf" },
+      "it": { "titel": "Assistenza sociale e assicurazioni sociali", "status": "entwurf" },
+      "es": { "titel": "Asistencia social y seguros sociales", "status": "entwurf" },
+      "ar": { "titel": "قانون المساعدة الاجتماعية والتأمينات الاجتماعية", "status": "entwurf" }
+    },
+    "herkunft": [{ "quelle": "Profile der bisherigen Website (Ebnöther, Loss, Müller)", "url": "https://www.kanonengasse.ch/davide-loss", "abgerufen": "2026-11-02", "art": "bisherige-website" }],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "arbeitsrecht",
+    "titel": "Arbeitsrecht",
+    "zusatz": null,
+    "schwerpunkt": false,
+    "reihenfolge": 6,
+    "begriffe": ["Arbeitsrecht"],
+    "hintergrund": [],
+    "uebersetzungen": {
+      "en": { "titel": "Employment law", "status": "entwurf" },
+      "fr": { "titel": "Droit du travail", "status": "entwurf" },
+      "it": { "titel": "Diritto del lavoro", "status": "entwurf" },
+      "es": { "titel": "Derecho laboral", "status": "entwurf" },
+      "ar": { "titel": "قانون العمل", "status": "entwurf" }
+    },
+    "herkunft": [{ "quelle": "Profile der bisherigen Website (Loss, Müller, Züsli)", "url": "https://www.kanonengasse.ch/dominik-zuesli", "abgerufen": "2026-11-02", "art": "bisherige-website" }],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "grund-und-menschenrechte",
+    "titel": "Grund- und Menschenrechte",
+    "zusatz": "internationale Menschenrechtsverfahren (EGMR und CAT)",
+    "schwerpunkt": false,
+    "reihenfolge": 7,
+    "begriffe": ["Internationale Menschenrechtsverfahren (EGMR- und CAT-Verfahren)", "Internationale Menschenrechtsverfahren", "Grundrechte"],
+    "hintergrund": ["Dominik Züsli ist neben seiner anwaltlichen Tätigkeit Co-Teamlead des AIG/Procedures Team bei AsyLex."],
+    "uebersetzungen": {
+      "en": { "titel": "Fundamental and human rights (ECHR and CAT proceedings)", "status": "entwurf" },
+      "fr": { "titel": "Droits fondamentaux et droits humains (procédures CEDH et CAT)", "status": "entwurf" },
+      "it": { "titel": "Diritti fondamentali e diritti umani (procedure CEDU e CAT)", "status": "entwurf" },
+      "es": { "titel": "Derechos fundamentales y derechos humanos (procedimientos ante el TEDH y el CAT)", "status": "entwurf" },
+      "ar": { "titel": "الحقوق الأساسية وحقوق الإنسان (إجراءات المحكمة الأوروبية لحقوق الإنسان ولجنة مناهضة التعذيب)", "status": "entwurf" }
+    },
+    "herkunft": [{ "quelle": "Profile der bisherigen Website (Hassan, Schiller, Züsli)", "url": "https://www.kanonengasse.ch/tarig-hassan", "abgerufen": "2026-11-02", "art": "bisherige-website" }],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "sportrecht",
+    "titel": "Sportrecht",
+    "zusatz": "Beratung und Vertretung von Sportlern, Sportverbänden und Sportveranstaltern",
+    "schwerpunkt": false,
+    "reihenfolge": 8,
+    "begriffe": ["Sportrecht (Beratung und Vertretung von Sportlern, Sportverbänden und Sportveranstaltern)"],
+    "hintergrund": ["Tarig Hassan schloss 2018 das berufsbegleitende Studium Certificate of Advanced Studies UZH in International Sports Law ab."],
+    "uebersetzungen": {
+      "en": { "titel": "Sports law", "status": "entwurf" },
+      "fr": { "titel": "Droit du sport", "status": "entwurf" },
+      "it": { "titel": "Diritto sportivo", "status": "entwurf" },
+      "es": { "titel": "Derecho deportivo", "status": "entwurf" },
+      "ar": { "titel": "القانون الرياضي", "status": "entwurf" }
+    },
+    "herkunft": [{ "quelle": "Profil Tarig Hassan auf der bisherigen Website", "url": "https://www.kanonengasse.ch/tarig-hassan", "abgerufen": "2026-11-02", "art": "bisherige-website" }],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "gutachten-islamisches-und-arabisches-recht",
+    "titel": "Gutachten zur islamischen und arabischen Rechtsordnung",
+    "zusatz": null,
+    "schwerpunkt": false,
+    "reihenfolge": 9,
+    "begriffe": ["Gutachten zur islamischen/arabischen Rechtsordnung"],
+    "hintergrund": ["Tarig Hassan studierte Rechtswissenschaft an der Universität Marrakesch, erwarb 1996 das Anwaltspatent für arabische Länder und ist seither Mitglied der Arabischen Advokaten-Vereinigung Kairo."],
+    "uebersetzungen": {
+      "en": { "titel": "Expert opinions on Islamic and Arab legal systems", "status": "entwurf" },
+      "fr": { "titel": "Expertises sur le droit islamique et arabe", "status": "entwurf" },
+      "it": { "titel": "Perizie sul diritto islamico e arabo", "status": "entwurf" },
+      "es": { "titel": "Dictámenes sobre el derecho islámico y árabe", "status": "entwurf" },
+      "ar": { "titel": "آراء خبراء في النظام القانوني الإسلامي والعربي", "status": "entwurf" }
+    },
+    "herkunft": [{ "quelle": "Profil Tarig Hassan auf der bisherigen Website", "url": "https://www.kanonengasse.ch/tarig-hassan", "abgerufen": "2026-11-02", "art": "bisherige-website" }],
+    "freigabe": "demo"
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "sprache": "ar",
+  "lang": "ar",
+  "richtung": "rtl",
+  "name": "العربية",
+  "nameDeutsch": "Arabisch",
+  "gruss": "مرحبا",
+  "titel": "مكتب محاماة في الحي الرابع بزيورخ",
+  "intro": [
+    "يقع مكتبنا الصغير للمحاماة في مدينة زيورخ، الحي الرابع. نحن نتبنى قضايا «الأفراد العاديين». أيضاً ما يجعل مكتبنا متميزاً عن غيره هو تبنينا لقضايا الأشخاص ذوي الأصول المهاجرة، وتلك المرتبطة باللجوء السياسي. لكن يسعدنا أيضاً مساعدتكم بوضع خبراتنا المتعددة في المجالات القانونية الأخرى تحت خدمتكم."
+  ],
+  "seoTitel": "مكتب محاماة في الحي الرابع بزيورخ",
+  "seoBeschreibung": "advokatur kanonengasse، Militärstrasse 76، زيورخ: مكتب محاماة يُعنى بقانون الهجرة واللجوء والقانون الجنائي وقانون الأسرة وقانون الإيجار.",
+  "ui": {
+    "navigation": [
+      {
+        "text": "المكتب",
+        "anker": "kanzlei"
+      },
+      {
+        "text": "مجالات القانون",
+        "anker": "rechtsgebiete"
+      },
+      {
+        "text": "الفريق",
+        "anker": "team"
+      },
+      {
+        "text": "اتصل بنا",
+        "anker": "kontakt"
+      }
+    ],
+    "sprache": "اللغة",
+    "spracheWaehlen": "اختيار اللغة",
+    "zumInhalt": "الانتقال إلى المحتوى",
+    "zurStartseite": "advokatur kanonengasse، الصفحة الرئيسية",
+    "telefonzeiten": "أوقات الاتصال الهاتفي",
+    "tage": "من الاثنين إلى الخميس",
+    "zeiten": [
+      "من 9:00 إلى 12:00",
+      "من 14:00 إلى 16:00"
+    ],
+    "terminhinweis": "المواعيد بالحجز المسبق فقط.",
+    "besuchsadresse": "عنوان المكتب",
+    "postadresse": "العنوان البريدي",
+    "stockwerk": "الطابق الأول، أعلى الدرج",
+    "telefon": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "anrufen": "اتصال",
+    "anfahrt": "كيف تصلون إلينا",
+    "anfahrtPunkte": [
+      "الحافلة 31 من المحطة الرئيسية حتى موقف «Kanonengasse».",
+      "نحو خمس دقائق سيراً على الأقدام من المحطة الرئيسية."
+    ],
+    "karte": "فتح الخريطة (موقع خارجي)",
+    "karten": [
+      {
+        "text": "الخريطة على OpenStreetMap",
+        "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      },
+      {
+        "text": "الخريطة على خرائط Google",
+        "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich"
+      }
+    ],
+    "rechtsgebieteTitel": "مجالات القانون",
+    "rechtsgebieteText": "الشروح التفصيلية وتوزيع المجالات على المحاميات والمحامين متاحة باللغة الألمانية.",
+    "teamTitel": "الفريق",
+    "teamText": "الملفات الشخصية مع المسيرة المهنية واللغات وأرقام الهاتف المباشرة متاحة باللغة الألمانية.",
+    "nurDeutsch": "بالألمانية فقط",
+    "zurDeutschenWebsite": "الموقع باللغة الألمانية",
+    "kontaktTitel": "اتصل بنا",
+    "hinweisTitel": "ملاحظة بشأن الاستفسارات",
+    "impressum": "بيانات الناشر",
+    "datenschutz": "حماية البيانات",
+    "demoHinweis": "مسودة: عرض تجريبي للبيع من إعداد Nick Holzbecher. هذا ليس الموقع الرسمي لمكتب advokatur kanonengasse.",
+    "oeffnetNeuesFenster": "يُفتح في نافذة جديدة",
+    "uebersetzungshinweis": "النص التعريفي مأخوذ من الموقع الحالي للمكتب. سائر النصوص في هذه الصفحة مسودات ترجمة بانتظار موافقة المكتب.",
+    "gesprocheneSprachen": "اللغات"
+  },
+  "formular": {
+    "titel": "إعداد رسالة",
+    "einleitung": "يُعِدّ هذا النموذج رسالة بريد إلكتروني إلى المكتب في برنامج البريد الخاص بكم. الموقع لا يرسل شيئاً ولا يحفظ شيئاً.",
+    "keineVertraulich": "يرجى عدم إرفاق مستندات سرية أو تفاصيل مفصلة عن قضيتكم. لا ينشأ التوكيل إلا بتأكيد صريح من المكتب.",
+    "name": "الاسم",
+    "email": "عنوان البريد الإلكتروني",
+    "telefon": "رقم الهاتف",
+    "telefonHilfe": "اختياري، لمعاودة الاتصال بكم خلال أوقات الاتصال الهاتفي.",
+    "betreff": "الموضوع",
+    "betreffOptionen": [
+      {
+        "wert": "istifsar-aam",
+        "titel": "استفسار عام"
+      },
+      {
+        "wert": "tamthil",
+        "titel": "طلب استشارة أو تمثيل قانوني"
+      },
+      {
+        "wert": "mawid",
+        "titel": "طلب موعد"
+      },
+      {
+        "wert": "akhar",
+        "titel": "أخرى"
+      }
+    ],
+    "betreffPraefix": "استفسار عبر الموقع",
+    "nachricht": "رسالة قصيرة",
+    "nachrichtHilfe": "ما هو الموضوع، وكيف يمكننا التواصل معكم؟",
+    "pflicht": "الحقول المعلّمة بـ * إلزامية.",
+    "absenden": "إعداد البريد الإلكتروني",
+    "hinweisNachher": "ينبغي أن يُفتح الآن برنامج البريد الخاص بكم مع الرسالة المعدّة. راجعوا النص وأرسلوه من هناك. إذا لم يُفتح شيء، فاكتبوا مباشرة إلى",
+    "fehlerName": "يرجى إدخال اسمكم.",
+    "fehlerEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح، مثل name@example.com.",
+    "fehlerNachricht": "يرجى كتابة رسالة قصيرة.",
+    "kopieren": "نسخ الرسالة",
+    "kopiert": "تم نسخ الرسالة إلى الحافظة.",
+    "kopierenFehler": "تعذّر النسخ. النص الكامل متاح أدناه لتحديده.",
+    "zuLangFehler": "الرسالة أطول من أن تُرسل عبر رابط مباشر، وتعذّر النسخ. النص الكامل متاح أدناه لتحديده.",
+    "volltextLabel": "الرسالة الكاملة للنسخ",
+    "ohneJavascript": "بدون JavaScript لا يمكن للنموذج إعداد رسالة. اكتبوا مباشرة إلى",
+    "datenschutzHinweis": "كيفية تعامل المكتب مع البيانات الشخصية موضحة في بيان حماية البيانات (بالألمانية).",
+    "datenschutzLink": "حماية البيانات (بالألمانية)"
+  },
+  "kapazitaetshinweis": {
+    "text": "شكراً لاستفساركم. إذا لم تتلقوا رداً منا خلال 24 ساعة، فيمكنكم افتراض أنه لا تتوفر لدى أي من محامياتنا ومحامينا القدرة على تولي قضيتكم.",
+    "status": "entwurf"
+  },
+  "belege": {
+    "herkunft": [
+      {
+        "quelle": "Arabische Seite «مرحبا» der bisherigen Website (Einführung; Schreibfehler «زيروخ» und «السياسيى» korrigiert, Satzzeichen ergänzt)",
+        "url": "https://www.kanonengasse.ch/advokatur-1",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "Bedienelemente, Hinweise und Kapazitätshinweis ins Arabische übersetzt (Entwurf zur Freigabe)",
+        "abgerufen": "2026-11-03",
+        "art": "redaktion"
+      }
+    ],
+    "freigabe": "demo"
+  }
+}

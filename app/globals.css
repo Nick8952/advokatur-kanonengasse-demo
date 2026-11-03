@@ -1,0 +1,298 @@
+@import "tailwindcss";
+
+/*
+ * Gestaltung «Fensterfront» (siehe docs/DESIGN.md).
+ * Aus der bisherigen Website und dem Strassenfoto abgeleitet: Das Geschäftshaus an der Militärstrasse ist ein strenges Raster aus
+ * Fenstern; die alte Website legte weisse Zellen über dieses Foto. Die neue Website macht das Fenster zum einzigen Strukturmotiv:
+ * gleich grosse Zellen mit haarfeinen Fugen für die Sprachwahl, die Rechtsgebiete und das Team. Alles andere ist ruhiger Textfluss.
+ * Farben aus der alten Website: heller Putz als Grund, weisse Fenster, Marineblau als Rahmen und Schrift, Orange als einziger Akzent
+ * (nur als Fläche mit marineblauer Schrift, nie als Schriftfarbe auf Hell). Eine Schriftfamilie mit arabischer Schwester:
+ * IBM Plex Sans und IBM Plex Sans Arabic, lokal ausgeliefert. Radius 0 überall. Ein helles Theme (color-scheme: light).
+ */
+@theme {
+  --color-putz: #e9e9e7;
+  --color-fenster: #fbfbfa;
+  --color-fenster-2: #f1f1ef;
+  --color-rahmen: #182153;
+  --color-rahmen-2: #4b5070;
+  --color-grau: #5f6380;
+  --color-fuge: #cfd0d6;
+  --color-fuge-stark: #7f839c;
+  --color-akzent: #eb910c;
+  --color-akzent-tief: #d27f05;
+  --color-akzent-text: #182153;
+  --color-platte: #000000;
+  --color-fehler: #a3261b;
+
+  --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-arabisch: "IBM Plex Sans Arabic", "IBM Plex Sans", "Noto Sans Arabic", Arial, sans-serif;
+
+  --spacing-rand: clamp(1rem, 4vw, 2.5rem);
+  --ease-aus: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Schriften lokal (SIL Open Font License, Dateien in assets/schriften, kopiert von fontsource; Next verschiebt sie beim Build nach _next/static/media). unicode-range je Teilmenge, damit
+   nur geladen wird, was die Seite braucht. Arabisch nur auf der arabischen Seite (lang="ar" auf <html>). */
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 100 700; font-display: swap; src: url("../assets/schriften/plex-sans-latin-wght-normal.woff2") format("woff2-variations"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 100 700; font-display: swap; src: url("../assets/schriften/plex-sans-latin-ext-wght-normal.woff2") format("woff2-variations"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight: 100 700; font-display: swap; src: url("../assets/schriften/plex-sans-latin-wght-italic.woff2") format("woff2-variations"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/schriften/plex-sans-arabic-400.woff2") format("woff2"); unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC; }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/schriften/plex-sans-arabic-500.woff2") format("woff2"); unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC; }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/schriften/plex-sans-arabic-600.woff2") format("woff2"); unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC; }
+
+@layer base {
+/* Ebenen (einzige z-index-Werte der Website): Sprachwahl 30, Einwilligungsbanner 40, Sprunglink 50. Dialoge liegen im Top-Layer. Kein fixierter Kopf. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; transition-delay: 0ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
+body {
+  background: var(--color-putz);
+  color: var(--color-rahmen);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: tabular-nums;
+}
+html[lang="ar"] body { font-family: var(--font-arabisch); line-height: 1.75; }
+img { max-width: 100%; height: auto; }
+::selection { background: var(--color-akzent); color: var(--color-akzent-text); }
+:focus-visible { outline: 3px solid var(--color-rahmen); outline-offset: 3px; }
+}
+
+/* Eigene Klassen in der Ebene «components», damit Tailwind-Utilities sie übersteuern können. */
+@layer components {
+/* ── Raster ─────────────────────────────────────────────────────────── */
+.behaelter { width: 100%; max-width: 80rem; margin-inline: auto; padding-inline: var(--spacing-rand); }
+.abschnitt { padding-block: clamp(3rem, 7vw, 6rem); }
+.abschnitt-knapp { padding-block: clamp(2rem, 4vw, 3rem); }
+.trenner { border-top: 1px solid var(--color-fuge); }
+.lauftext { max-width: 64ch; text-wrap: pretty; }
+.nur-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* ── Schrift ────────────────────────────────────────────────────────── */
+.titel-1, .titel-2, .titel-3 { font-weight: 500; letter-spacing: -0.012em; text-wrap: balance; overflow-wrap: anywhere; }
+.titel-1 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.4rem); line-height: 1.08; }
+.titel-2 { font-size: clamp(1.6rem, 1.3rem + 1.1vw, 2.25rem); line-height: 1.15; }
+.titel-3 { font-size: clamp(1.25rem, 1.15rem + 0.4vw, 1.5rem); line-height: 1.25; letter-spacing: -0.006em; }
+.titel-4 { font-size: 1.0625rem; line-height: 1.35; font-weight: 600; }
+html[lang="ar"] .titel-1, html[lang="ar"] .titel-2, html[lang="ar"] .titel-3 { letter-spacing: 0; line-height: 1.3; }
+.vorspann { font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem); line-height: 1.5; color: var(--color-rahmen); max-width: 46ch; text-wrap: pretty; }
+.klein { font-size: 0.9rem; line-height: 1.45; }
+.meta { font-size: 0.9375rem; line-height: 1.4; color: var(--color-rahmen-2); }
+.zahl { font-variant-numeric: tabular-nums; }
+.textlink { color: var(--color-rahmen); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; transition: text-decoration-thickness 160ms var(--ease-aus); }
+.textlink:hover { text-decoration-thickness: 2px; }
+/* Alleinstehende Textlinks (eigener Absatz oder Listenpunkt) als Bedienziel von mindestens 44 px Höhe */
+.textlink-block { display: inline-flex; align-items: center; min-height: 2.75rem; }
+
+/* ── Knöpfe: Orange ist Handlung ────────────────────────────────────── */
+.knopf {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  min-height: 3rem; padding: 0.7rem 1.3rem;
+  font-size: 1rem; font-weight: 600; line-height: 1.2; white-space: nowrap;
+  border-radius: 0; border: 1.5px solid transparent; cursor: pointer;
+  transition: background-color 180ms var(--ease-aus), border-color 180ms var(--ease-aus), color 180ms var(--ease-aus), transform 140ms var(--ease-aus);
+}
+.knopf:active { transform: scale(0.98); }
+.knopf-primaer { background: var(--color-akzent); color: var(--color-akzent-text); border-color: var(--color-akzent); }
+.knopf-primaer:hover { background: var(--color-akzent-tief); border-color: var(--color-akzent-tief); }
+.knopf-sekundaer { background: transparent; color: var(--color-rahmen); border-color: var(--color-rahmen); }
+.knopf-sekundaer:hover { background: var(--color-rahmen); color: var(--color-putz); }
+.knopf-klein { min-height: 2.75rem; padding: 0.55rem 1rem; font-size: 0.9375rem; }
+.knopf:disabled { cursor: not-allowed; opacity: 0.6; }
+
+/* ── Kopfzeile: Logo-Platte links, Sprachwahl rechts; darunter das Register ─ */
+.kopf { border-bottom: 1px solid var(--color-fuge); }
+.kopf-zeile { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; padding-block: 0.75rem; }
+.platte { display: inline-flex; align-items: center; min-width: 0; flex: 0 1 auto; }
+/* Die Wortmarke skaliert mit der Breite (Seitenverhältnis 5.5 : 1): 180 px bei 360 px, höchstens 400 px */
+.platte img { width: clamp(10rem, 50vw, 25rem); height: auto; display: block; }
+
+/* Register: alle Hauptseiten in einer Zeile, auch auf dem Handy (fünf kurze Wörter), kein Menü-Dialog. */
+.register { display: flex; border-top: 1px solid var(--color-fuge); }
+/* Unter 40 rem läuft das Register über die ganze Breite (ohne Seitenrand), damit fünf Wörter auch bei 360 px in eine Zeile passen. */
+@media (max-width: 39.99rem) { .register { margin-inline: calc(-1 * var(--spacing-rand)); } }
+.register-link {
+  flex: 1 1 auto; display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 3rem; padding: 0.4rem 0.25rem; min-width: 0;
+  font-size: 0.875rem; font-weight: 500; line-height: 1.2; color: var(--color-rahmen);
+  border-inline-start: 1px solid var(--color-fuge);
+  transition: background-color 160ms var(--ease-aus);
+}
+.register-link:first-child { border-inline-start: 0; }
+.register-link:hover { background: var(--color-fenster); }
+.register-link[aria-current="page"] { background: var(--color-fenster); font-weight: 600; box-shadow: inset 0 3px 0 var(--color-rahmen); }
+@media (min-width: 40rem) { .register-link { font-size: 1rem; padding: 0.5rem 1rem; min-height: 3.25rem; } }
+@media (min-width: 64rem) { .register { max-width: 48rem; } }
+
+/* Sprachwahl: <details> mit Liste; ohne JavaScript bedienbar, mit JavaScript schliesst sie bei Klick daneben und Escape */
+.sprachwahl { position: relative; z-index: 30; }
+.sprachwahl summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;
+  min-height: 2.75rem; padding: 0.4rem 0.75rem; border: 1.5px solid var(--color-rahmen); font-weight: 600; font-size: 0.9375rem; line-height: 1.2;
+  background: var(--color-fenster);
+}
+/* Unter 40 rem zeigt der Knopf nur den Sprachnamen (die Beschriftung «Sprache» bleibt im aria-label) */
+@media (max-width: 39.99rem) { .sprachwahl .sprachwahl-praefix { display: none; } }
+.sprachwahl summary::-webkit-details-marker { display: none; }
+.sprachwahl summary::after { content: ""; width: 0.5rem; height: 0.5rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform 160ms var(--ease-aus); }
+.sprachwahl[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.sprachwahl-liste {
+  position: absolute; inset-inline-end: 0; top: calc(100% + 0.4rem); min-width: 15rem;
+  display: grid; gap: 1px; background: var(--color-fuge); border: 1px solid var(--color-fuge);
+  box-shadow: 0 12px 32px rgb(24 33 83 / 0.12);
+}
+.sprachwahl-liste a { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; min-height: 2.75rem; padding: 0.55rem 0.9rem; background: var(--color-fenster); color: var(--color-rahmen); }
+.sprachwahl-liste a:hover { background: var(--color-fenster-2); }
+.sprachwahl-liste a[aria-current="true"] { background: var(--color-akzent); color: var(--color-akzent-text); }
+.sprachwahl-liste .sprache-deutsch { font-size: 0.85rem; color: var(--color-rahmen-2); }
+.sprachwahl-liste a[aria-current="true"] .sprache-deutsch { color: var(--color-akzent-text); }
+
+/* ── Fenster: das Strukturmotiv. Zellen mit 1-px-Fugen aus dem Rasterhintergrund, keine Doppelrahmen, keine Schatten. ─ */
+/* Die Fugen sind 1-px-Schatten je Zelle (überlagern sich im 1-px-Abstand zu einer Linie); leere Rasterspuren bleiben dadurch unsichtbar. */
+.fenster-raster { display: grid; gap: 1px; padding: 1px; }
+.fenster { position: relative; display: flex; flex-direction: column; gap: 0.35rem; background: var(--color-fenster); padding: 1.1rem 1.15rem; min-height: 6.5rem; color: var(--color-rahmen); box-shadow: 0 0 0 1px var(--color-fuge); transition: background-color 160ms var(--ease-aus); }
+.fenster:has(> .fenster-link:hover) { background: var(--color-fenster-2); }
+.fenster-link { color: inherit; text-decoration: none; display: inline-flex; align-items: center; min-height: 2.75rem; }
+.fenster-link::after { content: ""; position: absolute; inset: 0; }
+.fenster-link:focus-visible { outline: none; }
+.fenster:has(> .fenster-link:focus-visible), .fenster:has(> .fenster-inhalt > .fenster-link:focus-visible) { outline: 3px solid var(--color-rahmen); outline-offset: -3px; z-index: 1; }
+.fenster:has(.fenster-link:hover) { background: var(--color-fenster-2); }
+.fenster-akzent { background: var(--color-akzent); color: var(--color-akzent-text); }
+.fenster-akzent:has(.fenster-link:hover) { background: var(--color-akzent-tief); }
+.fenster-titel { font-weight: 600; font-size: 1.0625rem; line-height: 1.3; text-wrap: balance; }
+.fenster-text { font-size: 0.9375rem; line-height: 1.45; color: var(--color-rahmen-2); }
+.fenster-akzent .fenster-text { color: var(--color-akzent-text); }
+
+/* Sprachfenster: 3 × 2 wie auf der bisherigen Website, mit ausgeschriebenem Sprachnamen */
+.fenster-raster-sprachen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 30rem) { .fenster-raster-sprachen { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.fenster-sprache { min-height: 6.25rem; justify-content: space-between; padding: 0.9rem 1rem 0.5rem; }
+.fenster-sprache .gruss { font-size: clamp(1.05rem, 0.9rem + 0.7vw, 1.45rem); font-weight: 500; line-height: 1.2; overflow-wrap: anywhere; }
+.fenster-sprache .gruss[lang="ar"] { font-family: var(--font-arabisch); font-weight: 500; }
+@media (min-width: 40rem) { .fenster-sprache { min-height: 7.5rem; } }
+
+/* Rechtsgebiete: 1 / 2 / 3 Spalten, Schwerpunkte zuerst und grösser betitelt */
+.fenster-raster-gebiete { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 30rem) { .fenster-raster-gebiete { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 52rem) { .fenster-raster-gebiete { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.fenster-gebiet { min-height: 8.5rem; }
+.fenster-gebiet.schwerpunkt .fenster-titel { font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); font-weight: 500; }
+
+/* Team: quadratische Portraits in gleich grossen Fenstern */
+.fenster-raster-team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 40rem) { .fenster-raster-team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .fenster-raster-team { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.fenster-person { padding: 0; gap: 0; min-height: 0; }
+.fenster-person img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
+.fenster-person .fenster-inhalt { padding: 0.35rem 0.9rem 0.8rem; display: grid; gap: 0; }
+.fenster-person .fenster-titel { font-size: 1rem; }
+.fenster-person .fenster-text { font-size: 0.875rem; }
+@media (min-width: 40rem) { .fenster-person .fenster-inhalt { padding: 0.9rem 1rem 1.1rem; } }
+
+/* ── Einstieg: links Text, rechts die Sprachfenster ─────────────────── */
+.hero { display: grid; gap: 2.5rem; align-items: start; }
+@media (min-width: 64rem) { .hero { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 4rem; align-items: center; } }
+.telefonzeile { display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; align-items: baseline; font-size: 0.9375rem; color: var(--color-rahmen-2); }
+.telefonzeile strong { color: var(--color-rahmen); font-weight: 600; }
+
+/* ── Erreichbarkeit: drei Spalten mit Fugen statt Karten ───────────── */
+.erreichbarkeit { display: grid; gap: 1.5rem; }
+@media (min-width: 48rem) { .erreichbarkeit { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; } .erreichbarkeit > * { padding-inline: 2rem; border-inline-start: 1px solid var(--color-fuge); } .erreichbarkeit > :first-child { padding-inline-start: 0; border-inline-start: 0; } .erreichbarkeit > :last-child { padding-inline-end: 0; } }
+.fakten { display: grid; gap: 1rem; }
+.fakten dt { font-size: 0.875rem; font-weight: 600; color: var(--color-rahmen-2); margin-bottom: 0.2rem; }
+.fakten dd { line-height: 1.5; }
+.kontakt-link { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; font-weight: 600; color: var(--color-rahmen); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+.kontakt-link:hover { text-decoration-thickness: 2px; }
+.gross { font-size: clamp(1.35rem, 1.2rem + 0.8vw, 1.9rem); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; }
+.gross .kontakt-link { font-size: inherit; font-weight: inherit; }
+
+/* ── Figuren und Hinweise ───────────────────────────────────────────── */
+.figur img { display: block; width: 100%; height: auto; }
+.figur figcaption { font-size: 0.9rem; line-height: 1.45; color: var(--color-grau); margin-top: 0.6rem; }
+.hinweis { background: var(--color-fenster); border-inline-start: 3px solid var(--color-rahmen); padding: 0.95rem 1.15rem; max-width: 64ch; text-wrap: pretty; }
+.entwurf-marke { display: inline-block; font-size: 0.8rem; font-weight: 600; color: var(--color-rahmen-2); border: 1px solid var(--color-fuge-stark); padding: 0.1rem 0.45rem; margin-inline-start: 0.5rem; vertical-align: middle; }
+
+/* ── Profil ─────────────────────────────────────────────────────────── */
+.profil { display: grid; gap: 2rem; }
+@media (min-width: 56rem) { .profil { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3.5rem; align-items: start; } }
+.profil-bild img { display: block; width: 100%; height: auto; background: var(--color-fenster); }
+.profil-kleb { position: sticky; top: 1.5rem; }
+.liste-punkte { list-style: disc; padding-inline-start: 1.25rem; display: grid; gap: 0.35rem; }
+.liste-schlicht { display: grid; gap: 0.1rem; }
+
+/* ── Gebiete auf der Übersichtsseite ────────────────────────────────── */
+.gebiet { padding-block: 2.25rem; border-top: 1px solid var(--color-fuge); display: grid; gap: 1rem 3rem; scroll-margin-top: 1.5rem; }
+@media (min-width: 56rem) { .gebiet { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); } }
+.gebiet:last-of-type { border-bottom: 1px solid var(--color-fuge); }
+.personen-liste { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+.personen-liste a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+
+/* ── Filter (Team) ──────────────────────────────────────────────────── */
+.filter { display: grid; gap: 1.25rem; border: 1px solid var(--color-fuge); background: var(--color-fenster); padding: 1.1rem 1.15rem; }
+.filter fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.filter legend { font-size: 0.875rem; font-weight: 600; color: var(--color-rahmen-2); margin-bottom: 0.5rem; }
+.filter-optionen { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.filter-option { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.4rem 0.85rem; border: 1.5px solid var(--color-fuge-stark); background: var(--color-fenster); color: var(--color-rahmen); font-size: 0.9375rem; cursor: pointer; }
+.filter-option:hover { border-color: var(--color-rahmen); }
+.filter-option[aria-pressed="true"] { background: var(--color-rahmen); color: var(--color-putz); border-color: var(--color-rahmen); }
+
+/* ── Formular ───────────────────────────────────────────────────────── */
+.feld { display: grid; gap: 0.4rem; }
+.feld label { font-weight: 600; font-size: 0.95rem; }
+.feld input, .feld select, .feld textarea { width: 100%; min-height: 3rem; padding: 0.65rem 0.8rem; font: inherit; color: var(--color-rahmen); background: var(--color-fenster); border: 1.5px solid var(--color-fuge-stark); border-radius: 0; }
+.feld textarea { min-height: 8rem; resize: vertical; }
+.feld input:focus-visible, .feld select:focus-visible, .feld textarea:focus-visible { border-color: var(--color-rahmen); outline-offset: 2px; }
+.feld [aria-invalid="true"] { border-color: var(--color-fehler); }
+.feld .hilfe { font-size: 0.875rem; color: var(--color-grau); }
+.feld .fehler { font-size: 0.9rem; font-weight: 600; color: var(--color-fehler); }
+.formular-raster { display: grid; gap: 1.25rem; }
+@media (min-width: 40rem) { .formular-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── Rich Text (Rechtsseiten, Mitarbeit) ────────────────────────────── */
+.richtext { max-width: 68ch; }
+.richtext h2 { font-weight: 500; font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.7rem); line-height: 1.2; letter-spacing: -0.008em; margin-top: 2.5rem; margin-bottom: 0.75rem; scroll-margin-top: 1.5rem; }
+.richtext h3 { font-weight: 600; font-size: 1.1rem; margin-top: 1.75rem; margin-bottom: 0.5rem; scroll-margin-top: 1.5rem; }
+.richtext h4 { font-weight: 600; font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.4rem; }
+.richtext > :first-child { margin-top: 0; }
+.richtext p { margin-bottom: 1rem; text-wrap: pretty; }
+.richtext ul { list-style: disc; padding-inline-start: 1.25rem; margin-bottom: 1rem; display: grid; gap: 0.4rem; }
+.richtext a { color: var(--color-rahmen); text-decoration: underline; text-underline-offset: 0.22em; }
+.richtext .hinweis { margin-block: 1.25rem; }
+
+/* ── Dialoge ────────────────────────────────────────────────────────── */
+dialog { border-radius: 0; }
+dialog::backdrop { background: rgb(24 33 83 / 0.35); }
+
+/* ── Fusszeile ──────────────────────────────────────────────────────── */
+.fuss { border-top: 1px solid var(--color-fuge); }
+.fuss-raster { display: grid; gap: 2rem; }
+@media (min-width: 40rem) { .fuss-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .fuss-raster { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem; } }
+.fuss h2 { font-size: 0.875rem; font-weight: 600; color: var(--color-rahmen-2); margin-bottom: 0.75rem; }
+.fuss-liste { display: grid; gap: 0.1rem; }
+.fuss-liste a, .fuss-liste button { display: flex; align-items: center; min-height: 2.75rem; min-width: 2.75rem; color: var(--color-rahmen); text-align: start; }
+.fuss-liste a:hover, .fuss-liste button:hover { text-decoration: underline; text-underline-offset: 0.22em; }
+.demo-hinweis { font-size: 0.875rem; line-height: 1.4; color: var(--color-rahmen-2); }
+}
+
+/* ── Druckansicht ───────────────────────────────────────────────────── */
+@media print {
+  .kopf .sprachwahl, .register, .fuss nav, .kein-druck, dialog, .demo-leiste, .filter { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; line-height: 1.5; }
+  .behaelter { max-width: none; padding: 0; }
+  .abschnitt { padding-block: 0.5rem; }
+  .fenster-raster { background: #999; }
+  a { color: inherit; text-decoration: none; }
+  .richtext a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; }
+  .titel-1 { font-size: 20pt; }
+}

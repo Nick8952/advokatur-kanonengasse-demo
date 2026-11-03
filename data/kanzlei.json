@@ -1,0 +1,32 @@
+{
+  "name": "advokatur kanonengasse",
+  "kurzbeschreibung": "Anwaltskanzlei im Zürcher Kreis 4",
+  "besuchsadresse": { "strasse": "Militärstrasse 76", "plz": "8004", "ort": "Zürich", "zusatz": "1. Stock, oben an der Treppe" },
+  "postadresse": { "postfach": "Postfach 1012", "plz": "8021", "ort": "Zürich" },
+  "telefon": "+41 43 322 12 12",
+  "email": "kanzlei@kanonengasse.ch",
+  "telefonzeiten": {
+    "tage": "Montag bis Donnerstag",
+    "zeiten": ["09.00 bis 12.00 Uhr", "14.00 bis 16.00 Uhr"],
+    "terminhinweis": "Termine nur gegen Voranmeldung."
+  },
+  "anfahrt": [
+    "Bus 31 ab Hauptbahnhof bis Haltestelle «Kanonengasse».",
+    "Fünf Gehminuten vom Hauptbahnhof."
+  ],
+  "karten": [
+    { "text": "Karte bei OpenStreetMap", "ziel": "https://www.openstreetmap.org/search?query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich" },
+    { "text": "Karte bei Google Maps", "ziel": "https://www.google.com/maps/search/?api=1&query=Milit%C3%A4rstrasse%2076%2C%208004%20Z%C3%BCrich" }
+  ],
+  "organisation": "Die Anwältinnen und Anwälte der advokatur kanonengasse sind als Bürogemeinschaft organisiert und arbeiten wirtschaftlich selbständig.",
+  "logo": "logo",
+  "foto": "strassenfoto",
+  "seoBild": "og",
+  "herkunft": [
+    { "quelle": "Kontaktseite der bisherigen Website (Adresse, Postfach, Telefon, E-Mail, Telefonzeiten Montag bis Donnerstag, 1. Stock, Bus 31)", "url": "https://www.kanonengasse.ch/kontakt", "abgerufen": "2026-11-02", "art": "bisherige-website" },
+    { "quelle": "Startseite der bisherigen Website (Telefonzeiten ohne Tagesangabe, Terminhinweis, Kreis 4)", "url": "https://www.kanonengasse.ch/", "abgerufen": "2026-11-02", "art": "bisherige-website" },
+    { "quelle": "Partnerschaftsseite der bisherigen Website (Bürogemeinschaft, wirtschaftlich selbständig, 5 Gehminuten vom Hauptbahnhof)", "url": "https://www.kanonengasse.ch/partnerschaft", "abgerufen": "2026-11-02", "art": "bisherige-website" },
+    { "quelle": "Postleitzahl der Besuchsadresse Militärstrasse 76: 8004 Zürich (amtliches Adressverzeichnis, geo.admin.ch); das Postfach liegt in 8021 Zürich", "url": "https://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=Milit%C3%A4rstrasse%2076%20Z%C3%BCrich&type=locations&origins=address", "abgerufen": "2026-11-03", "art": "amtlich" }
+  ],
+  "freigabe": "demo"
+}

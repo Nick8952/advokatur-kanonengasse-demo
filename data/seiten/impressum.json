@@ -1,0 +1,33 @@
+{
+  "slug": "impressum",
+  "titel": "Impressum",
+  "einleitung": "Diese Website ist eine Verkaufs-Demo. Sie zeigt, wie ein neuer Webauftritt der advokatur kanonengasse aussehen könnte, und ist nicht die offizielle Website der Kanzlei.",
+  "stand": "3. November 2026",
+  "bloecke": [
+    { "titel": "Betreiber dieser Demo" },
+    "**Nick Holzbecher**, Entwicklung von Websites für kleine Unternehmen. Die Postanschrift wird auf Anfrage mitgeteilt.",
+    "E-Mail: [holzbechernick@gmail.com](mailto:holzbechernick@gmail.com)",
+    "Verantwortlich für Gestaltung, Technik und die Zusammenstellung der Inhalte dieser Demo. Die Demo wurde ohne Auftrag der advokatur kanonengasse erstellt und wird ihr als Vorschlag vorgelegt.",
+    { "titel": "Dargestellte Kanzlei" },
+    "**advokatur kanonengasse**, Militärstrasse 76, 8004 Zürich (Büro im 1. Stock). Postadresse: Postfach 1012, 8021 Zürich. Telefon [+41 43 322 12 12](tel:+41433221212), E-Mail [kanzlei@kanonengasse.ch](mailto:kanzlei@kanonengasse.ch).",
+    "Die Anwältinnen und Anwälte der advokatur kanonengasse sind gemäss ihrer bisherigen Website als Bürogemeinschaft organisiert und arbeiten wirtschaftlich selbständig. Rechtsform, Unternehmens-Identifikationsnummer, Registereinträge, Aufsichtsbehörde und Berufsverbandsmitgliedschaften der einzelnen Anwältinnen und Anwälte werden hier nicht genannt, weil sie für diese Demo nicht belegt sind. Für den Produktivbetrieb prüft und ergänzt sie die Kanzlei.",
+    { "titel": "Inhalte" },
+    "Texte, Profile, Rechtsgebiete, Stellen- und Partnerschaftsangaben wurden am 2. November 2026 von der bisherigen Website www.kanonengasse.ch übernommen und sprachlich leicht überarbeitet, ohne Fakten zu ändern. Massgebend sind die Angaben der Kanzlei.",
+    "Die Einführungstexte in Englisch, Französisch, Italienisch, Spanisch und Arabisch stammen von der bisherigen Website. Die übrigen Texte dieser Sprachfassungen (Bedienelemente, Beschriftungen, Hinweise) sind Übersetzungsentwürfe, die die Kanzlei vor dem Produktivbetrieb freigibt.",
+    { "titel": "Urheberrechte und Bilder" },
+    "Die Texte unterliegen dem Urheberrecht der advokatur kanonengasse. Die Wortmarke, das Strassenfoto und die Portraits stammen von der bisherigen Website; wer sie fotografiert hat, ist dort nicht genannt. Alle Bilder werden in dieser Demo vorbehaltlich der Freigabe durch die Berechtigten gezeigt. Es werden keine Kartenausschnitte, keine Stockfotos, keine erzeugten Personen und keine Fotos fremder Räume verwendet. Die Bildquellen stehen im Bildnachweis am Ende dieser Seite.",
+    { "titel": "Haftung" },
+    "Die Inhalte wurden mit Sorgfalt zusammengestellt. Für Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Die Website ersetzt keine Rechtsberatung im Einzelfall. Links zu externen Websites führen zu Angeboten Dritter, für deren Inhalte die jeweiligen Betreiber verantwortlich sind.",
+    { "titel": "Technik" },
+    "Die Demo ist eine statische Website und wird über GitHub Pages ausgeliefert (GitHub, Inc., San Francisco, USA). Sie ist für Suchmaschinen gesperrt (noindex) und als Entwurf gekennzeichnet."
+  ],
+  "seoTitel": "Impressum",
+  "seoBeschreibung": "Impressum der Verkaufs-Demo für die advokatur kanonengasse: Betreiber der Demo, dargestellte Kanzlei, Quellen der Inhalte, Urheberrechte und Bildnachweis.",
+  "belege": {
+    "herkunft": [
+      { "quelle": "Impressum und Kontaktseite der bisherigen Website (Name, Adresse, Postfach, Telefon, E-Mail)", "url": "https://www.kanonengasse.ch/impressum", "abgerufen": "2026-11-02", "art": "bisherige-website" },
+      { "quelle": "Angaben des Demo-Betreibers Nick Holzbecher", "abgerufen": "2026-11-03", "art": "eigene-quelle" }
+    ],
+    "freigabe": "demo"
+  }
+}

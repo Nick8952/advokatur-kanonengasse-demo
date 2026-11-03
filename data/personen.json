@@ -1,0 +1,720 @@
+[
+  {
+    "slug": "urs-ebnoether",
+    "vorname": "Urs",
+    "nachname": "Ebnöther",
+    "rolle": "Rechtsanwalt, lic. iur., Partner",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 1,
+    "sprachenOriginal": "Deutsch, Französisch, Englisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Französisch"
+      },
+      {
+        "name": "Englisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Bevorzugte Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Migrationsrecht (Bürgerrecht, Asyl- und Ausländerrecht)",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Strafrecht",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Mietrecht",
+        "slug": "mietrecht"
+      },
+      {
+        "text": "Familienrecht",
+        "slug": "familienrecht"
+      },
+      {
+        "text": "Sozialhilfe",
+        "slug": "sozialhilfe-und-sozialversicherungsrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 14",
+    "telefonBezeichnung": "Telefon direkt",
+    "email": "ebnoether@kanonengasse.ch",
+    "werdegang": [
+      "Geboren 1973 in Zug. Studium der Rechtswissenschaften an den Universitäten St. Gallen und Genf, Lizentiat im Frühjahr 1999. Anwaltspatent im Dezember 2003. Zwischen 2001 und 2005 Leiter der Rechtsberatungsstelle für Asyl- und Ausländerrecht in Schaffhausen. Rechtsberater beim Mieterverband Zürich von 2001 bis 2022, Beisitzer Schlichtungsbehörde in Mietsachen Zürich von 2002 bis 2012. Mietrichter (Vertreter vom Mieterverband) an den Mietgerichten in Dielsdorf, Zürich, Bülach und Meilen. Seit 2007 Partner bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": null,
+    "mitgliedschaften": [],
+    "portrait": "urs-ebnoether",
+    "portraitQuadrat": "urs-ebnoether-quadrat",
+    "seoBeschreibung": "Urs Ebnöther, Rechtsanwalt, lic. iur., Partner der advokatur kanonengasse in Zürich: Migrationsrecht, Strafrecht, Mietrecht, Familienrecht und Sozialhilfe.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/urs-ebnoether",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "E-Mail-Adresse von der Partnerschaftsseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/partnerschaft",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "tarig-hassan",
+    "vorname": "Tarig",
+    "nachname": "Hassan",
+    "rolle": "lic. iur., LL. M., Partner",
+    "berufsbezeichnung": null,
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 2,
+    "sprachenOriginal": "Arabisch (Muttersprache), Deutsch, Englisch, Französisch",
+    "sprachen": [
+      {
+        "name": "Arabisch",
+        "zusatz": "Muttersprache"
+      },
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      },
+      {
+        "name": "Französisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Bevorzugte Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Migrationsrecht (Asyl- und Ausländerrecht)",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Internationale Menschenrechtsverfahren (EGMR- und CAT-Verfahren)",
+        "slug": "grund-und-menschenrechte"
+      },
+      {
+        "text": "Sportrecht (Beratung und Vertretung von Sportlern, Sportverbänden und Sportveranstaltern)",
+        "slug": "sportrecht"
+      },
+      {
+        "text": "Gutachten zur islamischen/arabischen Rechtsordnung",
+        "slug": "gutachten-islamisches-und-arabisches-recht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 15",
+    "telefonBezeichnung": "Telefon direkt",
+    "email": null,
+    "werdegang": [
+      "Geboren in Omdurman, Sudan. Studium der Rechtswissenschaft an der Universität Marrakesch (Marokko), Lizentiat 1991. Erwarb Anwaltspatent für arabische Länder 1996, seither Mitglied der Arabischen Advokaten-Vereinigung Kairo (Ägypten). Nicht eingetragen im Schweizerischen Anwaltsregister.",
+      "Zwischen 1998 und 2000 Nachdiplomstudium im Internationalen Wirtschaftsrecht an der Universität Zürich, abgeschlossen mit dem Titel LL.M. 2000.",
+      "Vom September 2017 bis März 2018 (berufsbegleitendes Studium) in Internationalem Sportrecht an der Universität Zürich, abgeschlossen mit dem Titel Certificate of Advanced Studies UZH in International Sports Law, CAS UZH.",
+      "Mai 2000 bis Januar 2001 Rechtsberater im Bereich Zwangsmassnahmen im Ausländerrecht beim HEKS, Zürich. Juli 2002 bis Dezember 2006 Führung eigener Mandate bei der Muhajir Rechtsberatung.",
+      "Seit 2007 Partner bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": null,
+    "mitgliedschaften": [],
+    "portrait": "tarig-hassan",
+    "portraitQuadrat": "tarig-hassan-quadrat",
+    "seoBeschreibung": "Tarig Hassan, lic. iur., LL. M., Partner der advokatur kanonengasse in Zürich: Migrationsrecht, internationale Menschenrechtsverfahren, Sportrecht. Arabisch, Deutsch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/tarig-hassan",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "tobias-kazik",
+    "vorname": "Tobias",
+    "nachname": "Kazik",
+    "rolle": "Rechtsanwalt, MLaw, Partner",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 3,
+    "sprachenOriginal": "Deutsch, Französisch, Englisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Französisch"
+      },
+      {
+        "name": "Englisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Bevorzugte Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Migrationsrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Familienrecht",
+        "slug": "familienrecht"
+      },
+      {
+        "text": "Strafrecht",
+        "slug": "strafrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 17",
+    "telefonBezeichnung": "Telefon direkt",
+    "email": null,
+    "werdegang": [
+      "Studium der Rechtswissenschaften an der Universität Zürich, Master-Abschluss im 2012. Im 2013 Auditorat am Bezirksgericht Zürich.",
+      "Von 2014 bis 2016 Gerichtsschreiber dort. Im Juli 2016 Erwerb des Anwaltspatents des Kantons Zürich. Von 2016 bis 2020 Rechtsanwalt in einer Kanzlei am Zürichsee, Tätigkeitsschwerpunkte im Familien- und Strafrecht. Ab 2020 teilamtlicher Richter am Bezirksgericht Pfäffikon ZH. Von 2021 bis 2022 nebenamtlicher Richter am Bezirksgericht Zürich. Seit 2022 Partner bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": "Berufsbezogene Mitgliedschaften",
+    "mitgliedschaften": [
+      "Demokratische Jurist*innen Zürich",
+      "Zürcher Anwaltsverband",
+      "ZAV Fachgruppe Familienrecht"
+    ],
+    "portrait": "tobias-kazik",
+    "portraitQuadrat": "tobias-kazik-quadrat",
+    "seoBeschreibung": "Tobias Kazik, Rechtsanwalt, MLaw, Partner der advokatur kanonengasse in Zürich: Migrationsrecht, Familienrecht und Strafrecht. Deutsch, Französisch, Englisch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/tobias-kazik",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "davide-loss",
+    "vorname": "Davide",
+    "nachname": "Loss",
+    "rolle": "Rechtsanwalt, MLaw, Partner",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 4,
+    "sprachenOriginal": "Deutsch, Englisch, Italienisch, Französisch, Spanisch, Portugiesisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      },
+      {
+        "name": "Italienisch"
+      },
+      {
+        "name": "Französisch"
+      },
+      {
+        "name": "Spanisch"
+      },
+      {
+        "name": "Portugiesisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Strafrecht (inkl. Verwaltungsstrafrecht)",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Migrationsrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Sozialversicherungsrecht und Sozialhilferecht",
+        "slug": "sozialhilfe-und-sozialversicherungsrecht",
+        "fussnote": 1
+      },
+      {
+        "text": "Arbeitsrecht",
+        "slug": "arbeitsrecht"
+      },
+      {
+        "text": "Familienrecht",
+        "slug": "familienrecht"
+      }
+    ],
+    "fussnoten": [
+      "Vertrauensanwalt der Unabhängigen Fachstelle für Sozialhilferecht (UFS)."
+    ],
+    "telefon": "+41 43 322 12 12",
+    "telefonBezeichnung": "Telefon",
+    "email": null,
+    "werdegang": [
+      "Geboren 1987 in Zürich. Schweizerisch-italienischer Doppelbürger. Studium der Rechtswissenschaften an der Universität Zürich mit Abschluss des Masterstudiums mit Schwerpunkt Rechtspraxis im Sommer 2014. Anschliessend Auditorat am Bezirksgericht Zürich. Erteilung des Anwaltspatents des Kantons Zürich im Februar 2019. Danach Partner in einer kleinen Zürcher Anwaltskanzlei. Seit Oktober 2022 Partner bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": "Mitgliedschaften",
+    "mitgliedschaften": [
+      "Zürcher Anwaltsverband",
+      "Mitglied der Demokratischen Juristinnen und Juristen Zürich",
+      "Pikett Strafverteidigung",
+      "Pikett Administrativhaft",
+      "Rechtsauskunft Anwaltskollektiv"
+    ],
+    "portrait": "davide-loss",
+    "portraitQuadrat": "davide-loss-quadrat",
+    "seoBeschreibung": "Davide Loss, Rechtsanwalt, MLaw, Partner der advokatur kanonengasse in Zürich: Strafrecht, Migrationsrecht, Sozialversicherungsrecht, Arbeitsrecht, Familienrecht.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/davide-loss",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "christian-mueller",
+    "vorname": "Christian",
+    "nachname": "Müller",
+    "rolle": "Rechtsanwalt, MLaw LL.M., Associate",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "associate",
+    "reihenfolge": 5,
+    "sprachenOriginal": "Deutsch, Englisch, Französisch, Spanisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      },
+      {
+        "name": "Französisch"
+      },
+      {
+        "name": "Spanisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Strafrecht (inkl. Verwaltungsstrafrecht)",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Migrationsrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Sozialversicherungsrecht und Sozialhilferecht",
+        "slug": "sozialhilfe-und-sozialversicherungsrecht"
+      },
+      {
+        "text": "Arbeitsrecht",
+        "slug": "arbeitsrecht"
+      },
+      {
+        "text": "Familienrecht",
+        "slug": "familienrecht"
+      },
+      {
+        "text": "Mietrecht",
+        "slug": "mietrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 33",
+    "telefonBezeichnung": "Telefon",
+    "email": null,
+    "werdegang": [
+      "Geboren am 3. Januar 1997 in Urdorf ZH. Matura an der Kantonsschule Limmattal im Jahre 2015. Anschliessend Studium der Rechtswissenschaften an der Universität Zürich und Abschluss des Double Degree Master im Juli 2022 nach einem Jahr an der University of Amsterdam mit Schwerpunkt im Europäischen Wettbewerbs- und Regulierungsrecht. Seit Oktober 2022 als Substitut in der advokatur kanonengasse und seit Juli 2025 als Rechtsanwalt bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": "Mitgliedschaften",
+    "mitgliedschaften": [
+      "Zürcher Anwaltsverband",
+      "Pikett Strafverteidigung",
+      "Pikett Administrativhaft"
+    ],
+    "portrait": "christian-mueller",
+    "portraitQuadrat": "christian-mueller-quadrat",
+    "seoBeschreibung": "Christian Müller, Rechtsanwalt, MLaw LL.M., Associate der advokatur kanonengasse in Zürich: Strafrecht, Migrationsrecht, Arbeitsrecht, Familienrecht, Mietrecht.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/christian-mueller",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "manuela-schiller",
+    "vorname": "Manuela",
+    "nachname": "Schiller",
+    "rolle": "Rechtsanwältin, lic. iur., Partnerin",
+    "berufsbezeichnung": "Rechtsanwältin",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partnerin",
+    "reihenfolge": 6,
+    "sprachenOriginal": "Deutsch, Italienisch (Englisch, Spanisch und Französisch mündlich)",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Italienisch"
+      },
+      {
+        "name": "Englisch",
+        "zusatz": "mündlich"
+      },
+      {
+        "name": "Spanisch",
+        "zusatz": "mündlich"
+      },
+      {
+        "name": "Französisch",
+        "zusatz": "mündlich"
+      }
+    ],
+    "rechtsgebieteTitel": "Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Mietrecht",
+        "slug": "mietrecht"
+      },
+      {
+        "text": "Strafrecht",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Grundrechte",
+        "slug": "grund-und-menschenrechte"
+      },
+      {
+        "text": "Ausländerrecht",
+        "slug": "migrationsrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 36",
+    "telefonBezeichnung": "Telefon",
+    "email": "schiller@kanonengasse.ch",
+    "werdegang": [
+      "Geboren 1957 in Zürich. Schweizerisch-italienische Doppelbürgerin. Studium in Zürich und Marburg. Anwaltspatent seit 1989. Von 1990 bis 2024 Anwaltsbüro Delphinstrasse in Zürich. Seit 1. Juni 2024 Partnerin bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": "Mitgliedschaften",
+    "mitgliedschaften": [
+      "Demokratische Juristinnen und Juristen Schweiz (DJS) und Zürich (DJZ)",
+      "Zürcher Anwaltsverband (ZAV)",
+      "Schweizerischer Anwaltsverband (SAV)",
+      "Pikett Strafverteidigung",
+      "Vertrauensanwältin Mieterinnen- und Mieterverband Zürich (mvz)",
+      "Alternative Liste Zürich (AL)"
+    ],
+    "portrait": "manuela-schiller",
+    "portraitQuadrat": "manuela-schiller-quadrat",
+    "seoBeschreibung": "Manuela Schiller, Rechtsanwältin, lic. iur., Partnerin der advokatur kanonengasse in Zürich: Mietrecht, Strafrecht, Grundrechte und Ausländerrecht.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website (nicht in deren Sitemap, aber in der Navigation verlinkt)",
+        "url": "https://www.kanonengasse.ch/manuela-schiller",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "E-Mail-Adresse von der Partnerschaftsseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/partnerschaft",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "nicolas-von-wartburg",
+    "vorname": "Nicolas",
+    "nachname": "von Wartburg",
+    "rolle": "Rechtsanwalt, MLaw, Partner",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 7,
+    "sprachenOriginal": "Deutsch, Englisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Bevorzugte Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Strafrecht",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Ausländerrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Familienrecht",
+        "slug": "familienrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 11",
+    "telefonBezeichnung": "Telefon direkt",
+    "email": null,
+    "werdegang": [
+      "Geboren 1982 in Zürich, absolvierte ich mein Studium der Rechtswissenschaften an der Universität Zürich und schloss dieses im Winter 2013 mit dem Master ab. Es folgten ein Anwaltspraktikum bei der Anwaltskanzlei advokatur kanonengasse und ein Auditorat am Bezirksgericht Zürich. Von Sommer 2014 bis Frühling 2017 war ich als Gerichtsschreiber am Bezirksgericht Zürich tätig und erwarb im Juli 2016 das Anwaltspatent des Kantons Zürich. Seit Mai 2017 bin ich als Rechtsanwalt bei der Anwaltskanzlei advokatur kanonengasse tätig.",
+      "Meine besonderen Erfahrungen liegen im Ausländer- und im Straf- sowie im Familienrecht."
+    ],
+    "mitgliedschaftenTitel": "Mitgliedschaften",
+    "mitgliedschaften": [
+      "Verein Pikett Strafverteidigung",
+      "Rechtsauskunft Anwaltskollektiv",
+      "Demokratische Juristinnen und Juristen Zürich",
+      "Zürcher Anwaltsverband"
+    ],
+    "portrait": "nicolas-von-wartburg",
+    "portraitQuadrat": "nicolas-von-wartburg-quadrat",
+    "seoBeschreibung": "Nicolas von Wartburg, Rechtsanwalt, MLaw, Partner der advokatur kanonengasse in Zürich: Strafrecht, Ausländerrecht und Familienrecht. Deutsch und Englisch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/nicolas-von-wartburg",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "dominik-zuesli",
+    "vorname": "Dominik",
+    "nachname": "Züsli",
+    "rolle": "Rechtsanwalt, MLaw, Partner",
+    "berufsbezeichnung": "Rechtsanwalt",
+    "gruppe": "anwaeltinnen-und-anwaelte",
+    "funktion": "partner",
+    "reihenfolge": 8,
+    "sprachenOriginal": "Deutsch, Englisch, Französisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      },
+      {
+        "name": "Französisch"
+      }
+    ],
+    "rechtsgebieteTitel": "Rechtsgebiete",
+    "rechtsgebiete": [
+      {
+        "text": "Migrationsrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Asylrecht",
+        "slug": "migrationsrecht"
+      },
+      {
+        "text": "Internationale Menschenrechtsverfahren",
+        "slug": "grund-und-menschenrechte"
+      },
+      {
+        "text": "Migrationsstrafrecht",
+        "slug": "strafrecht"
+      },
+      {
+        "text": "Arbeitsrecht",
+        "slug": "arbeitsrecht"
+      }
+    ],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 31",
+    "telefonBezeichnung": "Telefon",
+    "email": "zuesli@kanonengasse.ch",
+    "werdegang": [
+      "Geboren 1991 in Aarau, führte mich das Studium der Rechtswissenschaften nach Zürich. Abschluss des Master of Law an der UZH im Winter 2019. Es folgten ein Einsatz bei MIRSAH, ein Auditorat am Bezirksgericht Zürich sowie ein Praktikum in der advokatur kanonengasse. Nach Erlangen des Zürcher Anwaltspatents im Januar 2023 arbeitete ich zwei Jahre als Rechtsvertreter im erweiterten Asylverfahren bei der Zürcher Beratungsstelle für Asylsuchende, danach ein Jahr als Rechtsanwalt im Advokaturbüro Langstrasse 4. Seit 2026 Partner bei der advokatur kanonengasse. Neben meiner anwaltlichen Tätigkeit bin ich als Co-Teamlead des AIG/Procedures Team bei AsyLex tätig."
+    ],
+    "mitgliedschaftenTitel": "Mitgliedschaften",
+    "mitgliedschaften": [
+      "Zürcher Anwaltsverband",
+      "Demokratische Juristinnen und Juristen Zürich",
+      "Pikett Administrativhaft",
+      "AsyLex"
+    ],
+    "portrait": "dominik-zuesli",
+    "portraitQuadrat": "dominik-zuesli-quadrat",
+    "seoBeschreibung": "Dominik Züsli, Rechtsanwalt, MLaw, Partner der advokatur kanonengasse in Zürich: Migrationsrecht, Asylrecht, Menschenrechtsverfahren, Migrationsstrafrecht, Arbeitsrecht.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website (nicht in deren Sitemap, aber in der Navigation verlinkt)",
+        "url": "https://www.kanonengasse.ch/dominik-zuesli",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "florian-hoensch",
+    "vorname": "Florian",
+    "nachname": "Hönsch",
+    "rolle": "MLaw, Substitut",
+    "berufsbezeichnung": null,
+    "gruppe": "substitutinnen-und-substituten",
+    "funktion": "substitut",
+    "reihenfolge": 9,
+    "sprachenOriginal": "Deutsch, Englisch, Französisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      },
+      {
+        "name": "Französisch"
+      }
+    ],
+    "rechtsgebieteTitel": null,
+    "rechtsgebiete": [],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 32",
+    "telefonBezeichnung": "Telefon",
+    "email": null,
+    "werdegang": [
+      "Geboren im Zürcher Oberland. Maturität am Gymnasium Stadelhofen in Zürich. Studium der Rechtswissenschaften an der Universität Zürich mit Abschluss im Sommer 2025. Während und nach dem Studium Tätigkeit bei der Zürcher Beratungsstelle für Asylsuchende, zunächst als Praktikant und anschliessend als Rechtsvertreter. Seit April 2026 Anwaltssubstitut bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": null,
+    "mitgliedschaften": [],
+    "portrait": "florian-hoensch",
+    "portraitQuadrat": "florian-hoensch-quadrat",
+    "seoBeschreibung": "Florian Hönsch, MLaw, Anwaltssubstitut bei der advokatur kanonengasse in Zürich seit April 2026. Deutsch, Englisch, Französisch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/florian-hoensch",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "leonie-roethlisberger",
+    "vorname": "Leonie",
+    "nachname": "Röthlisberger",
+    "rolle": "MLaw, Substitutin",
+    "berufsbezeichnung": null,
+    "gruppe": "substitutinnen-und-substituten",
+    "funktion": "substitutin",
+    "reihenfolge": 10,
+    "sprachenOriginal": "Deutsch, Englisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Englisch"
+      }
+    ],
+    "rechtsgebieteTitel": null,
+    "rechtsgebiete": [],
+    "fussnoten": [],
+    "telefon": "+41 44 244 51 60",
+    "telefonBezeichnung": "Telefon",
+    "email": null,
+    "werdegang": [
+      "Im Jahr 2000 in Aarau geboren und aufgewachsen. Eidgenössische Matura an der Alten Kanti in Aarau mit dem Schwerpunktfach Kunst. Während Covid-19 direkt mit dem Studium der Rechtswissenschaften an der Universität Zürich begonnen und im Jahr 2026 abgeschlossen. Während dem Studium bei einer Rechtsvertretung für Asylsuchende im Bundesasylverfahren gearbeitet. Seit September 2026 Anwaltssubstitutin bei der advokatur kanonengasse."
+    ],
+    "mitgliedschaftenTitel": null,
+    "mitgliedschaften": [],
+    "portrait": "leonie-roethlisberger",
+    "portraitQuadrat": "leonie-roethlisberger-quadrat",
+    "seoBeschreibung": "Leonie Röthlisberger, MLaw, Anwaltssubstitutin bei der advokatur kanonengasse in Zürich seit September 2026. Deutsch und Englisch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/leonie-roethlisberger",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  },
+  {
+    "slug": "patricia-berdin",
+    "vorname": "Patricia",
+    "nachname": "Berdin",
+    "rolle": "Leiterin Sekretariat",
+    "berufsbezeichnung": null,
+    "gruppe": "sekretariat",
+    "funktion": "leitung-sekretariat",
+    "reihenfolge": 11,
+    "sprachenOriginal": "Deutsch, Kroatisch",
+    "sprachen": [
+      {
+        "name": "Deutsch"
+      },
+      {
+        "name": "Kroatisch"
+      }
+    ],
+    "rechtsgebieteTitel": null,
+    "rechtsgebiete": [],
+    "fussnoten": [],
+    "telefon": "+41 43 322 12 12",
+    "telefonBezeichnung": "Telefon",
+    "email": "berdin@kanonengasse.ch",
+    "werdegang": [
+      "Abschluss der Berufslehre als kaufmännische Angestellte (eidg. FA) 1994. Jahrelange Sekretariatserfahrung in Klein- und Grossunternehmen.",
+      "Seit November 2022 in der advokatur kanonengasse als Mitarbeiterin Sekretariat im Bereich Finanz- und Personalwesen der Kanzlei."
+    ],
+    "mitgliedschaftenTitel": null,
+    "mitgliedschaften": [],
+    "portrait": "patricia-berdin",
+    "portraitQuadrat": "patricia-berdin-quadrat",
+    "seoBeschreibung": "Patricia Berdin, Leiterin Sekretariat der advokatur kanonengasse in Zürich: Empfang, Finanz- und Personalwesen der Kanzlei. Deutsch und Kroatisch.",
+    "herkunft": [
+      {
+        "quelle": "Profilseite der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/patricia-berdin",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      },
+      {
+        "quelle": "E-Mail-Adresse von der Seite «Offene Stellen» der bisherigen Website",
+        "url": "https://www.kanonengasse.ch/offene-stellen",
+        "abgerufen": "2026-11-02",
+        "art": "bisherige-website"
+      }
+    ],
+    "freigabe": "demo"
+  }
+]
